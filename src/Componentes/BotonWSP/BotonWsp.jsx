@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useTranslations } from "next-intl";
+import { userData } from "@/app/Constants/userinfo";
 
 
 // const userData = { ----- Asi tiene que ser el documento dentro de constantes -----
@@ -15,7 +16,6 @@ import { useTranslations } from "next-intl";
 // export default userData;
 
 const BotonWsp = () => {
-  const t = useTranslations('userData')
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -25,14 +25,14 @@ const BotonWsp = () => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
-  const enviar = `https://wa.me/+${t('codigoPais')}${t('contact')}?text=${encodeURIComponent(t('textBoton'))}`;
+  const enviar = `https://wa.me/+${userData.codigoPais}${userData.contact}?text=${encodeURIComponent(userData.textoPredefinido)}`;
 
   return (
     <article className="fixed bottom-6 right-6 z-50">
       <a href={enviar} >
         <button rel="noopener noreferrer" className='flex items-center justify-center bg-green-500 text-white font-bold p-4 rounded-full' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} aria-label="Contact via WhatsApp" role="button" data-client={true} >
           <FaWhatsapp className='text-white text-3xl'/>
-          {isHovered && <h2 className='ml-2'>{t('textBoton')}</h2>}
+          {isHovered && <h2 className='ml-2'>{userData.textBoton}</h2>}
         </button>
       </a>
     </article>
