@@ -7,6 +7,45 @@
   --foreground: #171717;
 }
 
+
+.buttonWspPosition{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 50;
+}
+
+.buttonWspDesign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 9999px;
+}
+
+.buttonWspDesign:hover {
+  background-color: #25D366;
+  cursor: pointer;
+}
+
+.iconWhatsApp{
+  color: #ffffff;
+  font-size: 2.25rem;
+}
+
+.textWhatsApp{
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
