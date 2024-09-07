@@ -31,5 +31,9 @@ export const userData = { //----- Asi tiene que ser el documento dentro de const
   textoPredefinido :`Hola, me gustaria saber mas sobre,`
 };
 
-export default userData;
+export const Links = [
+    { name: "Inicio", href: "#inicio", current: false  },
+    { name: "Productos", href: "#productos", current: false  },
+    { name: "Nosotros", href: "#nosotros", current: false  },
+  ];
     
