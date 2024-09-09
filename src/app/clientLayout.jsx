@@ -15,7 +15,7 @@ export default function ClientLayout({ children }) {
   return (
     <>
       {!hideLayout && (
-        <nav className='mb-10'>
+        <nav className=''>
           <Suspense fallback={<Loading />}>
             <Navbar />
           </Suspense>

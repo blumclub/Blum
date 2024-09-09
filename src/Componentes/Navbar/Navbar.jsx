@@ -35,8 +35,8 @@ export default function Navbar(contacto) {
   };
   
   return (
-    <div className="py-8 md:py-11 bg-gray-400">
-      <Disclosure as="nav" className={classNames(`fixed top-9 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-primary text-text-tertiary  backdrop-blur-none shadow-lg ${isScrolled?'shadow-blue-200':''} `)}>
+    <div className="">
+      <Disclosure as="nav" className={classNames(`fixed top-0 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-primary text-text-tertiary   shadow-lg ${isScrolled?'shadow-blue-200 backdrop-blur-md':'backdrop-blur-none '} `)}>
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 py-1 md:py-0 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export default function Navbar(contacto) {
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10">
                     <Link href="/" className="">
-                      <img src="/logos/LOGBLUMX.webp" alt="Blum" className="py-4" aria-label="Logo Blum" width={160} height={'auto'} />
+                      <img src="/Logo/LogoBlum160.webp" alt="Blum" className="py-4" aria-label="Logo Blum" width={100} height={'auto'} />
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">

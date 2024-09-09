@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Componentes/Banner/Banner';
+import Nosotros from '../Componentes/Nosotros/Nosotros';
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       </a>
       <main>
         <Banner />
+        <Nosotros />
       </main>
     </>
   );

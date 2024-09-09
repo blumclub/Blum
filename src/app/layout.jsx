@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <link rel="manifest" href={metadata.manifest} />
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400&display=swap" rel="stylesheet"/>
 
         {/* Google Analytics */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-BFTD765MWQ" strategy="afterInteractive"/>
