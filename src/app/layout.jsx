@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Blum Cannabis Club',
   description: 'Blun Cannabis Club',
   viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#ffffff',
+  themeColor: '#0c343c',
   charSet: 'UTF-8',
   icon: '/favicon.ico',
   keywords: 'Club, cannabis, blum, cannabis recreacional, cannabis medicinal'
