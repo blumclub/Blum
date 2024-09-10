@@ -36,15 +36,15 @@ export default function Navbar(contacto) {
   
   return (
     <div className="">
-      <Disclosure as="nav" className={classNames(`fixed top-0 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-primary text-text-tertiary   shadow-lg ${isScrolled?'shadow-secondary backdrop-blur-md':'backdrop-blur-none '} `)}>
+      <Disclosure as="nav" className={classNames(`fixed top-0 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-30 transition-colors duration-300 bg-background-primary text-text-tertiary   shadow-lg ${isScrolled?'shadow-secondary backdrop-blur-md':'backdrop-blur-none '} `)}>
         {({ open }) => (
           <>
-            <div className="mx-auto max-w-7xl px-4 py-1 md:py-0 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-4 py-1 md:py-0 sm:px-6 lg:px-8 z-20">
               <div className="relative flex h-16 items-center justify-start md:justify-around">
                 <div className="flex flex-1 items-center justify-start md:justify-around">
-                  <div className="flex flex-shrink-0 items-center mr-10">
-                    <Link href="/" className="">
-                      <img src="/Logo/LogoBlum160.webp" alt="Blum" className="py-4" aria-label="Logo Blum" width={100} height={'auto'} />
+                  <div className="flex flex-shrink-0 items-center mr-10 ">
+                    <Link href="/" className="z-20 py-2">
+                      <img src="/Logo/LogoBlum160.webp" alt="Blum" className="py-4" aria-label="Logo Blum" width={80} height={'auto'} />
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">
