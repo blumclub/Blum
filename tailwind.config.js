@@ -18,6 +18,10 @@ module.exports = {
       backgroundImage: {
         'bgSecondary': "url('/BG/footer6.webp')",
       },
+      dropShadow: {
+        'primary': '0 4px 25px rgba(12, 52, 60, 0.8)', 
+        'secondary': '0 4px 25px rgba(254, 153, 0, 0.8)',
+      },
       colors: {
         primary: {
           DEFAULT: '#0c343c',  // Color de fondo primario

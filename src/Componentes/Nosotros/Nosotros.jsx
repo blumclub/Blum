@@ -15,7 +15,7 @@ export default function Nosotros() {
             <br />
             <p className="text-text-secondary text-lg indent-6">Buscamos proporcionar alternativas de tratamiento efectivas y de alta calidad, marcando la pauta como el primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad. Partimos del marco legal de la Ley de Cannabis Medicinal (Ley N°27.350), llevando adelante nuestras actividades bajo los estándares de la misma.</p>
           </div>
-          <img loading="lazy" width={100} style={{ filter: 'drop-shadow(0 4px 25px rgba(0, 123, 199))' }} className="hidden md:block md:w-full p-6 place-self-center z-10" src="https://res.cloudinary.com/deueso3sr/image/upload/v1725904568/1m_oheh13.webp" alt="ojo del logo" aria-label="ojo del logo" />
+          <img loading="lazy" width={100} className="hidden md:block md:w-full p-6 place-self-center z-10 drop-shadow-secondary" src="https://res.cloudinary.com/deueso3sr/image/upload/v1725988970/flor_qr4xqg.webp" alt="Flores de Cannabis" aria-label="Flores de Cannabis" />
         </div>
       </article>
       
