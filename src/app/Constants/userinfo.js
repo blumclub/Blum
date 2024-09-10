@@ -1,4 +1,4 @@
-import {faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import {FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 export const userinfo = {
     logoText: "BLUM", //This text is visible on your navbar and footer like your logo.
@@ -10,9 +10,9 @@ export const userinfo = {
     socials: [
         //For aesthetics, it is advisable for you to mention upto 4 social media links only. Fill in the links.
         //more icons are imported above, use as you like them.
-        { type: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61551846219257', icon: faFacebook },
-        { type: 'Instagram', link: 'https://www.instagram.com/blum.club/', icon: faInstagram },
-        { type: 'WhatsApp', link:'https://api.whatsapp.com/send?phone=5491123960360', icon: faWhatsapp },
+        { type: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61551846219257', icon: <FaFacebook className='text-primary'/> },
+        { type: 'Instagram', link: 'https://www.instagram.com/blum.club/', icon: <FaInstagram className='text-primary'/> },
+        { type: 'WhatsApp', link:'https://api.whatsapp.com/send?phone=5491123960360', icon: <FaWhatsapp className='text-primary'/> },
         { type: 'Phone', link:'https://api.whatsapp.com/send?phone=5491123960360' },  
     ],
 }

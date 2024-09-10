@@ -5,6 +5,8 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { IoClose } from 'react-icons/io5';
+import Link from 'next/link';
+import { userinfo } from '@/app/Constants/userinfo';
 
 const Contactusform = ({ className = '' }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -81,39 +83,23 @@ const Contactusform = ({ className = '' }) => {
 
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={closeModal}>
-                    <Transition.Child
-                        as={Fragment}
-                        enter="ease-out duration-300"
-                        enterFrom="opacity-0"
-                        enterTo="opacity-100"
-                        leave="ease-in duration-200"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
+                    <Transition.Child as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
                         <div className="fixed inset-0 bg-primary bg-opacity-75" />
                     </Transition.Child>
 
                     <div className="fixed inset-0 overflow-y-auto">
                         <div className="flex min-h-full items-center justify-center p-4 text-center">
-                            <Transition.Child
-                                as={Fragment}
-                                enter="ease-out duration-300"
-                                enterFrom="opacity-0 scale-95"
-                                enterTo="opacity-100 scale-100"
-                                leave="ease-in duration-200"
-                                leaveFrom="opacity-100 scale-100"
-                                leaveTo="opacity-0 scale-95"
-                            >
+                            <Transition.Child as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100"           leave="ease-in duration-200" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95" >
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-secondary p-6 text-left align-middle shadow-xl transition-all">
                                     <button type="button" onClick={closeModal} className="absolute top-5 right-6" aria-label="Cerrar formulario de contacto">
                                         <IoClose size={32} style={{ color: 'gray' }} />
                                     </button>
-                                    <div className="py-6 lg:py-8 px-4 mx-auto max-w-screen-md">
+                                    <div className="py-2 px-4 mx-auto max-w-screen-md">
                                         <div className="flex flex-col items-center">
-                                            <img className="h-48px w-48px lg:block border-none" src="/Logo/LogoBlumContacto.webp" alt="Blum Logo" width={200} height={'auto'} />
-                                            <p className={`mb-6 lg:mb-16 mt-4 font-light text-center ${className}`}>Contactanos por aca o comunícate por Whatsapp (+54)11 2396-0360</p>
+                                            <img className="lg:block border-none" src="/Logo/LogoBlumContacto.webp" alt="Blum Logo" width={200} height={'auto'} />
+                                            <p className={`mb-6 lg:mb-10 mt-4 font-light text-center ${className}`}>Contactanos por aca o comunícate por Whatsapp (+54)11 2396-0360</p>
                                         </div>
-                                        <form className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
+                                        <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
                                             <div>
                                                 <label id='nombreForm' htmlFor="text" className="block mb-2 text-sm font-medium text-text-primary">Nombre</label>
                                                 <input
@@ -158,7 +144,7 @@ const Contactusform = ({ className = '' }) => {
                                                     className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                                     aria-label="Seleccionar motivo de contacto"
                                                 >
-                                                    <option value="Consulta">Consulta</option>
+                                                    <option value="Consulta" disabled>Consulta</option>
                                                     <option value="Turno 1ª vez">Turno 1ª vez</option>
                                                     <option value="Reprocam">Reprocam</option>
                                                 </select>
@@ -177,6 +163,17 @@ const Contactusform = ({ className = '' }) => {
                                                 Enviar
                                             </button>
                                         </form>
+                                        <div className="flex flex-col gap-5 items-center justify-center pt-4">
+                                            <ul className="text-[40px] flex gap-4 text-gray-30">
+                                                {userinfo.socials.map((link, key) => (
+                                                <li key={key} className="transition-transform duration-200 ease-in-out transform hover:scale-110">
+                                                    <Link href={link.link} target="_blank" rel="noreferrer">
+                                                    {link.icon}
+                                                    </Link>
+                                                </li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>

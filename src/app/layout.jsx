@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Blum Cannabis Club',
   description: 'Blun Cannabis Club',
   viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#451F49',
+  themeColor: '#ffffff',
   charSet: 'UTF-8',
   icon: '/favicon.ico',
   keywords: 'Club, cannabis, blum, cannabis recreacional, cannabis medicinal'
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        <meta name="viewport" content={metadata.viewport} />
+        <meta name="viewport" content='width=device-width, initial-scale=1' />
         <meta name="theme-color" content={metadata.themeColor} />
         <meta charSet={metadata.charSet} />
         <link rel="icon" href={metadata.icon} />

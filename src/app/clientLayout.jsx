@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import Loading from '../Componentes/Loading/Loading';
 import ButtonWsp from '../Componentes/Socials/ButtonWsp';
 import Navbar from '../Componentes/Navbar/Navbar';
+import Footer from '../Componentes/Footer/Footer';
 
 export default function ClientLayout({ children }) {
   const path = usePathname() || "";
@@ -24,7 +25,7 @@ export default function ClientLayout({ children }) {
       {children}
       {!hideLayout && (
         <footer>
-          {/* <Footer /> */}
+          <Footer /> 
           <ButtonWsp contact={'1162574919'} />
         </footer>
       )}
