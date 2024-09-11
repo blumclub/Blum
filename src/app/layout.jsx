@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content='width=device-width, initial-scale=1' />
         <meta name="theme-color" content={metadata.themeColor} />
         <meta charSet={metadata.charSet} />
-        <link rel="icon" href={metadata.icon} />
+        <link rel="icon" href='/favicon.ico' sizes="any" type="image/x-icon"/>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />

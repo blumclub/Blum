@@ -24,9 +24,9 @@ const Footer = () => {
                 </div>
             </article>
             <article>
-                <a href="https://programundo.dev" target="_blank" rel="noreferrer">
-                    <p className="bold-20 w-full text-center text-primary pt-10 mb-4">2024 - Website creado por MATGON</p>
-                </a>
+                <Link href='https://programundo.dev' >
+                    <small className="text-sm text-primary sm:text-center">© 2024 - MATIGON. All Rights Reserved.</small>
+                </Link>
             </article>
         </section>
     )
