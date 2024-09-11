@@ -14,7 +14,7 @@ export default function Nosotros() {
             <br />
             <p className="text-white text-lg indent-6">Buscamos proporcionar alternativas de tratamiento efectivas y de alta calidad, marcando la pauta como el primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad. Partimos del marco legal de la Ley de Cannabis Medicinal (Ley N°27.350), llevando adelante nuestras actividades bajo los estándares de la misma.</p>
           </div>
-          <p className="hidden md:block md:text-9xl place-self-center text-transparent leading-none font-oxanium tracking-wider font-bold bg-bgTitle bg-clip-text bg-fixed drop-shadow-secondary bg-blend-luminosity">
+          <p className="hidden md:block md:text-9xl place-self-center text-transparent leading-none font-oxanium tracking-wider font-bold bg-bgTitle bg-clip-text bg-repeat-y  drop-shadow-secondary bg-blend-luminosity">
             <strong>Blüm</strong>
           </p>
         </div>
