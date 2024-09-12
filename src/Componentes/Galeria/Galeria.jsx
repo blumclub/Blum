@@ -39,7 +39,7 @@ const Gallery = () => {
                         <h3 className="text-3xl lg:text-5xl font-light text-primary uppercase my-16">Encuentros Sociales</h3>
                     </Fade>
                 </article>
-                <article className='md:grid grid-cols-1 md:grid-cols-12 my-16 sm:space-x-6 space-y-6 md:space-y-0 px-6'>
+                <article className='md:grid grid-cols-1 md:grid-cols-12 py-16 sm:space-x-6 space-y-6 md:space-y-0 px-6'>
                     <div className='col-span-6 flex justify-center'>
                         <div className="grid grid-rows-1 grid-flow-row gap-4">
                         <div className='grid grid-cols-2 gap-2'>
