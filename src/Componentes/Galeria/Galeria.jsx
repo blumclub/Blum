@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Gallery = () => {
     return (
-        <section id="galeria" className="bg-bgSecondary bg-fixed">
+        <section id="galeria" className="bg-bgSecondary bg-fixed pt-4">
             <div className='mx-auto max-w-2xl lg:max-w-4xl sm:py-4 lg:px-8  md:pt-12'>
                 <article className="text-center">
                     <Fade direction={'up'} delay={400} cascade damping={1e-1} triggerOnce={true}>
@@ -39,7 +39,7 @@ const Gallery = () => {
                         <h3 className="text-3xl lg:text-5xl font-light text-primary uppercase my-16">Encuentros Sociales</h3>
                     </Fade>
                 </article>
-                <article className='md:grid grid-cols-1 md:grid-cols-12 py-16 sm:space-x-6 space-y-6 md:space-y-0 px-6'>
+                <article className='md:grid grid-cols-1 md:grid-cols-12 pb-16 pt-6 sm:space-x-6 space-y-6 md:space-y-0 px-6'>
                     <div className='col-span-6 flex justify-center'>
                         <div className="grid grid-rows-1 grid-flow-row gap-4">
                         <div className='grid grid-cols-2 gap-2'>
@@ -56,7 +56,7 @@ const Gallery = () => {
                         </div>
                     </div>
                     <div className='col-span-6 flex justify-center overflow-hidden rounded-3xl'>
-                        <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/8_t79umg.webp" alt="Instalacion en Hotel" width={1000} height={805} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
+                        <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726162508/10_gjh3q6.webp" alt="Instalacion en Hotel" width={1000} height={805} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
                     </div>
                 </article>
             </div>
