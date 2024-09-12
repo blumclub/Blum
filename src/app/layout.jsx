@@ -8,11 +8,9 @@ export const metadata = {
   manifest: "/manifest.json",
   title: 'Blum Cannabis Club',
   description: 'Blun Cannabis Club',
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#0c343c',
   charSet: 'UTF-8',
   icon: '/favicon.ico',
-  keywords: 'Club, cannabis, blum, cannabis recreacional, cannabis medicinal'
+  keywords: 'Club, cannabis, blum, cannabis recreacional, cannabis medicinal, bernal, buenos aires, argentina'
 };
 
 export default function RootLayout({ children }) {
@@ -20,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <meta name="viewport" content='width=device-width, initial-scale=1' />
-        <meta name="theme-color" content={metadata.themeColor} />
+        <meta name="theme-color" content='#0c343c' />
         <meta charSet={metadata.charSet} />
         <link rel="icon" href='/favicon.ico' sizes="any" type="image/x-icon"/>
         <title>{metadata.title}</title>
