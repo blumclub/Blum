@@ -11,6 +11,8 @@ import { userinfo } from '@/app/Constants/userinfo';
 const Contactusform = ({ className = '' }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { register, handleSubmit, reset, formState: { errors }, watch } = useForm();
+    const [showAdditionalFields, setShowAdditionalFields] = useState(false);
+    const [showConsulta, setShowConsulta] = useState(false)
     const selectedOption = watch('Motivo', 'Consulta');
 
     const alert = (Nombre, Email) => {
@@ -64,6 +66,21 @@ const Contactusform = ({ className = '' }) => {
             }
         }
     };
+    const selectedMotivo = watch('Motivo');
+
+    if (selectedMotivo === 'Turno 1ª vez' && !showAdditionalFields) {
+      setShowAdditionalFields(true);
+      
+    } else if (selectedMotivo !== 'Turno 1ª vez' && showAdditionalFields) {
+        setShowAdditionalFields(false);
+    }
+
+    if (selectedMotivo === 'Consulta' && !showConsulta) {
+        setShowConsulta(true);
+        
+      } else if (selectedMotivo !== 'Consulta' && showConsulta) {
+        setShowConsulta(false);
+      }
 
     const closeModal = () => setIsOpen(false);
     const openModal = () => setIsOpen(true);
@@ -97,68 +114,142 @@ const Contactusform = ({ className = '' }) => {
                                     <div className="py-2 px-4 mx-auto max-w-screen-md">
                                         <div className="flex flex-col items-center">
                                             <img className="lg:block border-none" src="/Logo/LogoBlumContacto.webp" alt="Blum Logo" width={200} height={'auto'} />
-                                            <p className={`mb-6 lg:mb-10 mt-4 font-light text-center ${className}`}>Contactanos por aca o comunícate por Whatsapp (+54)11 2396-0360</p>
+                                            <p className={`mb-6 lg:mb-10 mt-4 font-light text-center ${className}`}>Completa tus datos y continuamos por WhatsApp</p>
                                         </div>
                                         <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
                                             <div>
-                                                <label id='nombreForm' htmlFor="text" className="block mb-2 text-sm font-medium text-text-primary">Nombre</label>
+                                                <label htmlFor="text" className="block mb-2 text-sm font-medium text-text-primary">Nombre y Apellido</label>
                                                 <input
-                                                    id="text"
-                                                    {...register('Nombre', { required: true })}
-                                                    type="text"
-                                                    className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    placeholder='nombre'
-                                                    aria-label="Ingresar nombre"
+                                                id="text"
+                                                {...register('Nombre', { required: true })}
+                                                type="text"
+                                                className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                placeholder="Jhon Black"
+                                                aria-label="Ingresar nombre"
                                                 />
-                                                {errors.Nombre && <span className="text-red-500">Nombre es requerido</span>}
+                                                {errors.Nombre && <span className="text-red-500">Nombre y Apellido es requerido</span>}
                                             </div>
+
                                             <div>
-                                                <label id='emailForm' htmlFor="email" className="block mb-2 text-sm font-medium text-text-primary">Email</label>
+                                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-text-primary">Email</label>
                                                 <input
-                                                    id="email"
-                                                    {...register('Email', { required: true })}
-                                                    type="email"
-                                                    className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    placeholder="email@email.com"
-                                                    aria-label="Ingresar correo electrónico"
+                                                id="email"
+                                                {...register('Email', { required: true })}
+                                                type="email"
+                                                className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                placeholder="email@email.com"
+                                                aria-label="Ingresar correo electrónico"
                                                 />
                                                 {errors.Email && <span className="text-red-500">Email es requerido</span>}
                                             </div>
+
                                             <div>
-                                                <label id='telForm' htmlFor="telefono" className="block mb-2 text-sm font-medium text-text-primary">Telefono</label>
+                                                <label htmlFor="telefono" className="block mb-2 text-sm font-medium text-text-primary">Celular</label>
                                                 <input
-                                                    id="telefono"
-                                                    {...register('Telefono', { required: true })}
-                                                    type="text"
-                                                    className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    placeholder='Telefono'
-                                                    aria-label="Ingresar teléfono"
+                                                id="telefono"
+                                                {...register('Telefono', { required: true })}
+                                                type="text"
+                                                className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                placeholder="Celular"
+                                                aria-label="Ingresar teléfono"
                                                 />
-                                                {errors.Telefono && <span className="text-red-500">Teléfono es requerido</span>}
+                                                {errors.Telefono && <span className="text-red-500">Celular es requerido</span>}
                                             </div>
+
                                             <div>
                                                 <label htmlFor="options" className="block mb-2 text-sm font-medium text-text-primary">Motivo</label>
                                                 <select
-                                                    id="options"
-                                                    {...register('Motivo')}
-                                                    className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    aria-label="Seleccionar motivo de contacto"
+                                                id="options"
+                                                {...register('Motivo')}
+                                                className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                aria-label="Seleccionar motivo de contacto"
                                                 >
-                                                    <option value="Consulta" disabled>Consulta</option>
-                                                    <option value="Turno 1ª vez">Turno 1ª vez</option>
-                                                    <option value="Reprocam">Reprocam</option>
+                                                <option value="Contacto" disabled>Contacto</option>
+                                                <option value="Turno 1ª vez">Turno 1ª vez</option>
+                                                <option value="Consulta">Consulta</option>
                                                 </select>
                                             </div>
-                                            <div className="sm:col-span-2">
-                                                <label htmlFor="message" className="block mb-2 text-sm font-medium text-text-primary">Mensaje</label>
-                                                <textarea
-                                                    id="message"
-                                                    {...register('Mensaje')}
-                                                    className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    placeholder="Dejar un comentario..."
-                                                    aria-label="Escribir mensaje"
-                                                ></textarea>
-                                            </div>
+                                            {showConsulta && (
+                                                <div>
+                                                    <label htmlFor="Mensaje" className="block mb-2 text-sm     text-text-primary">Mensaje</label>
+                                                    <textarea
+                                                        id="Mensaje"
+                                                        {...register('Mensaje', { required: true })}
+                                                        type="text"
+                                                        className="relative block w-full appearance-none rounded-md     py-2 text-gray-900 placeholder-gray-500 focus:border    focus:ring-indigo-500 sm:text-sm"
+                                                        placeholder=" Mensaje"
+                                                        aria-label="Ingresar edad"
+                                                        />
+                                                    {errors.Edad && <span className="text-red-500">Edad es requerida</span>}
+                                                </div>
+                                            
+                                            )}
+                                            {/* Conditional fields */}
+                                            {showAdditionalFields && (
+                                                <>
+                                                <div>
+                                                    <label htmlFor="edad" className="block mb-2 text-sm font-medium text-text-primary">Edad</label>
+                                                    <input
+                                                    id="edad"
+                                                    {...register('Edad', { required: true })}
+                                                    type="text"
+                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                    placeholder="Edad"
+                                                    aria-label="Ingresar edad"
+                                                    />
+                                                    {errors.Edad && <span className="text-red-500">Edad es requerida</span>}
+                                                </div>
+
+                                                <div>
+                                                    <label htmlFor="domicilio" className="block mb-2 text-sm font-medium text-text-primary">Localidad de Residencia</label>
+                                                    <input
+                                                    id="domicilio"
+                                                    {...register('Domicilio', { required: true })}
+                                                    type="text"
+                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                    placeholder="Quilmes"
+                                                    aria-label="Ingresar domicilio"
+                                                    />
+                                                    {errors.Domicilio && <span className="text-red-500">Localidad de Residencia es requerido</span>}
+                                                </div>
+
+                                                <div>
+                                                    <label htmlFor="referido" className="block mb-2 text-sm font-medium text-text-primary">Persona que lo refirió</label>
+                                                    <input
+                                                    id="referido"
+                                                    {...register('Referido')}
+                                                    type="text"
+                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                    placeholder="Nombre y Apellido de quien lo refirió"
+                                                    aria-label="Ingresar nombre de la persona que lo refirió"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <label htmlFor="inscripto" className="block mb-2 text-sm font-medium text-text-primary">¿Estas inscripto al Reprocam? </label>
+                                                    <input
+                                                        id="inscripto"
+                                                        {...register('inscripto')}
+                                                        type="text"
+                                                        className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                        placeholder="Si - No"
+                                                        aria-label="Ingresar nombre de la persona que lo refirió"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <label htmlFor="lugar" className="block mb-2 text-sm font-medium text-text-primary">¿Qué Dispensario prefiere?</label>
+                                                    <select
+                                                    id="lugar"
+                                                    {...register('Lugar')}
+                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                    aria-label="Seleccionar lugar preferido"
+                                                    >
+                                                    <option value="Bernal">Bernal</option>
+                                                    <option value="CABA">CABA</option>
+                                                    </select>
+                                                </div>
+                                                </>
+                                            )}
+
                                             <button type="submit" className="py-2 px-5 text-sm bg-primary font-medium w-full text-center text-text-tertiary rounded-lg hover:bg-primary-hover hover:text-primary hover:font-semibold" aria-label="Enviar formulario">
                                                 Enviar
                                             </button>

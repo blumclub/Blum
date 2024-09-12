@@ -27,13 +27,19 @@ export default async function handler(req, res) {
                         <div class="container">
                             <div class="header">
                                 <h2>${req.body.Nombre} se contacto por la web.</h2>
+                                <h2>Referido de: ${req.body.Referido}</h2>
                             </div>
                             <div class="content">
                                 <p><strong>Nombre:</strong> ${req.body.Nombre}</p>
                                 <p><strong>Email:</strong> ${req.body.Email}</p>
                                 <p><strong>Teléfono:</strong> ${req.body.Telefono}</p>
                                 <p><strong>Motivo:</strong> ${req.body.Motivo}</p>
-                                <p><strong>Mensaje:</strong> ${req.body.Mensaje}</p>
+                                ${req.body.Mensaje?`<p><strong>Mensaje:</strong> ${req.body.Mensaje}</p>`:''}
+                                <p><strong>Edad:</strong> ${req.body.Edad}</p>
+                                <p><strong>Localidad:</strong> ${req.body.Domicilio}</p>
+                                <p><strong>Reprocam:</strong> ${req.body.inscripto}</p>
+                                <p><strong>Dispensario:</strong> ${req.body.Lugar}</p>
+
                             </div>
                             <div class="footer">
                                 <p>Este mensaje fue enviado desde el formulario de contacto.</p>

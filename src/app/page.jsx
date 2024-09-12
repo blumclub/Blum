@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../Componentes/Banner/Banner';
 import Nosotros from '../Componentes/Nosotros/Nosotros';
+import Gallery from '../Componentes/Galeria/Galeria';
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </a>
       <main>
         <Banner />
+        <Gallery />
         <Nosotros />
       </main>
     </>
