@@ -20,9 +20,7 @@ const Gallery = () => {
                     </div>
                     <div className='col-span-6 flex justify-center'>
                         <div className="grid grid-rows-1 grid-flow-row gap-4">
-                            <div className="row-span-1 overflow-hidden rounded-3xl">
-                                <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726159638/web/bdgqabjvgq68xu04mkqr.webp" alt="Instalacion en Altura" width={700} height={405} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
-                            </div>
+
                             <div className='grid grid-cols-2 gap-2'>
                                 <div className='overflow-hidden rounded-3xl'>
                                     <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726159638/web/jtwhxkqr3aicyiimic15.webp" alt="pizza-three" width={500} height={405} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
@@ -30,6 +28,9 @@ const Gallery = () => {
                                 <div className='overflow-hidden rounded-3xl'>
                                     <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/4_vkg8mv.webp" alt="terminacion" width={500} height={405} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
                                 </div>
+                            </div>
+                            <div className="row-span-1 overflow-hidden rounded-3xl">
+                                <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726159638/web/bdgqabjvgq68xu04mkqr.webp" alt="Instalacion en Altura" width={700} height={405} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
                             </div>
                         </div>
                     </div>

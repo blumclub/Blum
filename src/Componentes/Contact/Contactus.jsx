@@ -159,14 +159,13 @@ const Contactusform = ({ className = '' }) => {
                                             <div>
                                                 <label htmlFor="options" className="block mb-2 text-sm font-medium text-text-primary">Motivo</label>
                                                 <select
-                                                id="options"
-                                                {...register('Motivo')}
-                                                className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                                aria-label="Seleccionar motivo de contacto"
-                                                >
-                                                <option value="Contacto" disabled>Contacto</option>
-                                                <option value="Turno 1ª vez">Turno 1ª vez</option>
-                                                <option value="Consulta">Consulta</option>
+                                                    id="options"
+                                                    {...register('Motivo')}
+                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                    aria-label="Seleccionar motivo de contacto" >
+                                                        <option value="" disabled hidden>Contacto</option>
+                                                        <option value="Turno 1ª vez">Turno 1ª vez</option>
+                                                        <option value="Consulta">Consulta</option>
                                                 </select>
                                             </div>
                                             {showConsulta && (
