@@ -20,7 +20,6 @@ const Gallery = () => {
                     </div>
                     <div className='col-span-6 flex justify-center'>
                         <div className="grid grid-rows-1 grid-flow-row gap-4">
-
                             <div className='grid grid-cols-2 gap-2'>
                                 <div className='overflow-hidden rounded-3xl'>
                                     <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726159638/web/jtwhxkqr3aicyiimic15.webp" alt="pizza-three" width={500} height={405} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
@@ -33,6 +32,16 @@ const Gallery = () => {
                                 <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726159638/web/bdgqabjvgq68xu04mkqr.webp" alt="Instalacion en Altura" width={700} height={405} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
                             </div>
                         </div>
+                    </div>
+                </article>
+                <article className="flex flex-col w-full px-8">
+                    <div className="bg-primary rounded-md p-4 bg-opacity-20">
+                        <h2 className="text-center text-primary font-oxanium font-bold text-2xl">CULTIVO HIDROPONICO</h2>
+                        <p className="">Utilizamos el avanzado método de cultivo hidropónico, asegurando un entorno óptimo para el crecimiento de plantas de alta calidad.</p><br/>
+                    </div><br/>
+                    <div className="bg-primary rounded-md p-4 bg-opacity-20">
+                        <h2 className="text-center text-primary font-oxanium font-bold text-2xl">CULTIVO EN TIERRA</h2>
+                        <p className="">Donde la esencia misma de la terapia botánica cobra vida. Enraizado en las tradiciones agrícolas y abrazando la riqueza del suelo, nuestro cultivo en tierra es un homenaje a la simbiosis entre la planta y la tierra que la sustenta.</p>
                     </div>
                 </article>
                 <article className="text-center ">
@@ -58,6 +67,16 @@ const Gallery = () => {
                     </div>
                     <div className='col-span-6 flex justify-center overflow-hidden rounded-3xl'>
                         <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726162508/10_gjh3q6.webp" alt="Instalacion en Hotel" width={1000} height={805} className="object-cover transform transition-transform duration-300 hover:scale-110 rounded-3xl"/>
+                    </div>
+                </article>
+                <article className="flex flex-col w-full px-8 pb-16">
+                    <div className="bg-primary rounded-md p-4 bg-opacity-20">
+                        <h2 className="text-center text-primary font-oxanium font-bold text-2xl">CANNABIS MEDICINAL</h2>
+                        <p className="">Utilizamos el avanzado método de cultivo hidropónico, asegurando un entorno óptimo para el crecimiento de plantas de alta calidad.</p><br/>
+                    </div><br/>
+                    <div className="bg-primary rounded-md p-4 bg-opacity-20">
+                        <h2 className="text-center text-primary font-oxanium font-bold text-2xl">SOCIAL</h2>
+                        <p className="">Donde la esencia misma de la terapia botánica cobra vida. Enraizado en las tradiciones agrícolas y abrazando la riqueza del suelo, nuestro cultivo en tierra es un homenaje a la simbiosis entre la planta y la tierra que la sustenta.</p>
                     </div>
                 </article>
             </div>
