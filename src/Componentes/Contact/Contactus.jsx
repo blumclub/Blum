@@ -162,10 +162,12 @@ const Contactusform = ({ className = '' }) => {
                                                     id="options"
                                                     {...register('Motivo')}
                                                     className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                                    aria-label="Seleccionar motivo de contacto" >
-                                                        <option value="" disabled hidden selected>Contacto</option>
-                                                        <option value="Turno 1ª vez">Turno 1ª vez</option>
-                                                        <option value="Consulta">Consulta</option>
+                                                    aria-label="Seleccionar motivo de contacto"
+                                                    defaultValue="Contacto"
+                                                >
+                                                    <option value="Contacto" disabled hidden>Contacto</option>
+                                                    <option value="Turno 1ª vez">Turno 1ª vez</option>
+                                                    <option value="Consulta">Consulta</option>
                                                 </select>
                                             </div>
                                             {showConsulta && (
