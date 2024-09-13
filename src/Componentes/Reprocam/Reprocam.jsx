@@ -18,28 +18,28 @@ const Reprocam = () => {
           <li className='min-w-36'>
             <button onClick={() => handleTabClick('Tramites')} className={`inline-flex items-center px-4 py-3 rounded-lg w-full ${
                 activeTab === 'Tramites' ? 'bg-primary text-secondary font-oxanium' : 'bg-white text-gray-500  hover:bg-primary '}`}>
-                <img src='Reprocam/tramitation.svg' alt='tramitacion' width={30} height={'auto'} className='pr-2'/>
+                <img src='Reprocam/tramitation.svg' alt='tramitacion' width={30} height={30} className='pr-2'/>
                 Tramites
             </button>
           </li>
           <li className='min-w-36'>
             <button onClick={() => handleTabClick('Ley')} className={`inline-flex items-center px-4 py-3 rounded-lg w-full ${
                 activeTab === 'Ley' ? 'bg-primary text-secondary font-oxanium' : 'bg-white text-gray-500  hover:bg-primary '}`}>
-                <img src='Reprocam/law.svg' alt='tramitacion' width={30} height={'auto'} className='pr-2'/>
+                <img src='Reprocam/law.svg' alt='tramitacion' width={30} height={30} className='pr-2'/>
                 Ley
             </button>
           </li>
           <li className='min-w-36'>
             <button  onClick={() => handleTabClick('Reprocam')} className={`inline-flex items-center px-4 py-3 rounded-lg w-full  ${
                 activeTab === 'Reprocam' ? 'bg-primary text-secondary font-oxanium' : 'bg-white text-gray-500  hover:bg-primary ' }`}>
-                <img src='Reprocam/law-book.svg' alt='tramitacion' width={30} height={'auto'} className='pr-2'/>
+                <img src='Reprocam/law-book.svg' alt='tramitacion' width={30} height={30} className='pr-2'/>
                 Reprocam
             </button>
           </li>
           <li className='min-w-36'>
             <button  onClick={() => handleTabClick('Consultorio')} className={`inline-flex items-center px-4 py-3 rounded-lg w-full ${
                 activeTab === 'Consultorio' ? 'bg-primary text-secondary font-oxanium' : 'bg-white text-gray-500  hover:bg-primary ' }`}>
-                <img src='Reprocam/health.svg' alt='tramitacion' width={30} height={'auto'} className='pr-2'/>
+                <img src='Reprocam/health.svg' alt='tramitacion' width={30} height={30} className='pr-2'/>
                 Consultorio
             </button>
           </li>
