@@ -30,6 +30,7 @@ module.exports = {
           active: '#ffffff',
         },
         secondary: '#fe9900',  // Color secundario
+        tertiary:'#E99006',
         transparent: 'transparent',
         current: 'currentColor',
         'white': '#ffffff',
