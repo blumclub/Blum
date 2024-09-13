@@ -3,7 +3,7 @@ import Banner from '../Componentes/Banner/Banner';
 import Nosotros from '../Componentes/Nosotros/Nosotros';
 import Gallery from '../Componentes/Galeria/Galeria';
 import Division from '../Componentes/Division/Division';
-import Reprocam from '../Componentes/Reprocam/Reprocam';
+// import Reprocam from '../Componentes/Reprocam/Reprocam';
 import Link from 'next/link';
 
 
@@ -19,7 +19,7 @@ export default function Home() {
         <Gallery />
         <Division />
         <Nosotros />
-        <Reprocam />
+        {/* <Reprocam /> */}
       </main>
     </>
   );
