@@ -1,5 +1,6 @@
 'use client'
 import { Fade } from "react-awesome-reveal";
+import Division from "../Division/Division";
 
 
 const Gallery = () => {
@@ -80,6 +81,7 @@ const Gallery = () => {
                     </div>
                 </article>
             </div>
+            <Division />
         </section>
     )
 }

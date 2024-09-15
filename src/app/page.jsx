@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <Banner />
         <Gallery />
-        <Division />
+        {/* <Division /> */}
         <Nosotros />
         <Reprocam /> 
       </main>
