@@ -72,11 +72,11 @@ const Gallery = () => {
                 <article className="flex flex-col w-full px-8 pb-16">
                     <div className="bg-primary rounded-md p-4 bg-opacity-20">
                         <h2 className="text-center text-primary font-oxanium font-bold text-2xl">CANNABIS MEDICINAL</h2>
-                        <p className="">Utilizamos el avanzado método de cultivo hidropónico, asegurando un entorno óptimo para el crecimiento de plantas de alta calidad.</p><br/>
+                        <p className="">Empleamos técnicas de cultivo controladas y de precisión, aprovechando los beneficios de la tecnología hidropónica. Esto nos permite ofrecer plantas medicinales de la más alta pureza y calidad, optimizando su contenido terapéutico para satisfacer las necesidades de cada paciente.</p><br/>
                     </div><br/>
                     <div className="bg-primary rounded-md p-4 bg-opacity-20">
                         <h2 className="text-center text-primary font-oxanium font-bold text-2xl">SOCIAL</h2>
-                        <p className="">Donde la esencia misma de la terapia botánica cobra vida. Enraizado en las tradiciones agrícolas y abrazando la riqueza del suelo, nuestro cultivo en tierra es un homenaje a la simbiosis entre la planta y la tierra que la sustenta.</p>
+                        <p className="">Celebramos la conexión natural entre la tierra y la planta, cultivando de manera orgánica para preservar los ciclos naturales de la tierra. Nuestro enfoque social fomenta el respeto por la naturaleza, creando una relación armónica entre el cultivo y las comunidades que lo rodean.</p>
                     </div>
                 </article>
             </div>
