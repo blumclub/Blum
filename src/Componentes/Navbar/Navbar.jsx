@@ -44,7 +44,7 @@ export default function Navbar(contacto) {
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10 ">
                     <Link href="/" className="z-20 py-2">
-                      <img src="/Logo/LogoBlum160.webp" alt="Blum" className="" aria-label="Logo Blum" width={80} height={80} />
+                      <img src="/Logo/LogoBlum160.webp" alt="Blum" className="" aria-label="Logo Blum" width={80} height={80} style={{filter: 'drop-shadow(0px 2px 3px rgba(12, 52, 60, 1))',}}/>
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">
