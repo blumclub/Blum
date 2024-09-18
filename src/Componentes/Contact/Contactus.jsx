@@ -57,8 +57,7 @@ const Contactusform = ({ className = '' }) => {
             `${data.Edad ? `*Edad:* ${data.Edad} `: ''}\n` +
             `${data.Lugar ? `*Lugar:* ${data.Lugar} `: ''}\n` +
             `${data.Referido ? `*Referido:* ${data.Referido} `: ''}\n` +
-            `${data.inscripto ? `*inscripto:* ${data.inscripto} `: ''}\n` +
-            `Gracias!` 
+            `${data.inscripto ? `*inscripto:* ${data.inscripto} `: ''}\n`
         );
     };
     
