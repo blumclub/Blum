@@ -35,11 +35,10 @@ export default async function handler(req, res) {
                                 <p><strong>Teléfono:</strong> ${req.body.Telefono}</p>
                                 <p><strong>Motivo:</strong> ${req.body.Motivo}</p>
                                 ${req.body.Mensaje?`<p><strong>Mensaje:</strong> ${req.body.Mensaje}</p>`:''}
-                                <p><strong>Edad:</strong> ${req.body.Edad}</p>
-                                <p><strong>Localidad:</strong> ${req.body.Domicilio}</p>
-                                <p><strong>Reprocam:</strong> ${req.body.inscripto}</p>
-                                <p><strong>Dispensario:</strong> ${req.body.Lugar}</p>
-
+                                ${req.body.Edad?`<p><strong>Edad:</strong> ${req.body.Edad}</p>`:''}
+                                ${req.body.inscripto?`<p><strong>Reprocam:</strong> ${req.body.inscripto}</p>`:''}
+                                ${req.body.Domicilio?`<p><strong>Domicilio:</strong> ${req.body.Domicilio}</p>`:''}
+                                ${req.body.Lugar?`<p><strong>Lugar:</strong> ${req.body.Lugar}</p>`:''}
                             </div>
                             <div class="footer">
                                 <p>Este mensaje fue enviado desde el formulario de contacto.</p>
