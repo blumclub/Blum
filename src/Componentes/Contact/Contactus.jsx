@@ -23,7 +23,7 @@ const Contactusform = ({ className = '' }) => {
             confirmButtonAriaLabel: `Pronto se comunicarán contigo al whatsApp`,
             text: `Pronto se comunicarán contigo al whatsApp`,
             icon: 'success',
-            timer:3000,
+            timer: 3100,
         });
     };
 
