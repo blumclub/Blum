@@ -53,7 +53,7 @@ export default async function handler(req, res) {
                         <div class="container">
                             <div class="header">
                                 <h2>${req.body.Nombre || 'Nombre no proporcionado'} se contactó por la web.</h2>
-                                <h2>Referido de: ${req.body.Referido || 'No especificado'}</h2>
+                                ${req.body.Referido?`<h2>Referido de: ${req.body.Referido}</h2>`:''}
                             </div>
                             <div class="content">
                                 <p><strong>Nombre:</strong> ${req.body.Nombre || 'No proporcionado'}</p>
