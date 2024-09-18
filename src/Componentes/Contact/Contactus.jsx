@@ -47,17 +47,16 @@ const Contactusform = ({ className = '' }) => {
 
     const formatMessage = (data) => {
         return (
-
-            `${data.Nombre ? `*Hola soy  ${data.Nombre} y estos son mis datos:*`: ''}\n` +
-            `${data.Email ? `*Email:* ${data.Email} `: ''}\n` +
-            `${data.Telefono ? `*Telefono:* ${data.Telefono} `: ''}\n` +
-            `${data.Motivo ? `*Motivo:* ${data.Motivo} `: ''}\n` +
-            `${data.Mensaje ? `*Mensaje:* ${data.Mensaje} `: ''}\n` +
-            `${data.Domicilio ? `*Domicilio:* ${data.Domicilio} `: ''}\n` +
-            `${data.Edad ? `*Edad:* ${data.Edad} `: ''}\n` +
-            `${data.Lugar ? `*Lugar:* ${data.Lugar} `: ''}\n` +
-            `${data.Referido ? `*Referido:* ${data.Referido} `: ''}\n` +
-            `${data.inscripto ? `*inscripto:* ${data.inscripto} `: ''}\n`
+            `${data.Nombre ? `*Hola soy  ${data.Nombre} y estos son mis datos:*\n`: ''}`+
+            `${data.Email ? `*Email:* ${data.Email}\n`: ''}`+
+            `${data.Telefono ? `*Telefono:* ${data.Telefono}\n`: ''}`+
+            `${data.Motivo ? `*Motivo:* ${data.Motivo}\n`: ''}`+
+            `${data.Mensaje ? `*Mensaje:* ${data.Mensaje}\n`: ''}`+
+            `${data.Domicilio ? `*Domicilio:* ${data.Domicilio}\n`: ''}`+
+            `${data.Edad ? `*Edad:* ${data.Edad}\n`: ''}`+
+            `${data.Lugar ? `*Lugar:* ${data.Lugar}\n`: ''}`+
+            `${data.Referido ? `*Referido:* ${data.Referido}\n`: ''}`+
+            `${data.inscripto ? `*inscripto:* ${data.inscripto}\n `: ''}`
         );
     };
     
