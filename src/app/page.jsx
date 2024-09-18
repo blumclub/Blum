@@ -2,9 +2,9 @@ import React from 'react';
 import Banner from '../Componentes/Banner/Banner';
 import Nosotros from '../Componentes/Nosotros/Nosotros';
 import Gallery from '../Componentes/Galeria/Galeria';
-import Division from '../Componentes/Division/Division';
 import Reprocam from '../Componentes/Reprocam/Reprocam';
 import Link from 'next/link';
+import PostInstagram from '@/Componentes/PostInstagram/PostInstagram';
 
 
 export default function Home() {
@@ -16,8 +16,8 @@ export default function Home() {
       </Link>
       <main>
         <Banner />
+        <PostInstagram />
         <Gallery />
-        {/* <Division /> */}
         <Nosotros />
         <Reprocam /> 
       </main>
