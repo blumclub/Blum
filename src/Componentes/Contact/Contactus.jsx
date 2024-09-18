@@ -7,6 +7,8 @@ import Swal from 'sweetalert2';
 import { IoClose } from 'react-icons/io5';
 import Link from 'next/link';
 import { userinfo } from '@/app/Constants/userinfo';
+import { userData } from '@/app/Constants/userinfo';
+
 
 const Contactusform = ({ className = '' }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +17,13 @@ const Contactusform = ({ className = '' }) => {
     const [showConsulta, setShowConsulta] = useState(false)
     const selectedOption = watch('Motivo', 'Consulta');
 
-    const alert = (Nombre, Email) => {
+    const alert = (Nombre) => {
         Swal.fire({
             title: `${Nombre}, tu mensaje ha sido enviado correctamente.`,
-            confirmButtonAriaLabel: `Pronto se comunicarán contigo al siguiente email, ${Email}`,
-            text: `Pronto se comunicarán contigo al siguiente email, ${Email}`,
+            confirmButtonAriaLabel: `Pronto se comunicarán contigo al whatsApp`,
+            text: `Pronto se comunicarán contigo al whatsApp`,
             icon: 'success',
-            confirmButtonText: 'Ok',
+            timer:3000,
         });
     };
 
@@ -43,6 +45,24 @@ const Contactusform = ({ className = '' }) => {
         });
     };
 
+    const formatMessage = (data) => {
+        return (
+
+            `${data.Nombre ? `*Hola soy  ${data.Nombre} y estos son mis datos:*`: ''}\n` +
+            `${data.Email ? `*Email:* ${data.Email} `: ''}\n` +
+            `${data.Telefono ? `*Telefono:* ${data.Telefono} `: ''}\n` +
+            `${data.Motivo ? `*Motivo:* ${data.Motivo} `: ''}\n` +
+            `${data.Mensaje ? `*Mensaje:* ${data.Mensaje} `: ''}\n` +
+            `${data.Domicilio ? `*Domicilio:* ${data.Domicilio} `: ''}\n` +
+            `${data.Edad ? `*Edad:* ${data.Edad} `: ''}\n` +
+            `${data.Lugar ? `*Lugar:* ${data.Lugar} `: ''}\n` +
+            `${data.Referido ? `*Referido:* ${data.Referido} `: ''}\n` +
+            `${data.inscripto ? `*inscripto:* ${data.inscripto} `: ''}\n` +
+            `Gracias!` 
+        );
+    };
+    
+    
     const onSubmit = async (data) => {
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!data.Email.match(emailPattern)) {
@@ -57,6 +77,9 @@ const Contactusform = ({ className = '' }) => {
                 });
                 Swal.close();
                 if (response.status === 200) {
+                    const whatsappMessage = formatMessage(data);
+                    const whatsappURL = `https://wa.me/+${userData.codigoPais}${userData.contact}?text=${encodeURIComponent(whatsappMessage)}`;
+                    window.open(whatsappURL, '_blank');
                     alert(data.Nombre, data.Email);
                     reset();
                     setIsOpen(false);
@@ -66,6 +89,7 @@ const Contactusform = ({ className = '' }) => {
             }
         }
     };
+
     const selectedMotivo = watch('Motivo');
 
     if (selectedMotivo === 'Turno 1ª vez' && !showAdditionalFields) {
