@@ -69,7 +69,7 @@ const Contactusform = ({ className = '' }) => {
         } else {
             try {
                 alertLoading();
-                console.log('data:', data)
+                console.log('Hola data:', data)
                 const response = await axios.post('/api/contact', {
                     ...data,
                     motivo: selectedOption,
