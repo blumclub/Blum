@@ -74,6 +74,8 @@ const Contactusform = ({ className = '' }) => {
                     motivo: selectedOption,
                 });
                 Swal.close();
+                console.log('public');
+                
                 if (response.status === 200) {
                     const whatsappMessage = formatMessage(data);
                     const whatsappURL = `https://wa.me/+${userData.codigoPais}${userData.contact}?text=${encodeURIComponent(whatsappMessage)}`;
