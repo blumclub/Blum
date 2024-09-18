@@ -62,7 +62,7 @@ export default async function handler(req, res) {
                                 <p><strong>Motivo:</strong> ${req.body.Motivo || 'No especificado'}</p>
                                 ${req.body.Mensaje ? `<p><strong>Mensaje:</strong> ${req.body.Mensaje}</p>` : ''}
                                 ${req.body.Edad ? `<p><strong>Edad:</strong> ${req.body.Edad}</p>` : ''}
-                                ${req.body.inscripto ? `<p><strong>Reprocam:</strong> ${req.body.inscripto}</p>` : ''}
+                                ${req.body.inscripto ? `<p><strong>Reprocan:</strong> ${req.body.inscripto}</p>` : ''}
                                 ${req.body.Domicilio ? `<p><strong>Domicilio:</strong> ${req.body.Domicilio}</p>` : ''}
                                 ${req.body.Lugar ? `<p><strong>Lugar:</strong> ${req.body.Lugar}</p>` : ''}
                             </div>
