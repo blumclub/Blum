@@ -55,7 +55,7 @@ const Contactusform = ({ className = '' }) => {
                     ...data,
                     motivo: selectedOption,
                 });
-                console.log('data:',data);                
+                console.log('hola data:',data);                
                 Swal.close();
                 if (response.status === 200) {
                     alert(data.Nombre, data.Email);
