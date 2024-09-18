@@ -8,9 +8,6 @@ const Gallery = () => {
         <section id="galeria" className="bg-bgSecondary bg-fixed pt-4">
             <div className='mx-auto max-w-2xl lg:max-w-4xl sm:py-4 lg:px-8  md:pt-12'>
                 <article className="text-center">
-                    <Fade direction={'up'} delay={400} cascade damping={1e-1} triggerOnce={true}>
-                        <h2 className='text-primary text-4xl mb-3 font-oxanium font-bold tracking-widest ls-51'>Galeria</h2>
-                    </Fade>
                     <Fade direction={'up'} delay={800} cascade damping={1e-1} triggerOnce={true}>
                         <h3 className="text-3xl lg:text-5xl font-light text-primary uppercase">Nuestros Productos</h3>
                     </Fade>
