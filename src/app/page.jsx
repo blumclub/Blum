@@ -5,6 +5,7 @@ import Gallery from '../Componentes/Galeria/Galeria';
 import Reprocam from '../Componentes/Reprocam/Reprocam';
 import Link from 'next/link';
 import PostInstagram from '@/Componentes/PostInstagram/PostInstagram';
+import InstagramPost from '@/Componentes/PostInstagram/InstagramPost';
 
 
 export default function Home() {
