@@ -5,6 +5,7 @@ import Gallery from '../Componentes/Galeria/Galeria';
 import Reprocam from '../Componentes/Reprocam/Reprocam';
 import Link from 'next/link';
 import PostInstagram from '@/Componentes/PostInstagram/PostInstagram';
+import Consultorio from '@/Componentes/Consultorio/Consultorio';
 
 
 export default function Home() {
@@ -16,9 +17,10 @@ export default function Home() {
       </Link>
       <main>
         <Banner />
-        {/* <PostInstagram /> */}
+        <PostInstagram />
         <Gallery />
         <Nosotros />
+        <Consultorio />
         <Reprocam /> 
       </main>
     </>

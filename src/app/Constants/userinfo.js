@@ -35,5 +35,6 @@ export const Links = [
     { name: "Inicio", href: "#inicio", current: false  },
     { name: "Productos", href: "#galeria", current: false  },
     { name: "Nosotros", href: "#nosotros", current: false  },
+    { name: "Consultorio", href: "#consultorio", current: false  },
   ];
     

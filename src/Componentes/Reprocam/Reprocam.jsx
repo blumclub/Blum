@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Consultorio from '../Consultorio/Consultorio';
 
 const Reprocam = () => {
   // Estado para controlar qué tab está activo
@@ -12,7 +13,7 @@ const Reprocam = () => {
   };
 
   return (
-    <section className='bg-tertiary' style={{textAlign:'-webkit-center'}}>
+    <section className='bg-tertiary ' style={{textAlign:'-webkit-center'}}>
       <div className="md:flex bg-tertiary p-4 max-w-[1200px] ">
         <article className="flex-column space-y-4 text-sm font-medium text-gray-500  md:me-4 mb-4 md:mb-0 list-none content-around">
           <li className='min-w-36'>
@@ -36,13 +37,13 @@ const Reprocam = () => {
                 Reprocan
             </button>
           </li>
-          <li className='min-w-36'>
+          {/* <li className='min-w-36'>
             <button  onClick={() => handleTabClick('Consultorio')} className={`inline-flex items-center px-4 py-3 rounded-lg w-full ${
                 activeTab === 'Consultorio' ? 'bg-primary text-secondary font-oxanium' : 'bg-white text-gray-500  hover:bg-primary ' }`}>
                 <img src='Reprocam/health.svg' alt='tramitacion' width={30} height={30} className='pr-2'/>
                 Consultorio
             </button>
-          </li>
+          </li> */}
         </article>
         <article className="p-6 bg-primary text-medium text-white rounded-lg w-full min-h-[450px] md:min-h-80 lg:min-h-64">
           {activeTab === 'Tramites' && (
@@ -74,7 +75,7 @@ const Reprocam = () => {
                 En caso de que no cuentes con el mismo o no sepas como tramitarlo te adjuntamos el link para hacerlo más fácil y simple:</p>
             </div>
           )}
-          {activeTab === 'Consultorio' && (
+          {/* {activeTab === 'Consultorio' && (
             <div>
               <h2 className="text-lg font-bold text-secondary font-oxanium uppercase mb-2">Consultorio Medico</h2>
               <div className="flex flex-col items-center md:flex-row">
@@ -82,7 +83,7 @@ const Reprocam = () => {
                   <p>En nuestro compromiso continuo de ofrecer soluciones integrales y respaldadas por la ciencia, estamos encantados de presentar nuestro Servicio de Consultorio Médico Cannábico. Este servicio está diseñado para proporcionar orientación médica especializada y personalizada sobre el uso del cannabis medicinal.</p>
               </div>
             </div>
-          )}
+          )} */}
         </article>
       </div>
     </section>
