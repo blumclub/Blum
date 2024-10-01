@@ -18,6 +18,7 @@ module.exports = {
       backgroundImage: {
         'bgSecondary': "url('/BG/footer6.webp')",
         'bgTitle': "url('/BG/flores.webp')",
+        'bgtertiary': "url('/BG/footer8.webp')",
       },
       dropShadow: {
         'primary': '0 4px 25px rgba(12, 52, 60, 0.8)', 

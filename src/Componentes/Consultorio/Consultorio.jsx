@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Consultorio() {
   return (
-    <section className="bg-tertiary pb-20 " style={{ textAlign: "-webkit-center" }}>
-      <div className="flex flex-col justify-center text-center p-2 mx-auto max-w-4xl">
+    <section className="bg-bgSecondary bg-fixed pb-20 " style={{ textAlign: "-webkit-center" }}>
+      <div className="flex flex-col justify-center text-center p-2 mx-auto max-w-6xl">
         <h2 className="text-3xl lg:text-5xl font-light text-primary uppercase my-16">
           Consultorio Medico
         </h2>
@@ -16,7 +16,7 @@ export default function Consultorio() {
             width={300}
             height={300}
             className="rounded-lg m-4"
-          />
+            />
           <div className="px-20 ">
             <p className="text-center text-primary font-oxanium font-semibold text-lg">
               En nuestro compromiso continuo de ofrecer soluciones integrales y
@@ -29,7 +29,6 @@ export default function Consultorio() {
           <br />
         </div>
       </div>
-      {/* Curva ondulada SVG */}
     </section>
   );
 }
