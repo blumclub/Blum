@@ -1,11 +1,13 @@
 'use client'
 import { Fade } from "react-awesome-reveal";
 import Division from "../Division/Division";
+import DivisionRecta from "../Division/DivisionRecta";
 
 
 const Gallery = () => {
     return (
-        <section id="galeria" className="bg-bgSecondary bg-fixed pt-4">
+        <section id="galeria" className="bg-bgSecondary bg-fixed">
+            <DivisionRecta />
             <div className='mx-auto max-w-2xl lg:max-w-4xl sm:py-4 lg:px-8  md:pt-12'>
                 <article className="text-center">
                     <Fade direction={'up'} delay={800} cascade damping={1e-1} triggerOnce={true}>

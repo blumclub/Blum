@@ -72,6 +72,7 @@ const Contactusform = ({ className = '' }) => {
                     ...data,
                     motivo: selectedOption,
                 });
+                console.log('hola data:',data);                
                 Swal.close();
                 console.log('public');
                 
