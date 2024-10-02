@@ -16,7 +16,7 @@ module.exports = {
         'xxl': '1600px',
       },
       backgroundImage: {
-        'bgSecondary': "url('/BG/footer6.webp')",
+        'bgSecondary': "url('/BG/10.png')",
         'bgTitle': "url('/BG/flores.webp')",
         'bgtertiary': "url('/BG/footer8.webp')",
       },
@@ -26,11 +26,11 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: '#0c343c',  // Color de fondo primario
+          DEFAULT: '#fe9900',  // Color de fondo primario
           hover: '#ffffff',    // Nuevo color de fondo al pasar el mouse
           active: '#ffffff',
         },
-        secondary: '#fe9900',  // Color secundario
+        secondary: '#0c343c',  // Color secundario
         tertiary:'#E99006',
         transparent: 'transparent',
         current: 'currentColor',

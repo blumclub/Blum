@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Link from 'next/link';
-import DivisionRecta from '../Division/DivisionRecta';
+//import DivisionRecta from '../Division/DivisionRecta';
 
 const Reprocam = () => {
   const [activeTab, setActiveTab] = useState('Reprocan');
@@ -69,7 +69,7 @@ const Reprocam = () => {
             )}
           </article>
         </div>
-      <DivisionRecta />
+      {/* <DivisionRecta /> */}
       </section>
   );
 };

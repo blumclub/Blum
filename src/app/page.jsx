@@ -17,9 +17,9 @@ export default function Home() {
       </Link>
       <main>
         <Banner />
+        <Nosotros />
         <PostInstagram />
         <Gallery />
-        <Nosotros />
         <Consultorio />
         <Reprocam /> 
       </main>

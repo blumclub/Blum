@@ -60,7 +60,7 @@ const PostInstagram = () => {
   }
 
   return (
-    <section className="bg-gradient-to-r from-primary to-secondary shadow-xl pb-16">
+    <section className="bg-secondary shadow-xl pb-16">
       <article className="p-6 rounded-lg max-w-6xl mx-auto py-8 ">
         <Link target='_blank' href={posts[currentIndex].permalink}>
           <div className="flex flex-col md:flex-row items-center transition-transform duration-500 ease-in-out">
