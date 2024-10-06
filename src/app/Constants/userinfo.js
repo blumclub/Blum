@@ -32,9 +32,9 @@ export const userData = { //----- Asi tiene que ser el documento dentro de const
 };
 
 export const Links = [
-    { name: "Inicio", href: "#inicio", current: false  },
-    { name: "Productos", href: "#galeria", current: false  },
-    { name: "Nosotros", href: "#nosotros", current: false  },
+    { name: "El Club", href: "#ElClub", current: false  },
+    { name: "Catalogo", href: "#Catalogo", current: false  },
     { name: "Consultorio", href: "#consultorio", current: false  },
+    { name: "Cultivo Hidropónico", href: "#cultivoHipodonico", current: false  },
   ];
     

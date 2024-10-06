@@ -54,7 +54,7 @@ const Banner = () => {
           <div className="absolute inset-0 flex justify-center items-center bottom-16 text-white z-10">
             <div className="text-center">
               <p className="text-[40px] md:text-[62px] text-secondary leading-none font-oxanium tracking-wider"><streong>Blüm</streong></p>
-              <p className="text-[20px] md:text-[22px] text-secondary tracking-wide text-customBeige  font-oxanium font-light">CANNABIS MEDICINAL</p>
+              <p className="text-[20px] md:text-[22px] text-secondary tracking-wide text-customBeige  font-oxanium font-light">TU PAUSA EN MEDIO DEL CAOS</p>
             </div>
           </div>
         </div>

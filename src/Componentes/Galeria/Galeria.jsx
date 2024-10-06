@@ -6,12 +6,12 @@ import DivisionRecta from "../Division/DivisionRecta";
 
 const Gallery = () => {
     return (
-        <section id="galeria" className="bg-bgSecondary bg-fixed">
-            <DivisionRecta />
+        <section id="Catalogo" className="bg-secondary bg-fixed pt-10 scroll-mt-16 lg:scroll-mt-10">
+            {/* <DivisionRecta /> */}
             <div className='mx-auto max-w-2xl lg:max-w-4xl sm:py-4 lg:px-8  md:pt-12'>
                 <article className="text-center">
                     <Fade direction={'up'} delay={800} cascade damping={1e-1} triggerOnce={true}>
-                        <h3 className="text-3xl lg:text-5xl font-light text-primary uppercase">Nuestros Productos</h3>
+                        <h3 className="text-3xl lg:text-5xl font-light text-primary uppercase">Catálogo</h3>
                     </Fade>
                 </article>
                 <article className='grid grid-cols-1 md:grid-cols-12 mt-16 mb-6 sm:space-x-6 space-y-6 md:space-y-0 px-6'>
