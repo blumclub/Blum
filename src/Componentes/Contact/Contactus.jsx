@@ -112,12 +112,12 @@ const Contactusform = ({ className = '' }) => {
     return (
         <>
             <div className={`flex items-center ${className}`}>
-                <button type="button" className="flex justify-center text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-white hover:bg-pink" onClick={openModal} aria-label="Abrir formulario de contacto" >
-                    CONTACTO
+                <button type="button" className="flex justify-center text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-tertiary text-gray-200 " onClick={openModal} aria-label="Abrir formulario de contacto" >
+                    CONOCENOS!
                 </button>
                 <div className="hidden md:block">
-                    <button type="button" className="text-15px space-links" onClick={openModal} aria-label="Abrir formulario de contacto" >
-                        CONTACTO
+                    <button type="button" className="text-15px space-links border px-2 py-1 rounded-md hover:border-tertiary hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110 " onClick={openModal} aria-label="Abrir formulario de contacto" >
+                        CONOCENOS!
                     </button>
                 </div>
             </div>
