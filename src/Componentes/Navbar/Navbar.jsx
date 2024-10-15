@@ -36,7 +36,7 @@ export default function Navbar(contacto) {
   
   return (
     <div className="">
-      <Disclosure as="nav" className={classNames(`fixed top-0 left-0 right-0 sm:py-0 md:py-3 z-30 transition-colors duration-300 bg-primary text-text-tertiary shadow-lg ${isScrolled?'shadow-[#0c3c3886] backdrop-blur-md':'backdrop-blur-none '} `)}>
+      <Disclosure as="nav" className={classNames(`fixed top-0 left-0 right-0 sm:py-0 md:py-3 z-30 transition-colors duration-300 bg-primary text-text-tertiary  ${isScrolled?' backdrop-blur-md shadow-lg':'backdrop-blur-none '} `)}>
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 py-1 md:py-0 sm:px-6 lg:px-8 z-20">

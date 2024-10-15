@@ -3,7 +3,7 @@ import { userinfo } from '../../app/Constants/userinfo'
 
 const Footer = () => {
     return (
-        <section className="flex flex-col items-center bg-bgSecondary bg-contain bg-center " id='footer'>
+        <section className="flex flex-col items-center bg-secondary bg-contain bg-center " id='footer'>
             <article className="flex md:flex-row align-middle justify-around w-full">
                 <div className="flex flex-col items-center md:flex-row justify-around w-full max-w-screen-xl mx-auto gap-5">
                     <Link href="/" className=" md:flex flex-col items-center mb-10">

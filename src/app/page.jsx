@@ -2,27 +2,27 @@ import React from 'react';
 import Banner from '../Componentes/Banner/Banner';
 import Nosotros from '../Componentes/Nosotros/Nosotros';
 import Gallery from '../Componentes/Galeria/Galeria';
-import Reprocam from '../Componentes/Reprocam/Reprocam';
-import Link from 'next/link';
-import PostInstagram from '@/Componentes/PostInstagram/PostInstagram';
-import Consultorio from '@/Componentes/Consultorio/Consultorio';
+import Reprocan from '../Componentes/Reprocan/Reprocan';
+import PostInstagram from '../Componentes/PostInstagram/PostInstagram';
+import Consultorio from '../Componentes/Consultorio/Consultorio';
+import Hidroponico from '../Componentes/Hidroponico/Hidroponico';
+import Catalogo from '../Componentes/Catalogo/Catalogo';
+import PreguntasFrecuentes from '../Componentes/PreguntasFrecuentas/PreguntasFrecuentas';
 
 
 export default function Home() {
 
   return (
-    <>
-      {/* <Link href="#locales" className="skip-link absolute left-0 bg-gray-900 text-white p-2 rounded-md text-base font-medium -top-10 focus:top-0 focus:z-50">
-        Saltar a principal
-      </Link> */}
       <main>
         <Banner />
         <Nosotros />
-        {/* <PostInstagram /> */}
+        <PostInstagram />
         <Gallery />
         <Consultorio />
-        <Reprocam /> 
+        <Hidroponico />
+        <Catalogo/>
+        <Reprocan /> 
+        <PreguntasFrecuentes />
       </main>
-    </>
   );
 }

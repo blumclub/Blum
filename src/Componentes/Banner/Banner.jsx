@@ -7,17 +7,17 @@ const Banner = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const slides = [
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/4_yhe8pc.jpg",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/3_hl4a2i.jpg",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1725643287/1_dn4ewf.jpg"
+    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/4_yhe8pc.jpg",
+    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/3_hl4a2i.jpg",
+    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg",
+    "/BG/perro.webp"
   ];
 
   const SlidesMovil = [
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/2m_jsr3gb.jpg",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/4m_mo1so8.jpg",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/3m_emq9fj.jpg",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/1m_ttxwrr.jpg"
+    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/2m_jsr3gb.jpg",
+    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/4m_mo1so8.jpg",
+    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/3m_emq9fj.jpg",
+    "/BG/perro.webp"
   ];
 
   useEffect(() => {

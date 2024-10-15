@@ -5,7 +5,7 @@ import Link from 'next/link';
 import InstagramPost from './InstagramPost';
 
 const Skeleton = () => (
-  <section className="bg-gradient-to-r from-primary to-secondary p-6 rounded-lg shadow-lg max-w-6xl mx-auto my-8 animate-pulse">
+  <section className="bg-gradient-to-r from-primary to-secondary p-6 rounded-lg shadow-lg max-w-7xl mx-auto my-12 animate-pulse">
     <h2 className="text-3xl font-bold text-white mb-4 bg-white bg-opacity-30 h-8 rounded"></h2>
     <div className="flex flex-col md:flex-row items-center">
       <div className="md:w-2/3 text-white mb-6 md:mb-0 md:pr-6">
@@ -60,27 +60,20 @@ const PostInstagram = () => {
   }
 
   return (
-    <section className="bg-secondary shadow-xl pb-16">
-      <article className="p-6 rounded-lg max-w-6xl mx-auto py-8 ">
+    <section className="bg-secondary shadow-xl">
+      <article className="p-6 rounded-lg max-w-7xl mx-auto py-12 ">
         <Link target='_blank' href={posts[currentIndex].permalink}>
           <div className="flex flex-col md:flex-row items-center transition-transform duration-500 ease-in-out">
-            <div className="md:w-2/3 text-white mb-6 md:mb-0 md:pr-6">
-              <h2 className="text-3xl font-bold text-white mb-4">Última publicación de Instagram</h2>
-              <p className="text-lg mb-4">
-                { "¡Explora nuestra comunidad de cultivo! 🌱💚"}
-              </p>
+            <div className="md:w-2/3 text-primary mb-6 md:mb-0 md:pr-6">
+              <h2 className="text-3xl font-bold text-primary mb-4">Última publicación de Instagram</h2>
+              <p className="text-lg mb-4">{ "¡Explora nuestra comunidad de cultivo! 🌱💚"}</p>
             </div>
             <div className="w-[220px] mx-auto relative">
             <div className="absolute inset-0 bg-white opacity-30 rounded-full scale-110 -rotate-12 transform"></div>
               <div className="absolute inset-0 bg-yellow-300 opacity-30 rounded-full scale-110 -rotate-18 transform"></div>
             <div className="absolute inset-0 bg-amber-800 opacity-30 rounded-full scale-110 rotate-12 transform"></div>
               <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300">
-              <InstagramPost 
-                username={'Blum.club'} 
-                img={posts[currentIndex].media_url} 
-                timestamp={publicado(posts[currentIndex].timestamp)}
-                mediaType={posts[currentIndex].media_type}
-                />
+              <InstagramPost username={'Blum.club'} img={posts[currentIndex].media_url} timestamp={publicado(posts[currentIndex].timestamp)} mediaType={posts[currentIndex].media_type}/>
             </div>
             </div>
           </div>

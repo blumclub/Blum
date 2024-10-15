@@ -250,7 +250,7 @@ const Contactusform = ({ className = '' }) => {
                                                     />
                                                 </div>
                                                 <div>
-                                                    <label htmlFor="inscripto" className="block mb-2 text-sm font-medium text-text-primary">¿Estas inscripto al Reprocan? </label>
+                                                    <label htmlFor="inscripto" className="block mb-2 text-sm font-medium text-text-primary">¿Estas inscripto al Reprocann? </label>
                                                     <input
                                                         id="inscripto"
                                                         {...register('inscripto')}
