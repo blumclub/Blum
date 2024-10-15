@@ -1,20 +1,22 @@
 import {FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 export const userinfo = {
-    logoText: "BLUM", //This text is visible on your navbar and footer like your logo.
+    logoText: "BLUM",
     contact: {
-        email: 'blumong.ok@gmail.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
-        phone: '1123960360', //Phone number is optional, if you dont want it, consider leaving it blank .
-        countrycode: '+54' //It is advisable to add the country code incase you mention your contact number.
+        email: 'blumong.ok@gmail.com', 
+        phone: '1123960360', 
+        countrycode: '+54' 
     },
     socials: [
-        //For aesthetics, it is advisable for you to mention upto 4 social media links only. Fill in the links.
-        //more icons are imported above, use as you like them.
         //{ type: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61551846219257', icon: <FaFacebook className='text-primary'/> },
         { type: 'Instagram', link: 'https://www.instagram.com/blum.club/', icon: <FaInstagram className='text-primary'/> },
         { type: 'WhatsApp', link:'https://api.whatsapp.com/send?phone=5491123960360', icon: <FaWhatsapp className='text-primary'/> },
         { type: 'Phone', link:'https://api.whatsapp.com/send?phone=5491123960360' },  
     ],
+    nosotrosTitle:'¡Bienvenidos al Primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad de Bernal, Buenos Aires, Argentina!',
+    nosotrosSub:'Blüm',
+    nosotrosText1:'En nuestro compromiso con la salud y el bienestar, nuestra misión es liderar la revolución del cannabis medicinal en Bernal, Argentina. Nos dedicamos a investigar, educar y acompañar a nuestros pacientes y la comunidad en general en el uso responsable y terapéutico del cannabis. ',
+    nosotrosText2:'Buscamos proporcionar alternativas de tratamiento efectivas y de alta calidad, marcando la pauta como el primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad. Partimos del marco legal de la Ley de Cannabis Medicinal (Ley N°27.350), llevando adelante nuestras actividades bajo los estándares de la misma.'
 }
 
 export const news = {
@@ -41,18 +43,24 @@ export const Links = [
 export const catalogo = [
     {
       nombre: 'Ungüentos',
+      // img:'https://res.cloudinary.com/deueso3sr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1725643288/2_kpxnaj.jpg',
+      img:'https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1725643288/2_kpxnaj.jpg',
       descripcion: 'Productos tópicos hechos a base de cannabis, ideales para aliviar dolores musculares, articulares y problemas en la piel.',
       href: 'unguentos',
       btn: 'Ver mas'
     },
     {
       nombre: 'Aceites',
+      // img:'https://res.cloudinary.com/deueso3sr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1725643287/1_dn4ewf.jpg',
+      img:'https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1725643287/1_dn4ewf.jpg',
       descripcion: 'Extractos concentrados de cannabis que ofrecen propiedades terapéuticas, perfectos para el bienestar físico y mental.',
       href: 'aceites',
       btn: 'Ver mas'
     },
     {
       nombre: 'Geneticas',
+      // img:'https://res.cloudinary.com/deueso3sr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1726160665/9_oozgob.webp',
+      img:'https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1726160665/9_oozgob.webp',
       descripcion: 'Variedades específicas de plantas de cannabis seleccionadas por sus características únicas, optimizadas para usos medicinales y recreativos.',
       href: 'geneticas',
       btn: 'Ver mas'

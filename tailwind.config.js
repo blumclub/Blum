@@ -51,7 +51,8 @@ module.exports = {
       },
       fontFamily: {
         'inter': ['Inter', "sans-serif"],
-        'oxanium': ['Oxanium', 'sans-serif'],  // Fuente Oxanlum añadida
+        'oxanium': ['Oxanium', 'sans-serif'],
+        'aileron':['Aileron','sans-serif']
       },
       fontSize: {
         xs: ['0.75rem', { lineHeight: '1rem' }],

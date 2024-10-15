@@ -21,8 +21,8 @@ const PreguntasFrecuentes = () => {
 
   return (
       <section className="bg-gradient-to-b from-primary to-secondary py-8 px-4  sm:py-16 lg:px-6 overflow-y-auto max-auto " id="preguntas" style={{textAlign:"-webkit-center"}}>
-        <div className="max-w-7xl rounded-xl" >
-          <div id="accordion-open" data-accordion="open" className="rounded-xl">
+        <div className="max-w-7xl " >
+          <div id="accordion-open" data-accordion="open" className="">
             <h2 className="text-3xl lg:text-5xl text-secondary mb-6 uppercase">Preguntas frecuentes</h2>
             {faqData.map((faq) => (
               <div key={faq.id} className="mb-4 border border-gray-200 rounded-xl">
@@ -41,7 +41,7 @@ const PreguntasFrecuentes = () => {
                   </button>
                 </h2>
                 <div id={`accordion-open-body-${faq.id}`} className={`${accordionOpen[faq.id] ? "block" : "hidden" } bg-white border-t border-gray-200  rounded-b-xl`} aria-labelledby={`accordion-open-heading-${faq.id} `} >
-                  <div className="p-4 rounded-xl">
+                  <div className="p-4 ">
                     <p className="mb-2 text-gray-700">{faq.answer}</p>
                     {faq.linkText && (
                       <p className="mb-2 text-gray-700">
@@ -49,7 +49,7 @@ const PreguntasFrecuentes = () => {
                       </p>
                     )}
                     {faq.additionalInfo && (
-                      <div className="rounded-xl">
+                      <div className="">
                         <p className="mb-2 text-gray-700">{faq.additionalInfo[0].text}</p>
                         <ul className="pl-4 text-gray-700 list-disc">{faq.additionalInfo[0].links.map((link, index) => (
                             <li key={index}><Link href={link.url} className="text-blue-600 hover:underline" title={link.text}>{link.text}</Link> </li>

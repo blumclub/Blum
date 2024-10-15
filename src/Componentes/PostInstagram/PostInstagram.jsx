@@ -65,8 +65,8 @@ const PostInstagram = () => {
         <Link target='_blank' href={posts[currentIndex].permalink}>
           <div className="flex flex-col md:flex-row items-center transition-transform duration-500 ease-in-out">
             <div className="md:w-2/3 text-primary mb-6 md:mb-0 md:pr-6">
-              <h2 className="text-3xl font-bold text-primary mb-4">Última publicación de Instagram</h2>
-              <p className="text-lg mb-4">{ "¡Explora nuestra comunidad de cultivo! 🌱💚"}</p>
+              <h2 className="text-3xl font-bold font-aileron text-primary mb-4">Última publicación de Instagram</h2>
+              <p className="text-lg mb-4 font-aileron">{ "¡Explora nuestra comunidad de cultivo! 🌱💚"}</p>
             </div>
             <div className="w-[220px] mx-auto relative">
             <div className="absolute inset-0 bg-white opacity-30 rounded-full scale-110 -rotate-12 transform"></div>

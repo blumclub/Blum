@@ -8,7 +8,7 @@ const Gallery = () => {
             <div className="max-w-7xl" >
                 <article className="text-center ">
                     <Fade direction={"up"} delay={800} cascade damping={1e-1} triggerOnce={true} >
-                    <h2 className="text-3xl lg:text-5xl font-light text-secondary uppercase my-16">Encuentros Sociales</h2>
+                    <h2 className="text-3xl lg:text-5xl font-light text-secondary uppercase font-aileron my-16">Encuentros Sociales</h2>
                     </Fade>
                 </article>
                 <article className="md:grid grid-cols-1 md:grid-cols-12 pb-16 pt-6 sm:space-x-6 space-y-6 md:space-y-0 px-6">
