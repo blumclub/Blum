@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Consultorio() {
   return (
-    <section className="bg-bgSecondary bg-fixed pb-20 " style={{ textAlign: "-webkit-center" }}>
+    <section id="consultorio" className="bg-bgSecondary bg-fixed pb-20 scroll-mt-10 lg:scroll-mt-16 " style={{ textAlign: "-webkit-center" }}>
       <div className="flex flex-col justify-center text-center p-2 mx-auto max-w-6xl">
         <h2 className="text-3xl lg:text-5xl font-light text-primary uppercase my-16">
           Consultorio Medico

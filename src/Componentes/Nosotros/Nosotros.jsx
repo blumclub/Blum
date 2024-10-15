@@ -3,8 +3,8 @@ import React from "react";
 export default function Nosotros() {
 
   return (
-    <section id="nosotros" className="relative z-10 bg-primary"> 
-      <article className="p-4 max-w-[780px] mx-auto pb-16 md:pb-24 xl:pb-36 ">
+    <section id="ElClub" className="relative z-10 bg-primary py-10 scroll-mt-10 lg:scroll-mt-20"> 
+      <article className="px-4 max-w-[780px] mx-auto">
         <h1 className="text-secondary text-3xl m-4 items-center text-center font-roboto">¡Bienvenidos al Primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad de Bernal, Buenos Aires, Argentina!</h1>
         <br />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">

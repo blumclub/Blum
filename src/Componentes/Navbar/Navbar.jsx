@@ -36,7 +36,7 @@ export default function Navbar(contacto) {
   
   return (
     <div className="">
-      <Disclosure as="nav" className={classNames(`fixed top-0 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-30 transition-colors duration-300 bg-background-primary text-text-tertiary   shadow-lg ${isScrolled?'shadow-secondary backdrop-blur-md':'backdrop-blur-none '} `)}>
+      <Disclosure as="nav" className={classNames(`fixed top-0 left-0 right-0 sm:py-0 md:py-3 z-30 transition-colors duration-300 bg-primary text-text-tertiary shadow-lg ${isScrolled?'shadow-[#0c3c3886] backdrop-blur-md':'backdrop-blur-none '} `)}>
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 py-1 md:py-0 sm:px-6 lg:px-8 z-20">
@@ -44,7 +44,7 @@ export default function Navbar(contacto) {
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10 ">
                     <Link href="/" className="z-20 py-2">
-                      <img src="/Logo/LogoBlum160.webp" alt="Blum" className="" aria-label="Logo Blum" width={80} height={80} style={{filter: 'drop-shadow(0px 2px 3px rgba(12, 52, 60, 1))',}}/>
+                      <img src="/Logo/LogoBlum160.webp" alt="Blum" className="" aria-label="Logo Blum" width={80} height={80} />
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">
@@ -58,15 +58,15 @@ export default function Navbar(contacto) {
                             href={href} 
                             className={classNames(
                               activeLink === item.href 
-                              ? "relative inline-block group text-lg font-semibold text-text-secondary"
-                              : "relative inline-block group text-text-link font-bold"
+                              ? "relative inline-block group text-lg font-semibold hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110 "
+                              : "relative inline-block group text-text-link font-bold hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110"
                             )} 
                             aria-current={activeLink === item.href ? "page" : undefined} 
                             onClick={() => handleLinkClick(item.href)} 
                             aria-label={item.name}
                           >
                             <span className={classNames(
-                              "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
+                              "absolute bottom-[-1px] h-[1.5px] bg-secondary transition-transform duration-300 ease-out", 
                               activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
                             )}></span>
                             {item.name.toLocaleUpperCase()}
@@ -81,8 +81,8 @@ export default function Navbar(contacto) {
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-1">
                       <span className="sr-only">Open main menu</span>
                       {open 
-                        ? (<XMarkIcon className={classNames("block h-6 w-6 text-text-link" )} aria-label="close menu" />) 
-                        : (<Bars3Icon className={classNames("block h-6 w-6 text-text-link" )} aria-label="open menu" />)}
+                        ? (<XMarkIcon className={classNames("block h-6 w-6 text-tertiary hover:text-tertiary" )} aria-label="close menu" />) 
+                        : (<Bars3Icon className={classNames("block h-6 w-6 text-tertiary hover:text-tertiary" )} aria-label="open menu" />)}
                     </Disclosure.Button>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function Navbar(contacto) {
                       as={Link} 
                       href={href} 
                       className={classNames(
-                        "block p-4 text-base font-medium border-b border-[#807f6c] hover:text-text-secondary",
+                        "block p-4 text-base font-medium border-b border-[#807f6c] hover:text-tertiary",
                         activeLink === item.href ? " text-text-secondary" : ""
                       )} 
                       aria-current={activeLink === item.href ? "page" : undefined} 
