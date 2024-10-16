@@ -16,10 +16,10 @@ export default function Home() {
       <main>
         <Banner />
         <Nosotros />
-        <PostInstagram />
         <Gallery />
         <Consultorio />
         <Hidroponico />
+        <PostInstagram />
         <Catalogo/>
         <Reprocan /> 
         <PreguntasFrecuentes />

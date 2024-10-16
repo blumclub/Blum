@@ -10,7 +10,7 @@ import { userinfo } from '@/app/Constants/userinfo';
 import { userData } from '@/app/Constants/userinfo';
 
 
-const Contactusform = ({ className = '' }) => {
+const Contactusform = ({ className= '', text, estilo }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { register, handleSubmit, reset, formState: { errors }, watch } = useForm();
     const [showAdditionalFields, setShowAdditionalFields] = useState(false);
@@ -112,12 +112,12 @@ const Contactusform = ({ className = '' }) => {
     return (
         <>
             <div className={`flex items-center ${className}`}>
-                <button type="button" className="flex justify-center text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-tertiary text-gray-200 " onClick={openModal} aria-label="Abrir formulario de contacto" >
-                    CONOCENOS!
+                <button type="button" className={estilo?`${estilo} md:hidden font-aileron`:"flex justify-center font-aileron text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-tertiary text-gray-200 "} onClick={openModal} aria-label="Abrir formulario de contacto" >
+                    {text}
                 </button>
                 <div className="hidden md:block">
-                    <button type="button" className="text-15px space-links border px-2 py-1 rounded-md hover:border-tertiary hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110 " onClick={openModal} aria-label="Abrir formulario de contacto" >
-                        CONOCENOS!
+                    <button type="button" className={estilo?`${estilo} hidden md:block font-aileron`:"text-15px space-links border font-aileron px-2 py-1 rounded-md hover:border-tertiary hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110 "} onClick={openModal} aria-label="Abrir formulario de contacto" >
+                        {text}
                     </button>
                 </div>
             </div>

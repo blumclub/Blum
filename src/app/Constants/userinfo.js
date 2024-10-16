@@ -1,3 +1,4 @@
+import Contactusform from '@/Componentes/Contact/Contactus'
 import {FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 export const userinfo = {
@@ -13,11 +14,16 @@ export const userinfo = {
         { type: 'WhatsApp', link:'https://api.whatsapp.com/send?phone=5491123960360', icon: <FaWhatsapp className='text-primary'/> },
         { type: 'Phone', link:'https://api.whatsapp.com/send?phone=5491123960360' },  
     ],
-    nosotrosTitle:'¡Bienvenidos al Primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad de Bernal, Buenos Aires, Argentina!',
+    nosotrosTitle:'Somos el primer club de cultivo de Bernal, que realiza producciones cannábicas orientadas exclusivamente a fines medicinales',
     nosotrosSub:'Blüm',
     nosotrosText1:'En nuestro compromiso con la salud y el bienestar, nuestra misión es liderar la revolución del cannabis medicinal en Bernal, Argentina. Nos dedicamos a investigar, educar y acompañar a nuestros pacientes y la comunidad en general en el uso responsable y terapéutico del cannabis. ',
-    nosotrosText2:'Buscamos proporcionar alternativas de tratamiento efectivas y de alta calidad, marcando la pauta como el primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad. Partimos del marco legal de la Ley de Cannabis Medicinal (Ley N°27.350), llevando adelante nuestras actividades bajo los estándares de la misma.'
-}
+    nosotrosText2:'Buscamos proporcionar alternativas de tratamiento efectivas y de alta calidad, marcando la pauta como el primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad. Partimos del marco legal de la Ley de Cannabis Medicinal (Ley N°27.350), llevando adelante nuestras actividades bajo los estándares de la misma.',
+    nosotrosTitle2:'¿Como Funciona Blüm?',
+    nosotrosText3: () => (<><Contactusform text={(<>Primero tenés que completar el formulario que se encuentra <strong className='text-secondary'>aqui</strong> y seleccionar tu sede.</>)} estilo={'font-aileron'} /> </>),
+    nosotrosText4: 'Una vez que llenes el formulario y lo envies, te vamos a contactar para una cita presencial con el Doc. Tomás León.',
+    nosotrosText5: 'En esta visita, te contaremos cómo funciona el cannabis medicinal, cuáles son las indicaciones que recomienda nuestro doctor, y además podrás recorrer las instalaciones de nuestro club. Una vez que te asocies, podrás venir cuando quieras, de 12 a 21 hs.',
+    nosotrosText6: 'Somos una ONG que prioriza el consumo responsable, es por esto que el único requisito para ser socio de Blüm, es que tengas tu Reprocann. No te preocupes, ¡Nosotros te lo gestionamos!',
+  }
 
 export const news = {
         //this text goes on your landing page

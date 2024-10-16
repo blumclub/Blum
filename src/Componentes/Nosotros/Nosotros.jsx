@@ -16,6 +16,29 @@ export default function Nosotros() {
           </div>
           <h2 className="hidden md:block md:text-9xl place-self-center text-transparent leading-none font-oxanium tracking-wider bg-bgTitle bg-clip-text bg-fixed drop-shadow-secondary font-black rounded-sm bg-right md:bg-contain lg:bg-left">{userinfo.nosotrosSub}</h2>
         </div>
+        <div>
+          <h2 className="text-secondary text-3xl m-4 font-aileron items-center text-center">{userinfo.nosotrosTitle2}</h2>
+          <br />
+          <ol className="space-y-4">
+            <li className="flex space-x-4 text-lg font-aileron align-middle items-center">
+              <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" width={40} height={40} />
+              <span className="text-white">{userinfo.nosotrosText3()}</span>
+            </li>
+            <li className="flex items-center space-x-4 text-lg font-aileron">
+              <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" width={48} height={48}/>
+              <span className="text-white">{userinfo.nosotrosText4}</span>
+            </li>
+            <li className="flex items-center space-x-4 text-lg font-aileron">
+              <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" width={40} height={40}/>
+              <span className="text-white">{userinfo.nosotrosText5}</span>
+            </li>
+            <li className="flex items-center space-x-4 text-lg font-aileron align-middle">
+              <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" width={40} height={40}/>
+              <span className="text-white">{userinfo.nosotrosText6}</span>
+            </li>
+          </ol>
+        </div>
+
       </article>
     </section>
   );

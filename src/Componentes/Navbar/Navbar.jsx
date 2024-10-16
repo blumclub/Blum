@@ -73,7 +73,7 @@ export default function Navbar(contacto) {
                           </Link>
                         );
                       })}
-                      <Contactusform className="text-navbar-style font-bold" contacto={contacto}/>
+                      <Contactusform className="text-navbar-style font-bold" contacto={contacto} text={'CONOCENOS!'}/>
 
                     </div>
                   </div>
@@ -112,7 +112,7 @@ export default function Navbar(contacto) {
                   );
                 })}
                 <div className="flex w-full text-start font-bold ">
-                  <Contactusform className="text-navbar-style-menu" contacto={contacto} />
+                  <Contactusform className="text-navbar-style-menu" contacto={contacto} text={'CONOCENOS!'} />
                 </div>
               </div>
             </Disclosure.Panel>
