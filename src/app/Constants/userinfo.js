@@ -64,6 +64,34 @@ export const steps = [
   },
 ];
 
+export const imagesHidroponico = [
+  {
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/4_vkg8mv.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/4_vkg8mv.webp",
+    description: "Imagen 1",
+  },
+  {
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/6_oo4nib.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/6_oo4nib.webp",
+    description: "Imagen 2",
+  },
+  {
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/5_vaxghv.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/5_vaxghv.webp",
+    description: "Imagen 3",
+  },
+  {
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/3_ki9gn1.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/3_ki9gn1.webp",
+    description: "Imagen 4",
+  },
+  {
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/9_oozgob.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/9_oozgob.webp",
+    description: "Imagen 5",
+  }
+];
+
 export const catalogo = [
     {
       nombre: 'Ungüentos',
