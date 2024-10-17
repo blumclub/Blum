@@ -46,6 +46,24 @@ export const Links = [
     { name: "Hidropónico", href: "#cultivoHipodonico", current: false  },
   ];
 
+export const steps = [
+  {
+    number: 1,
+    title: "Conocenos!",
+    description: "Completa el formulario",
+  },
+  {
+    number: 2,
+    title: "Entrevista",
+    description: "Doc. Tomás León.",
+  },
+  {
+    number: 3,
+    title: "Socio",
+    description: "Gestionar Reprocann",
+  },
+];
+
 export const catalogo = [
     {
       nombre: 'Ungüentos',

@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   try {
     const response = await fetch(`https://graph.instagram.com/me/media?fields=id,profile_picture_url,caption,username,media_url,permalink,media_type,thumbnail_url,timestamp&access_token=${INSTAGRAM_TOKEN}`);
     const data = await response.json();
-    console.log(data.data)
+    //console.log(data.data)
     if (data.error) {
       return res.status(500).json({ error: data.error.message });
     }
