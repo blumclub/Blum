@@ -22,7 +22,7 @@ const Gallery = () => {
       <div className="max-w-7xl mx-4 md:mx-10">
         <article className="text-center">
           <Fade direction="up" delay={800} cascade damping={0.1} triggerOnce>
-            <h2 className="text-3xl lg:text-5xl font-light text-secondary uppercase font-aileron my-16">Encuentros Sociales</h2>
+            <h2 className="text-3xl lg:text-5xl font-aileron text-secondary uppercase mt-16 mb-8 text-center">Encuentros Sociales</h2>
           </Fade>
         </article>
         <article className="grid grid-cols-2 md:hidden gap-4 pb-16 mx-auto">

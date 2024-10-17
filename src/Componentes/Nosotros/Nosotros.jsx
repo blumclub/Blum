@@ -14,7 +14,7 @@ export default function Nosotros() {
             <br />
             <p className="text-white text-lg font-aileron indent-6">{userinfo.nosotrosText2}</p>
           </div>
-          <h2 className="hidden md:block md:text-9xl place-self-center text-transparent leading-none font-aileron tracking-wider bg-bgTitle bg-clip-text bg-fixed drop-shadow-secondary font-black rounded-sm bg-right md:bg-contain lg:bg-left">{userinfo.nosotrosSub}</h2>
+          <h2 className="hidden md:block md:text-9xl place-self-center text-transparent leading-none font-a tracking-wider bg-bgTitle bg-clip-text bg-fixed drop-shadow-secondary font-black rounded-sm bg-right md:bg-contain lg:bg-left">{userinfo.nosotrosSub}</h2>
         </div>
         <div>
           <h2 className="text-secondary text-3xl m-4 font-aileron items-center text-center">{userinfo.nosotrosTitle2}</h2>

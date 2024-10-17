@@ -10,7 +10,7 @@ const Catalogo = () => {
             <div className="mx-auto max-w-2xl md:max-w-4xl lg:max-w-7xl sm:py-4 lg:px-8 md:pt-12">
                 <article className="text-center mb-6">
                     <Fade direction={"up"} delay={800} cascade damping={1e-1} triggerOnce={true}>
-                        <h2 className="text-3xl lg:text-5xl text-primary uppercase">Catálogo</h2>
+                        <h2 className="text-3xl lg:text-5xl font-aileron text-primary uppercase my-8 text-center">Catálogo</h2>
                     </Fade>
                 </article>
                 <article className="md:flex md:flex-row md:flex-wrap gap-4 justify-center">
