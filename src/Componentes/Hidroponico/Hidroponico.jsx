@@ -18,7 +18,7 @@ function Hidroponico() {
             <button className="text-center mt-4 xl:mt-0 xl:mx-4 w-20 text-sm border px-2 py-1 rounded-md float-end xl:align-middle hover:translate-y-[1px] hover:bg-secondary hover:text-primary hover:font-semibold hover:border-secondary">Ver más</button>
           </Link>
         </article>
-        <article className="grid gap-4 max-w-7xl mx-auto mt-8 md:p-8">
+        <article className="max-w-7xl mx-auto mt-8 md:p-8">
             <Gallery items={imagesHidroponico} showFullscreenButton={false} showPlayButton={false} />
         </article>
       </div>

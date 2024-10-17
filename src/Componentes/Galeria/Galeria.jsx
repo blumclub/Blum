@@ -15,6 +15,8 @@ const images = [
 ];
 
 const Gallery = () => {
+  const showImages = images.length % 2 === 1 ? images.slice(0, images.length - 1) : images;
+
   return (
     <section className="bg-primary flex justify-center">
       <div className="max-w-7xl mx-4 md:mx-10">
@@ -23,14 +25,20 @@ const Gallery = () => {
             <h2 className="text-3xl lg:text-5xl font-light text-secondary uppercase font-aileron my-16">Encuentros Sociales</h2>
           </Fade>
         </article>
-
-        <article className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-16 mx-auto">
-          {images.map((src, index) => (
-            <div key={index} className="flex justify-center">
-              <img className="h-auto max-w-full rounded-lg" src={src} alt={`Encuentro social ${index + 1}`} />
-            </div>
-          ))}
-        </article>
+        <article className="grid grid-cols-2 md:hidden gap-4 pb-16 mx-auto">
+        {showImages.map((src, index) => (
+          <div key={index} className="flex justify-center">
+            <img className="h-auto max-w-full rounded-lg" src={src} alt={`Encuentro social ${index + 1}`} />
+          </div>
+        ))}
+      </article>
+      <article className="hidden md:grid grid-cols-3 gap-4 pb-16 mx-auto">
+        {images.map((src, index) => (
+          <div key={index} className="flex justify-center">
+            <img className="h-auto max-w-full rounded-lg" src={src} alt={`Encuentro social ${index + 1}`} />
+          </div>
+        ))}
+      </article>
       </div>
     </section>
   );
