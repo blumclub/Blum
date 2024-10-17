@@ -11,7 +11,7 @@ function Hidroponico() {
   return (
     <section id="cultivoHipodonico" className="mb-16 scroll-mt-20 lg:scroll-mt-20">
       <div className="max-w-7xl mx-auto scroll-mt-20 lg:scroll-mt-20">
-        <h2 className="text-3xl lg:text-5xl font-aileron text-secondary uppercase mt-16 mb-8 text-center">Cultivo Hidroponico</h2>
+        <h2 className="text-3xl lg:text-5xl font-aileron text-secondary uppercase mt-16 mb-8 text-center">Cultivo hidropónico</h2>
         <article className="flex flex-col w-full px-8 xl:flex-row">
           <p className="text-xl">Utilizamos el avanzado método de cultivo hidropónico, asegurando un entorno óptimo para el crecimiento de plantas de alta calidad.</p>
           <Link href={'/cultivo/hidroponico'}>
