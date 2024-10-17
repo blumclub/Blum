@@ -104,4 +104,27 @@ export const catalogo = [
         "linkUrl": ""
     }
   ]
+
+  export const testimonios = [
+    {
+      nombre: "Juan Pérez",
+      comentario:
+        "¡Excelente servicio! Me sentí valorado como cliente, y todo el proceso fue eficiente. Definitivamente recomendaré sus servicios.",
+      rating: 4,
+    },
+    {
+      nombre: "María López",
+      comentario:
+        "Me encantó la atención. El personal fue amable y servicial. Sin duda, fue una experiencia muy positiva.",
+      rating: 5,
+    },
+    {
+      nombre: "Carlos Martínez",
+      comentario:
+        "El producto es de excelente calidad. Estoy muy contento con mi compra y volveré a utilizar sus servicios.",
+      rating: 5,
+    },
+  ];
+  
     
+  

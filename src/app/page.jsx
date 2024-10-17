@@ -8,6 +8,7 @@ import Consultorio from '../Componentes/Consultorio/Consultorio';
 import Hidroponico from '../Componentes/Hidroponico/Hidroponico';
 import Catalogo from '../Componentes/Catalogo/Catalogo';
 import PreguntasFrecuentes from '../Componentes/PreguntasFrecuentas/PreguntasFrecuentas';
+import Comentarios from '@/Componentes/Comentarios/Comentarios';
 
 
 export default function Home() {
@@ -21,7 +22,8 @@ export default function Home() {
         <Hidroponico />
         <PostInstagram />
         <Catalogo/>
-        <Reprocan /> 
+        <Comentarios /> 
+        <Reprocan />
         <PreguntasFrecuentes />
       </main>
   );
