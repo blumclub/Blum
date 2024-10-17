@@ -43,7 +43,7 @@ export const Links = [
     { name: "El Club", href: "#ElClub", current: false  },
     { name: "Catalogo", href: "#Catalogo", current: false  },
     { name: "Consultorio", href: "#consultorio", current: false  },
-    { name: "Hidropónico", href: "#cultivoHipodonico", current: false  },
+    { name: "Hidropónico", href: "#cultivoHidroponico", current: false  },
   ];
 
 export const steps = [

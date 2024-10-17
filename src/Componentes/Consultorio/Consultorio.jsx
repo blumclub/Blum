@@ -4,6 +4,7 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { steps } from "@/app/Constants/userinfo";
+import { Fade } from "react-awesome-reveal";
 
 
 
@@ -14,7 +15,9 @@ export default function Consultorio() {
   return (
     <section id="consultorio" ref={ref} className="bg-secondary pb-10 scroll-mt-10 lg:scroll-mt-16">
       <article className="flex flex-col justify-center text-center p-2 mx-auto max-w-7xl">
-        <h2 className="text-3xl lg:text-5xl font-aileron text-primary uppercase mt-16 mb-4">Consultorio Medico</h2>
+        <Fade direction={"right"} delay={800} cascade damping={1e-1} triggerOnce={true}>
+          <h2 className="text-3xl lg:text-5xl font-aileron text-primary uppercase mt-16 mb-4">Consultorio Medico</h2>
+        </Fade>
         <div className="flex flex-col items-center md:flex-row max-w-7xl mx-auto rounded-md p-4">
           <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726241033/10_1_ewahjz.webp" alt="Medico Tomás León" aria-label="Medico Tomás León" className=" rounded-xl w-72 h-48 sm:w-96 lg:w-72 md:h-72 lg:h-80 object-cover mb-8 shadow-yellow-400 shadow-xl" />
           <div className="px-4 mx-6">
