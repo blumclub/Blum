@@ -3,8 +3,11 @@
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import { catalogo } from "@/app/Constants/userinfo";
+import { usePathname } from "next/navigation";
 
 const Catalogo = () => {
+    const path = usePathname();
+
     const renderProductCard = (prod, isMobile) => (
         <Link href={`/catalogo/${prod.href}`} key={prod.nombre}>
             <div className={`group relative cursor-pointer overflow-hidden transition-all duration-300 rounded-xl 
@@ -30,11 +33,11 @@ const Catalogo = () => {
     );
 
     return (
-        <section id="Catalogo" className="bg-secondary py-10 scroll-mt-16 lg:scroll-mt-10">
+        <section id="Catalogo" className={`${path !== '/'?'bg-primary':'bg-secondary'} py-10 scroll-mt-16 lg:scroll-mt-10`}>
             <div className="mx-auto max-w-2xl md:max-w-4xl lg:max-w-7xl sm:py-4 lg:px-8 md:pt-12">
                 <article className="text-center mb-6">
-                    <Fade direction={"up"} delay={800} cascade damping={1e-1} triggerOnce={true}>
-                        <h2 className="text-3xl lg:text-5xl font-aileron text-primary uppercase my-8 text-center">Catálogo</h2>
+                    <Fade direction={"left"} delay={600} cascade damping={1e-1} triggerOnce={true}>
+                        <h2 className={`text-3xl lg:text-5xl font-aileron ${path !== '/' ? 'text-secondary' : 'text-primary'} uppercase my-8 text-center`}>Catálogo</h2>
                     </Fade>
                 </article>
                 <article className="md:flex md:flex-row md:flex-wrap gap-4 justify-center">

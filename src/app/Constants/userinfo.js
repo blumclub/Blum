@@ -98,7 +98,7 @@ export const catalogo = [
       // img:'https://res.cloudinary.com/deueso3sr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1725643288/2_kpxnaj.jpg',
       img:'https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1725643288/2_kpxnaj.jpg',
       descripcion: 'Productos tópicos hechos a base de cannabis, ideales para aliviar dolores musculares, articulares y problemas en la piel.',
-      href: 'unguentos',
+      href: 'unguentos_de_cannabis',
       btn: 'Ver mas'
     },
     {
@@ -106,7 +106,7 @@ export const catalogo = [
       // img:'https://res.cloudinary.com/deueso3sr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1725643287/1_dn4ewf.jpg',
       img:'https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1725643287/1_dn4ewf.jpg',
       descripcion: 'Extractos concentrados de cannabis que ofrecen propiedades terapéuticas, perfectos para el bienestar físico y mental.',
-      href: 'aceites',
+      href: 'aceites_de_cannabis',
       btn: 'Ver mas'
     },
     {
@@ -114,7 +114,7 @@ export const catalogo = [
       // img:'https://res.cloudinary.com/deueso3sr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1726160665/9_oozgob.webp',
       img:'https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1726160665/9_oozgob.webp',
       descripcion: 'Variedades específicas de plantas de cannabis seleccionadas por sus características únicas, optimizadas para usos medicinales y recreativos.',
-      href: 'geneticas',
+      href: 'geneticas_de_cannabis',
       btn: 'Ver mas'
     }
   ]
