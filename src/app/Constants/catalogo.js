@@ -125,6 +125,132 @@ export const catalogo = [
           },
           "sabor": ["Terroso"],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
+        },
+        {
+          "id": 6,
+          "nombre": "Ungüento con árnica y cannabis",
+          "descripcion": "Ungüento con árnica y extracto de cannabis.",
+          "cbd": "7",
+          "sativa": "0",
+          "indica": "0",
+          "recomendadoPara": ["Dolor", "Inflamación"],
+          "efectos": ["Calmante", "Relajante"],
+          "perfilTerpenos": {
+            "especiado": "Cariofileno",
+            "terroso": "Humuleno",
+            "floral1": "Ocimeno",
+            "floral2": "Terpinoleno"
+          },
+          "sabor": ["Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
+        },
+        {
+          "id": 6,
+          "nombre": "Ungüento con árnica y cannabis",
+          "descripcion": "Ungüento con árnica y extracto de cannabis.",
+          "cbd": "7",
+          "sativa": "0",
+          "indica": "0",
+          "recomendadoPara": ["Dolor", "Inflamación"],
+          "efectos": ["Calmante", "Relajante"],
+          "perfilTerpenos": {
+            "especiado": "Cariofileno",
+            "terroso": "Humuleno",
+            "floral1": "Ocimeno",
+            "floral2": "Terpinoleno"
+          },
+          "sabor": ["Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
+        },
+        {
+          "id": 6,
+          "nombre": "Ungüento con árnica y cannabis",
+          "descripcion": "Ungüento con árnica y extracto de cannabis.",
+          "cbd": "7",
+          "sativa": "0",
+          "indica": "0",
+          "recomendadoPara": ["Dolor", "Inflamación"],
+          "efectos": ["Calmante", "Relajante"],
+          "perfilTerpenos": {
+            "especiado": "Cariofileno",
+            "terroso": "Humuleno",
+            "floral1": "Ocimeno",
+            "floral2": "Terpinoleno"
+          },
+          "sabor": ["Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
+        },
+        {
+          "id": 6,
+          "nombre": "Ungüento con árnica y cannabis",
+          "descripcion": "Ungüento con árnica y extracto de cannabis.",
+          "cbd": "7",
+          "sativa": "0",
+          "indica": "0",
+          "recomendadoPara": ["Dolor", "Inflamación"],
+          "efectos": ["Calmante", "Relajante"],
+          "perfilTerpenos": {
+            "especiado": "Cariofileno",
+            "terroso": "Humuleno",
+            "floral1": "Ocimeno",
+            "floral2": "Terpinoleno"
+          },
+          "sabor": ["Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
+        },
+        {
+          "id": 6,
+          "nombre": "Ungüento con árnica y cannabis",
+          "descripcion": "Ungüento con árnica y extracto de cannabis.",
+          "cbd": "7",
+          "sativa": "0",
+          "indica": "0",
+          "recomendadoPara": ["Dolor", "Inflamación"],
+          "efectos": ["Calmante", "Relajante"],
+          "perfilTerpenos": {
+            "especiado": "Cariofileno",
+            "terroso": "Humuleno",
+            "floral1": "Ocimeno",
+            "floral2": "Terpinoleno"
+          },
+          "sabor": ["Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
+        },
+        {
+          "id": 6,
+          "nombre": "Ungüento con árnica y cannabis",
+          "descripcion": "Ungüento con árnica y extracto de cannabis.",
+          "cbd": "7",
+          "sativa": "0",
+          "indica": "0",
+          "recomendadoPara": ["Dolor", "Inflamación"],
+          "efectos": ["Calmante", "Relajante"],
+          "perfilTerpenos": {
+            "especiado": "Cariofileno",
+            "terroso": "Humuleno",
+            "floral1": "Ocimeno",
+            "floral2": "Terpinoleno"
+          },
+          "sabor": ["Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
+        },
+        {
+          "id": 6,
+          "nombre": "Ungüento con árnica y cannabis",
+          "descripcion": "Ungüento con árnica y extracto de cannabis.",
+          "cbd": "7",
+          "sativa": "0",
+          "indica": "0",
+          "recomendadoPara": ["Dolor", "Inflamación"],
+          "efectos": ["Calmante", "Relajante"],
+          "perfilTerpenos": {
+            "especiado": "Cariofileno",
+            "terroso": "Humuleno",
+            "floral1": "Ocimeno",
+            "floral2": "Terpinoleno"
+          },
+          "sabor": ["Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
         }
       ]
     }
