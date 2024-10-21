@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { IoClose } from 'react-icons/io5';
+import { MdArrowDropDown } from 'react-icons/md';
 import Link from 'next/link';
 import { userinfo } from '@/app/Constants/userinfo';
 import { userData } from '@/app/Constants/userinfo';
@@ -151,7 +152,7 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                                 placeholder="Jhon Black"
                                                 aria-label="Ingresar nombre"
                                                 />
-                                                {errors.Nombre && <span className="text-red-500">Nombre y Apellido es requerido</span>}
+                                                {errors.Nombre && <span className="text-red">Nombre y Apellido es requerido</span>}
                                             </div>
 
                                             <div>
@@ -164,7 +165,7 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                                 placeholder="email@email.com"
                                                 aria-label="Ingresar correo electrónico"
                                                 />
-                                                {errors.Email && <span className="text-red-500">Email es requerido</span>}
+                                                {errors.Email && <span className="text-red">Email es requerido</span>}
                                             </div>
 
                                             <div>
@@ -177,22 +178,29 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                                 placeholder="Celular"
                                                 aria-label="Ingresar teléfono"
                                                 />
-                                                {errors.Telefono && <span className="text-red-500">Celular es requerido</span>}
+                                                {errors.Telefono && <span className="text-red">Celular es requerido</span>}
                                             </div>
 
-                                            <div>
+                                            <div className="relative">
                                                 <label htmlFor="options" className="block mb-2 text-sm font-medium text-text-primary">Motivo</label>
-                                                <select
+                                                <div className="relative">
+                                                    <select
                                                     id="options"
                                                     {...register('Motivo')}
-                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                    className="block w-full appearance-none rounded-md border px-3 py-2 pr-10 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                     aria-label="Seleccionar motivo de contacto"
                                                     defaultValue="Contacto"
-                                                >
+                                                    >
                                                     <option value="Contacto" disabled hidden>Contacto</option>
                                                     <option value="Turno 1ª vez">Turno 1ª vez</option>
                                                     <option value="Consulta">Consulta</option>
-                                                </select>
+                                                    </select>
+                                                    {/* Icono de flecha dentro del select */}
+                                                    <div className="absolute right-3 top-2 h-5 w-5 text-primary text-xl pointer-events-none">
+                                                        <MdArrowDropDown />
+                                                    </div>
+                                                </div>
+                                                {errors.Motivo && <span className="text-red">Seleccione un motivo</span>}
                                             </div>
                                             {showConsulta && (
                                                 <div>
@@ -205,7 +213,7 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                                         placeholder=" Mensaje"
                                                         aria-label="Ingresar edad"
                                                         />
-                                                    {errors.Edad && <span className="text-red-500">Edad es requerida</span>}
+                                                    {errors.Edad && <span className="text-red">Edad es requerida</span>}
                                                 </div>
                                             
                                             )}
@@ -222,7 +230,7 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                                     placeholder="Edad"
                                                     aria-label="Ingresar edad"
                                                     />
-                                                    {errors.Edad && <span className="text-red-500">Edad es requerida</span>}
+                                                    {errors.Edad && <span className="text-red">Edad es requerida</span>}
                                                 </div>
 
                                                 <div>
@@ -235,7 +243,7 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                                     placeholder="Quilmes"
                                                     aria-label="Ingresar domicilio"
                                                     />
-                                                    {errors.Domicilio && <span className="text-red-500">Localidad de Residencia es requerido</span>}
+                                                    {errors.Domicilio && <span className="text-red">Localidad de Residencia es requerido</span>}
                                                 </div>
 
                                                 <div>
@@ -260,17 +268,23 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                                         aria-label="Ingresar nombre de la persona que lo refirió"
                                                     />
                                                 </div>
-                                                <div>
+                                                <div className="relative">
                                                     <label htmlFor="lugar" className="block mb-2 text-sm font-medium text-text-primary">¿Qué Dispensario prefiere?</label>
-                                                    <select
-                                                    id="lugar"
-                                                    {...register('Lugar')}
-                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                                    aria-label="Seleccionar lugar preferido"
-                                                    >
-                                                    <option value="Bernal">Bernal</option>
-                                                    <option value="CABA">CABA</option>
-                                                    </select>
+                                                    <div className="relative">
+                                                        <select
+                                                        id="lugar"
+                                                        {...register('Lugar')}
+                                                        className="block w-full appearance-none rounded-md border px-3 py-2 pr-10 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                        aria-label="Seleccionar lugar preferido"
+                                                        >
+                                                        <option value="Bernal">Bernal</option>
+                                                        <option value="CABA" disabled>CABA.<small>{'(proximamente)'}</small></option>
+                                                        </select>
+                                                        <div className="absolute right-3 top-2 h-5 w-5 text-primary text-xl pointer-events-none">
+                                                            <MdArrowDropDown />
+                                                        </div>
+                                                    </div>
+                                                    {errors.Lugar && <span className="text-red">Lugar es requerido</span>}
                                                 </div>
                                                 </>
                                             )}
