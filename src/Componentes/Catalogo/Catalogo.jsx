@@ -11,7 +11,7 @@ const Catalogo = () => {
     const renderProductCard = (prod, isMobile) => (
         <Link href={`/catalogo/${prod.href}`} key={prod.nombre}>
             <div className={`group relative cursor-pointer overflow-hidden transition-all duration-300 rounded-xl 
-                ${isMobile ? 'bg-primary m-2 my-4' : 'md:w-60 lg:w-72 xl:w-96 shadow bg-primary hover:scale-105'}`}>
+                ${isMobile ? 'bg-primary m-2 my-6 shadow-lg shadow-neutral-800' : 'mx-1 md:w-60 lg:w-72 xl:w-96 shadow-xl shadow-neutral-800 bg-primary hover:scale-105'}`}>
                 <span className="absolute top-10 z-0 h-20 w-20 rounded-full bg-gradient-to-r from-[#1a4249] to-[#076885] transition-all duration-300 group-hover:scale-[21]"></span>
                 <div className={`relative z-10 ${isMobile ? 'grid grid-cols-3' : ''}`}>
                     <img className={`object-cover w-full h-full ${isMobile ? '' : 'rounded-t-xl'}`} src={prod.img} alt={prod.nombre} />

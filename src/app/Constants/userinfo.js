@@ -41,9 +41,10 @@ export const userData = { //----- Asi tiene que ser el documento dentro de const
 
 export const Links = [
     { name: "El Club", href: "#ElClub", current: false  },
-    { name: "Catalogo", href: "#Catalogo", current: false  },
     { name: "Consultorio", href: "#consultorio", current: false  },
     { name: "Hidropónico", href: "#cultivoHidroponico", current: false  },
+    { name: "Catalogo", href: "#Catalogo", current: false  },
+    { name: "Ley", href: "#ley", current: false  },
   ];
 
 export const steps = [

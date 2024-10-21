@@ -4,14 +4,14 @@ import React from 'react';
 
 export default function Notfound() {
   return (
-    <div className="bg-[#FCF5EF] flex flex-col justify-center h-screen items-center text-center p-4">
-        <img src="Logo/LogoBlumTransparente.png" alt="Logo" loading='lazy' width={300} height={300} />
+    <div className="bg-primary flex flex-col justify-center h-screen items-center text-center p-4">
+        <img src="/Logo/LogoBlumTransparente.png" alt="Logo" loading='lazy' width={500} height={500} />
         <div>
-          <h1 className="text-6xl font-bold text-gray-800 mb-4">404</h1>
-          <p className="text-xl text-gray-600 mb-8">Página no encontrada</p>
+          <h1 className="text-6xl font-bold text-gray-200 mb-4">404</h1>
+          <p className="text-xl text-gray-400 mb-8">Página no encontrada</p>
         </div>
         <Link href="/">
-          <p className="text-blue-500 hover:text-blue-700 text-lg">Volver a la página principal</p>
+          <p className="text-secondary hover:text-blue-700 text-xl">Volver a la página principal</p>
         </Link>
     </div>
   );

@@ -11,7 +11,7 @@ const Reprocan = () => {
   };
 
   return (
-      <section className='bg-primary py-10 relative'>        
+      <section id='ley' className='bg-primary py-10 relative scroll-mt-20 lg:scroll-mt-20'>        
         <div className="md:flex p-4 max-w-7xl mx-auto">
           <article className="flex-column space-y-4 text-sm font-medium text-gray-500  md:me-4 mb-4 md:mb-0 list-none content-around relative z-20">
             <li className='min-w-36'>

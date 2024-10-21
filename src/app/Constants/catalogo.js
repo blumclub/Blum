@@ -7,7 +7,7 @@ export const catalogo = [
         {
           "id": 1,
           "nombre": "Aceite de cannabis 10%",
-          "descripcion": "Aceite con una concentración de 10% de CBD. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis aliquam vero quas at nemo omnis quod, veniam necessitatibus, alias, illo quo cumque officiis nobis temporibus nisi! Laborum, veniam perferendis.",
+          "descripcion": "Aceite con una concentración de 10% de CBD.",
           "cbd": "10",
           "sativa": "70",
           "indica": "30",
@@ -20,7 +20,7 @@ export const catalogo = [
             "floral2": "Terpinoleno"
           },
           "sabor": ["Cítrico", "Terroso", "Herbario", "Pimienta"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/6_oo4nib.webp" // Agrega la URL de la imagen aquí
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1725643287/1_dn4ewf.jpg" // Agrega la URL de la imagen aquí
         },
         {
           "id": 2,
@@ -38,7 +38,7 @@ export const catalogo = [
             "floral2": "Terpinoleno"
           },
           "sabor": ["Frutal", "Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1726159638/web/uvfwrvc1yihwkkvcf8re.webp" // Agrega la URL de la imagen aquí
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1725643288/4_yhe8pc.jpg" // Agrega la URL de la imagen aquí
         }
       ]
     },
@@ -49,7 +49,7 @@ export const catalogo = [
       "productos": [
         {
           "id": 3,
-          "nombre": "Cogollo Amnesia Haze",
+          "nombre": "Amnesia Haze",
           "descripcion": "Cogollo de Amnesia Haze con alto contenido de THC.",
           "cbd": "0.3",
           "sativa": "100",
@@ -63,11 +63,11 @@ export const catalogo = [
             "floral2": "Terpinoleno"
           },
           "sabor": ["Dulce", "Cítrico"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1726159638/web/bdgqabjvgq68xu04mkqr.webp"
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1725643232/2m_jsr3gb.jpg"
         },
         {
           "id": 4,
-          "nombre": "Cogollo Blue Dream",
+          "nombre": "Blue Dream",
           "descripcion": "Cogollo de Blue Dream con balance de THC y CBD.",
           "cbd": "0.5",
           "sativa": "50",
@@ -81,8 +81,62 @@ export const catalogo = [
             "floral2": "Terpinoleno"
           },
           "sabor": ["Dulce", "Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/9_oozgob.webp"
-        }
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1726159638/web/jtwhxkqr3aicyiimic15.webp"
+        },
+        {
+            "id": 5,
+            "nombre": "Sour Diesel",
+            "descripcion": "Variedad de alta potencia, Sour Diesel ofrece un perfil dominante en THC, perfecto para el alivio del estrés y el aumento de energía.",
+            "cbd": "0.3",
+            "sativa": "70",
+            "indica": "30",
+            "recomendadoPara": ["Fatiga", "Estrés"],
+            "efectos": ["Energético", "Elevado"],
+            "perfilTerpenos": {
+              "especiado": "Mirceno",
+              "terroso": "Pineno",
+              "floral1": "Limoneno",
+              "floral2": "Cariofileno"
+            },
+            "sabor": ["Cítrico", "Diesel"],
+            "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1726160665/3_ki9gn1.webp"
+          },
+          {
+            "id": 6,
+            "nombre": "OG Kush",
+            "descripcion": "OG Kush es una de las variedades más populares, con un perfil de efectos relajantes y calmantes.",
+            "cbd": "0.7",
+            "sativa": "25",
+            "indica": "75",
+            "recomendadoPara": ["Ansiedad", "Dolor"],
+            "efectos": ["Relajado", "Feliz"],
+            "perfilTerpenos": {
+              "especiado": "Cariofileno",
+              "terroso": "Limoneno",
+              "floral1": "Pineno",
+              "floral2": "Mirceno"
+            },
+            "sabor": ["Cítrico", "Pino"],
+            "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1726159638/web/bdgqabjvgq68xu04mkqr.webp"
+          },
+          {
+            "id": 7,
+            "nombre": "Gelato",
+            "descripcion": "Gelato es una genética híbrida conocida por sus sabores dulces y afrutados, con un equilibrio entre efectos relajantes y eufóricos.",
+            "cbd": "1.0",
+            "sativa": "55",
+            "indica": "45",
+            "recomendadoPara": ["Dolor", "Depresión"],
+            "efectos": ["Creativo", "Relajado"],
+            "perfilTerpenos": {
+              "especiado": "Linalool",
+              "terroso": "Humuleno",
+              "floral1": "Limoneno",
+              "floral2": "Mirceno"
+            },
+            "sabor": ["Dulce", "Frutal"],
+            "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1726160665/9_oozgob.webp"
+          }
       ]
     },
     {
@@ -127,7 +181,7 @@ export const catalogo = [
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
         },
         {
-          "id": 6,
+          "id": 7,
           "nombre": "Ungüento con árnica y cannabis",
           "descripcion": "Ungüento con árnica y extracto de cannabis.",
           "cbd": "7",
@@ -145,7 +199,7 @@ export const catalogo = [
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
         },
         {
-          "id": 6,
+          "id": 8,
           "nombre": "Ungüento con árnica y cannabis",
           "descripcion": "Ungüento con árnica y extracto de cannabis.",
           "cbd": "7",
@@ -163,7 +217,7 @@ export const catalogo = [
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
         },
         {
-          "id": 6,
+          "id": 9,
           "nombre": "Ungüento con árnica y cannabis",
           "descripcion": "Ungüento con árnica y extracto de cannabis.",
           "cbd": "7",
@@ -181,61 +235,7 @@ export const catalogo = [
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
         },
         {
-          "id": 6,
-          "nombre": "Ungüento con árnica y cannabis",
-          "descripcion": "Ungüento con árnica y extracto de cannabis.",
-          "cbd": "7",
-          "sativa": "0",
-          "indica": "0",
-          "recomendadoPara": ["Dolor", "Inflamación"],
-          "efectos": ["Calmante", "Relajante"],
-          "perfilTerpenos": {
-            "especiado": "Cariofileno",
-            "terroso": "Humuleno",
-            "floral1": "Ocimeno",
-            "floral2": "Terpinoleno"
-          },
-          "sabor": ["Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
-        },
-        {
-          "id": 6,
-          "nombre": "Ungüento con árnica y cannabis",
-          "descripcion": "Ungüento con árnica y extracto de cannabis.",
-          "cbd": "7",
-          "sativa": "0",
-          "indica": "0",
-          "recomendadoPara": ["Dolor", "Inflamación"],
-          "efectos": ["Calmante", "Relajante"],
-          "perfilTerpenos": {
-            "especiado": "Cariofileno",
-            "terroso": "Humuleno",
-            "floral1": "Ocimeno",
-            "floral2": "Terpinoleno"
-          },
-          "sabor": ["Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
-        },
-        {
-          "id": 6,
-          "nombre": "Ungüento con árnica y cannabis",
-          "descripcion": "Ungüento con árnica y extracto de cannabis.",
-          "cbd": "7",
-          "sativa": "0",
-          "indica": "0",
-          "recomendadoPara": ["Dolor", "Inflamación"],
-          "efectos": ["Calmante", "Relajante"],
-          "perfilTerpenos": {
-            "especiado": "Cariofileno",
-            "terroso": "Humuleno",
-            "floral1": "Ocimeno",
-            "floral2": "Terpinoleno"
-          },
-          "sabor": ["Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg" 
-        },
-        {
-          "id": 6,
+          "id": 10,
           "nombre": "Ungüento con árnica y cannabis",
           "descripcion": "Ungüento con árnica y extracto de cannabis.",
           "cbd": "7",

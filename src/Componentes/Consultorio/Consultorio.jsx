@@ -10,7 +10,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Consultorio() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.5 });
+  const isInView = useInView(ref, { once: true, threshold: 0.75 });
 
   return (
     <section id="consultorio" ref={ref} className="bg-secondary pb-10 scroll-mt-10 lg:scroll-mt-16">
