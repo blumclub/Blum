@@ -7,7 +7,7 @@ import { Fade } from 'react-awesome-reveal';
 
 function Hidroponico() {
   return (
-    <section id="cultivoHidroponico" className="my-16 scroll-mt-20 lg:scroll-mt-20">
+    <section id="cultivoHidroponico" className="my-16 scroll-mt-20 lg:scroll-mt-28">
       <div className="max-w-7xl mx-auto">
         <Fade direction={"down"} delay={800} cascade damping={1e-1} triggerOnce={true}>
           <h2 className="text-3xl lg:text-5xl font-aileron text-secondary uppercase mt-16 mb-8 text-center">Cultivo Hidropónico</h2>
