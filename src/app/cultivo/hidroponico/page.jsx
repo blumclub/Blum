@@ -60,6 +60,9 @@ const Cultivo = () => {
             <button className="bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-secondary transition">Contáctanos para más información</button>
           </Link>
         </article>
+      <Link href={'/#cultivoHidroponico'}>
+            <button className="bg-primary text-white font-semibold py-3 px-6 w-full md:w-40 rounded-lg hover:bg-secondary transition mt-6">VOLVER</button>
+      </Link>
       </div>
     </section>
   );
