@@ -68,28 +68,23 @@ export const steps = [
 export const imagesHidroponico = [
   {
     original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/4_vkg8mv.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/4_vkg8mv.webp",
-    description: "Imagen 1",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/4_vkg8mv.webp"
   },
   {
     original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/6_oo4nib.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/6_oo4nib.webp",
-    description: "Imagen 2",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/6_oo4nib.webp"
   },
   {
     original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/5_vaxghv.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/5_vaxghv.webp",
-    description: "Imagen 3",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/5_vaxghv.webp"
   },
   {
     original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/3_ki9gn1.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/3_ki9gn1.webp",
-    description: "Imagen 4",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/3_ki9gn1.webp"
   },
   {
     original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/9_oozgob.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/9_oozgob.webp",
-    description: "Imagen 5",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/9_oozgob.webp"
   }
 ];
 
