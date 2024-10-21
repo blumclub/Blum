@@ -6,15 +6,19 @@ import { Fade } from "react-awesome-reveal";
 
 const ListaConTitulo = ({ titulo, items }) => (
     <>
-        <div className="bg-amber-700 opacity-10 absolute inset-0 rounded-lg font-aileron " />
-        <div className="w-full rounded-lg p-3 my-2 z-10">
-            <h2 className="text-base font-bold text-gray-200 pb-2 mb-2 tracking-wider" >{titulo}</h2>
-            <ul className=" list-disc space-y-1 pl-2 ">
-                {items.map((item, index) => (
-                    <li key={index} className="text-sm text-white">{item}</li>
-                ))}
-            </ul>
-        </div>
+<div className="bg-amber-700 opacity-10 absolute inset-0 rounded-lg font-aileron " />
+<div className="w-full rounded-lg pl-2 my-2 z-10">
+    <h2 className="text-base font-bold text-primary pb-1 mb-2 tracking-wider">{titulo}</h2>
+    <ul className="list-none space-y-1">
+        {items.map((item, index) => (
+            <li key={index} className="flex items-center text-sm text-white">
+                <img src="/Logo/LogoBlumContacto.webp" alt="icono BLUM" className="w-4 h-4" width={16} height={16} />
+                {item}
+            </li>
+        ))}
+    </ul>
+</div>
+
     </>
 );
 
@@ -47,14 +51,14 @@ export default function Card({ producto }) {
                                 <h2 className="text-xl font-bold text-gray-800 py-1 text-center uppercase items-center">
                                     {producto.nombre}
                                 </h2>
-                                <p className="text-gray-600 mt-4 leading-relaxed text-md items-center text-center">{producto.descripcion}</p>
+                                <p className="text-gray-600 mt-2 leading-relaxed text-md items-center text-center">{producto.descripcion}</p>
                             </div>
                             <div className="relative grid gap-1 grid-cols-2 p-1">
                                 <ListaConTitulo titulo="Recomendado" items={producto.recomendadoPara} />
                                 <ListaConTitulo titulo="Efectos" items={producto.efectos} />
                                 <ListaConTitulo titulo="Sabor" items={producto.sabor} />
                                 <ListaConTitulo
-                                    titulo="Perfil de Terpenos"
+                                    titulo="Terpenos"
                                     items={[
                                         `Especiado: ${producto.perfilTerpenos.especiado}`,
                                         `Terroso: ${producto.perfilTerpenos.terroso}`,
