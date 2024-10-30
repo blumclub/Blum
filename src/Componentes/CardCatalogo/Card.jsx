@@ -57,15 +57,6 @@ export default function Card({ producto }) {
                                 <ListaConTitulo titulo="Recomendado" items={producto.recomendadoPara} />
                                 <ListaConTitulo titulo="Efectos" items={producto.efectos} />
                                 <ListaConTitulo titulo="Sabor" items={producto.sabor} />
-                                <ListaConTitulo
-                                    titulo="Terpenos"
-                                    items={[
-                                        `Especiado: ${producto.perfilTerpenos.especiado}`,
-                                        `Terroso: ${producto.perfilTerpenos.terroso}`,
-                                        `Floral 1: ${producto.perfilTerpenos.floral1}`,
-                                        `Floral 2: ${producto.perfilTerpenos.floral2}`,
-                                    ]}
-                                />
                             </div>
                         </div>
                     </div>
