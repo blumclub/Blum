@@ -41,7 +41,7 @@ export default function PorcentajeAnimado({ producto, estilo }) {
           <div className="p-2 mb-2 flex flex-col md:flex-row relative z-10">
             <div className="flex justify-around w-full">
             <div className="flex flex-col items-center space-y-2">
-                <motion.p className="text-sm font-bold text-purple-600 transition duration-300 ease-in-out transform hover:scale-105 uppercase">
+                <motion.p className="text-sm font-bold text-yellow-500 transition duration-300 ease-in-out transform hover:scale-105 uppercase">
                   THC: {Math.round(thc)}%
                 </motion.p>
                 <div className="h-1 w-20 bg-yellow-500 rounded-full" />
@@ -54,15 +54,15 @@ export default function PorcentajeAnimado({ producto, estilo }) {
               </div>
               <div className="flex flex-col items-center space-y-2">
                 <motion.p className="text-sm font-bold text-blue-400 transition duration-300 ease-in-out transform hover:scale-105 uppercase">
-                  Sativa: {Math.round(sativa)}%
+                 Sativa: {Math.round(sativa)}% 
                 </motion.p>
-                <div className="h-1 w-20 bg-blue-300 rounded-full" />
+                <div className="h-1 w-20 bg-blue-400 rounded-full" />
               </div>
               <div className="flex flex-col items-center space-y-2">
-                <motion.p className="text-sm font-bold text-purple-600 transition duration-300 ease-in-out transform hover:scale-105 uppercase">
+                <motion.p className="text-sm font-bold text-pink-500 transition duration-300 ease-in-out transform hover:scale-105 uppercase">
                   Indica: {Math.round(indica)}%
                 </motion.p>
-                <div className="h-1 w-20 bg-purple rounded-full" />
+                <div className="h-1 w-20 bg-pink-500 rounded-full" />
               </div>
             </div>
           </div>
