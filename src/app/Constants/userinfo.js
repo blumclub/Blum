@@ -106,7 +106,7 @@ export const catalogo = [
       btn: 'Ver mas'
     },
     {
-      nombre: 'Geneticas',
+      nombre: 'Genéticas',
       // img:'https://res.cloudinary.com/deueso3sr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1726160665/9_oozgob.webp',
       img:'https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1726160665/9_oozgob.webp',
       descripcion: 'Variedades específicas de plantas de cannabis seleccionadas por sus características únicas, optimizadas para usos medicinales y recreativos.',
