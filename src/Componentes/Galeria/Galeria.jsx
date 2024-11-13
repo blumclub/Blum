@@ -62,7 +62,6 @@ export default function Gallery() {
                 hideDownload={true}
                 small={src} 
                 large={src}
-                alt={`Encuentro social ${index + 1}`}
                 className={`h-auto max-w-full rounded-lg transition-transform duration-300 ease-in-out transform ${randomEffects[index]}`}
               />
             </div>
@@ -78,7 +77,6 @@ export default function Gallery() {
                 hideDownload={true}
                 small={src} 
                 large={src}
-                alt={`Encuentro social ${index + 1}`}
                 className={`h-auto max-w-full rounded-lg transition-transform duration-300 ease-in-out transform ${randomEffects[index]}`}
               />
             </div>

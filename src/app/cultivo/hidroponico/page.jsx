@@ -14,21 +14,21 @@ const Cultivo = () => {
       <div className='max-w-7xl mx-auto'>
         <article className="text-center mb-12">
           <h1 className="text-primary font-bold text-3xl md:text-5xl mt-20">Cultivo Hidropónico de Cannabis por <strong className='font-oxanium'> Blüm</strong></h1>
-          <p className="text-lg xl:text-xl md:text-xl mt-4 text-secondary">
-            Aprende cómo cultivar cannabis de manera eficiente utilizando el método hidropónico, una forma moderna y eficiente para obtener cosechas saludables.
-          </p>
+          <h2 className="text-lg xl:text-xl md:text-xl mt-4 text-secondary">
+            Aprende cómo cultivar cannabis de manera eficiente utilizando el método hidropónico, <br/> una forma moderna y eficiente para obtener cosechas saludables.
+          </h2>
         </article>
         <article className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center ">
             <h2 className="text-secondary font-semibold text-2xl md:text-3xl mb-4">¿Qué es el cultivo hidropónico?</h2>
             <p className="text-lg xl:text-xl text-gray-700">
               El cultivo hidropónico es un método de cultivo en el que las plantas crecen sin suelo, utilizando soluciones nutritivas. Este método es perfecto para el cultivo de cannabis, ya que permite un control preciso de los nutrientes y el agua, optimizando el crecimiento y la producción.
             </p>
           </div>
-          <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/5_vaxghv.webp" alt="Sistema de cultivo hidropónico" className="rounded-lg shadow-lg w-full max-w-md" />
+          <img src="https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/5_vaxghv.webp" alt="Sistema de cultivo hidropónico" className="rounded-lg shadow-lg w-full max-w-md" />
         </article>
         <article className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/3_ki9gn1.webp" alt="Planta de cannabis" className="rounded-lg shadow-lg w-full max-w-md md:order-1 order-2"/>
+          <img src="https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1726160665/3_ki9gn1.webp" alt="Planta de cannabis" className="rounded-lg shadow-lg w-full max-w-md md:order-1 order-2"/>
           <div className="flex flex-col justify-center md:order-2 order-1">
             <h2 className="text-primary font-semibold text-2xl md:text-3xl mb-4">Beneficios del cultivo hidropónico</h2>
             <ol className="space-y-2">

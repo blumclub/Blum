@@ -1,6 +1,6 @@
 'use client';
 import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Swal from 'sweetalert2';
@@ -17,6 +17,11 @@ const Contactusform = ({ className= '', text, estilo }) => {
     const [showAdditionalFields, setShowAdditionalFields] = useState(false);
     const [showConsulta, setShowConsulta] = useState(false)
     const selectedOption = watch('Motivo', 'Consulta');
+
+    useEffect(() => {
+        setShowAdditionalFields(selectedOption === 'Turno 1ª vez');
+        setShowConsulta(selectedOption === 'Consulta');
+    }, [selectedOption]);
 
     const alert = (Nombre) => {
         Swal.fire({
@@ -112,6 +117,7 @@ const Contactusform = ({ className= '', text, estilo }) => {
 
     return (
         <>
+
             <div className={`flex items-center ${className}`}>
                 <button type="button" className={estilo?`${estilo} md:hidden font-aileron`:"flex justify-center font-aileron text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-tertiary text-gray-200 "} onClick={openModal} aria-label="Abrir formulario de contacto" >
                     {text}
@@ -122,7 +128,6 @@ const Contactusform = ({ className= '', text, estilo }) => {
                     </button>
                 </div>
             </div>
-
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={closeModal}>
                     <Transition.Child as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
@@ -277,8 +282,8 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                                         className="block w-full appearance-none rounded-md border px-3 py-2 pr-10 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                         aria-label="Seleccionar lugar preferido"
                                                         >
-                                                        <option value="Bernal">Bernal</option>
-                                                        <option value="CABA" disabled>CABA.<small>{'(proximamente)'}</small></option>
+                                                            <option value="Bernal">Bernal</option>
+                                                            <option value="CABA" disabled>CABA.{'(proximamente)'}</option>
                                                         </select>
                                                         <div className="absolute right-3 top-2 h-5 w-5 text-primary text-xl pointer-events-none">
                                                             <MdArrowDropDown />

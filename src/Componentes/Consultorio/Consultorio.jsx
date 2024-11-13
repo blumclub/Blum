@@ -5,6 +5,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { steps } from "@/app/Constants/userinfo";
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
+import Contactusform from "../Contact/Contactus";
 
 
 
@@ -29,21 +31,38 @@ export default function Consultorio() {
               personalizada sobre el uso del cannabis medicinal.
             </p>
             <ol className="items-start space-y-4 sm:space-y-0 rtl:space-x-reverse flex flex-col sm:flex-row justify-around md:items-center w-full">
-              {steps.map((step, index) => (
-                <motion.li
-                  key={step.number}
-                  className="flex sm:flex-row justify-between text-start items-center text-gray-200 space-x-4 md:space-x-1 lg:space-x-2 rtl:space-x-reverse"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-                  transition={{ duration: 1, delay: index * 0.3 }}
-                >
-                  <span className="flex items-center justify-center w-8 h-8 border border-primary ring-1 rounded-full shrink-0 drop-shadow-lg shadow text-primary mb-2 sm:mb-0">{step.number}</span>
-                  <span className="text-start md:text-center">
-                    <h3 className="font-bold lg:text-xl text-primary">{step.title}</h3>
-                    <p className="text-sm lg:text-lg">{step.description}</p>
-                  </span>
-                </motion.li>
-              ))}
+            {steps.map((step, index) => (
+  <motion.li
+    key={step.number}
+    className="flex sm:flex-row justify-between text-start items-center text-gray-200 space-x-4 md:space-x-1 lg:space-x-2 rtl:space-x-reverse"
+    initial={{ opacity: 0, x: 20 }}
+    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+    transition={{ duration: 1, delay: index * 0.3 }}
+  >
+    {index === 0 ? (
+        <>
+          <span className="flex items-center justify-center w-8 h-8 border border-primary ring-1 rounded-full shrink-0 drop-shadow-lg shadow text-primary mb-2 sm:mb-0">
+            {step.number}
+          </span>
+          <span className="text-start md:text-center">
+            <h3 className="font-bold lg:text-xl text-primary">{step.title}</h3>
+            <Contactusform text={step.description} estilo="text-sm lg:text-lg"/>
+          </span>
+        </>
+    ) : (
+      <>
+        <span className="flex items-center justify-center w-8 h-8 border border-primary ring-1 rounded-full shrink-0 drop-shadow-lg shadow text-primary mb-2 sm:mb-0">
+          {step.number}
+        </span>
+        <span className="text-start md:text-center">
+          <h3 className="font-bold lg:text-xl text-primary">{step.title}</h3>
+          <p className="text-sm lg:text-lg">{step.description}</p>
+        </span>
+      </>
+    )}
+  </motion.li>
+))}
+
             </ol>
           </div>
         </div>
