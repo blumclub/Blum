@@ -30,7 +30,7 @@ const Cultivo = () => {
         <article className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <img src="https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1726160665/3_ki9gn1.webp" alt="Planta de cannabis" className="rounded-lg shadow-lg w-full max-w-md md:order-1 order-2"/>
           <div className="flex flex-col justify-center md:order-2 order-1">
-            <h2 className="text-primary font-semibold text-2xl md:text-3xl mb-4">Beneficios del cultivo hidropónico</h2>
+            <h2 className="text-secondary font-semibold text-2xl md:text-3xl mb-4">Beneficios del cultivo hidropónico</h2>
             <ol className="space-y-2">
               {beneficios.map((benefit, index) => (
                 <li key={index} className="flex items-center space-x-4 text-lg font-aileron">
