@@ -10,9 +10,9 @@ export default function Nosotros() {
         <br />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <div className="flex flex-col items-center text-start md:text-start md:items-start">
-            <p className="text-white text-lg font-aileron indent-6">{userinfo.nosotrosText1}</p>
+            <p className="text-white text-lg font-aileron justify-normal text-justify">{userinfo.nosotrosText1}</p>
             <br />
-            <p className="text-white text-lg font-aileron indent-6">{userinfo.nosotrosText2}</p>
+            <p className="text-white text-lg font-aileron text-justify justify-normal ">{userinfo.nosotrosText2}</p>
           </div>
           <h2 className="hidden md:block md:text-9xl place-self-center text-transparent leading-none font-a tracking-wider bg-bgTitle bg-clip-text bg-fixed drop-shadow-secondary font-black rounded-sm bg-right md:bg-contain lg:bg-left">{userinfo.nosotrosSub}</h2>
         </div>
