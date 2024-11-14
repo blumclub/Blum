@@ -37,7 +37,7 @@ export default function Card({ producto }) {
                                             {producto.nombre}
                                         </h2>
                                         <div className="relative w-full p-2 align-bottom ">
-                                            <PorcentajeAnimado producto={producto} estilo="absolute top-4 right-4 z-10" />
+                                            <PorcentajeAnimado producto={producto} estilo="absolute top-4 right-4 z-10 " />
                                             <img className="w-full h-auto object-cover rounded-t-md overflow-hidden" src={producto.imagen} alt={producto.nombre} />
                                         </div>
                                     </div>
