@@ -26,16 +26,16 @@ const Cultivo = () => {
               El cultivo hidropónico es un método de cultivo en el que las plantas crecen sin suelo, utilizando soluciones nutritivas. Este método es perfecto para el cultivo de cannabis, ya que permite un control preciso de los nutrientes y el agua, optimizando el crecimiento y la producción.
             </p>
           </div>
-          <img src="https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1731517554/Bl%C3%BCm-0605_uqwo2a.webp" alt="Sistema de cultivo hidropónico" className="rounded-lg shadow-lg w-full max-w-md" />
+          <img src="https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1731517554/Bl%C3%BCm-0605_uqwo2a.webp" alt="Sistema de cultivo hidropónico" className="rounded-lg shadow-lg w-full max-w-md" title='Sistema de cultivo hidropónico'/>
         </article>
         <article className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <img src="https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1731517648/Bl%C3%BCm-0594_kpjtaw.webp" alt="Planta de cannabis" className="rounded-lg shadow-lg w-full max-w-md md:order-1 order-2"/>
+          <img src="https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1731517648/Bl%C3%BCm-0594_kpjtaw.webp" alt="Planta de cannabis" className="rounded-lg shadow-lg w-full max-w-md md:order-1 order-2" title='Planta de cannabis'/>
           <div className="flex flex-col justify-center md:order-2 order-1">
             <h2 className="text-secondary font-semibold text-2xl md:text-3xl mb-4">Beneficios del cultivo hidropónico</h2>
             <ol className="space-y-2">
               {beneficios.map((benefit, index) => (
                 <li key={index} className="flex items-center space-x-4 text-lg font-aileron">
-                  <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12"/>
+                  <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" title='Logo Blum Club'/>
                   <p className="text-primary text-lg xl:text-xl">{benefit}</p>
                 </li>
               ))}
@@ -54,7 +54,7 @@ const Cultivo = () => {
               Gracias a este enfoque, optimizamos el crecimiento de nuestras genéticas de cannabis, logrando un desarrollo más rápido y eficiente. Esto se traduce en plantas más saludables, con mayores rendimientos y una calidad superior, minimizando el riesgo de enfermedades y plagas. El cultivo hidropónico nos permite experimentar con diferentes combinaciones de nutrientes, adaptándonos a las necesidades específicas de cada cepa.
             </p>
           </div>
-          <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1731518061/Bl%C3%BCm-0597-b_aocvuy.webp" alt="Sistema de cultivo hidropónico" className="rounded-lg shadow-lg w-full max-w-md" />
+          <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1731518061/Bl%C3%BCm-0597-b_aocvuy.webp" alt="Sistema de cultivo hidropónico" className="rounded-lg shadow-lg w-full max-w-md" title='Sistema de cultivo hidropónico'/>
         </article>
         <article className="mt-12 flex justify-center">
           <Link href={'https://api.whatsapp.com/send/?phone=541162574919&text=Hola%2C+te+escribo+desde+la+web%2C++&type=phone_number&app_absent=0'} target="_blank" >

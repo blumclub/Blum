@@ -11,7 +11,7 @@ const BtnInstagram = () => {
           role="button"
           data-client={true}
         >
-          <img src='/redesSociales/insta.svg' alt="Instagram logo" className="w-12 h-12" width={48} height={48}/>
+          <img src='/redesSociales/insta.svg' alt="Instagram logo" className="w-12 h-12" width={48} height={48} title="Logo de Instagram"/>
         </button>
       </Link>
     </article>

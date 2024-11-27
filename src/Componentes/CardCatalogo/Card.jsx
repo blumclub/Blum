@@ -12,7 +12,7 @@ const ListaConTitulo = ({ titulo, items }) => (
     <ul className="list-none space-y-1">
         {items.map((item, index) => (
             <li key={index} className="flex items-center text-sm text-white">
-                <img src="/Logo/LogoBlumContacto.webp" alt="icono BLUM" className="w-4 h-4" width={16} height={16} />
+                <img src="/Logo/LogoBlumContacto.webp" alt="icono BLUM" className="w-4 h-4" width={16} height={16} title="Logo Blum Club"/>
                 {item}
             </li>
         ))}
@@ -38,7 +38,7 @@ export default function Card({ producto }) {
                                         </h2>
                                         <div className="relative w-full p-2 align-bottom ">
                                             <PorcentajeAnimado producto={producto} estilo="absolute top-4 right-4 z-10 " />
-                                            <img className="w-full h-auto object-cover rounded-t-md overflow-hidden" src={producto.imagen} alt={producto.nombre} />
+                                            <img className="w-full h-auto object-cover rounded-t-md overflow-hidden" src={producto.imagen} alt={producto.nombre} title={producto.nombre} />
                                         </div>
                                     </div>
                                 </div>

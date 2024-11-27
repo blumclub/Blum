@@ -143,7 +143,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                     </button>
                                     <div className="py-2 px-4 mx-auto max-w-screen-md">
                                         <div className="flex flex-col items-center">
-                                            <img className="lg:block border-none" src="/Logo/LogoBlumContacto.webp" alt="Blum Logo" width={200} height={200} />
+                                            <img className="lg:block border-none" src="/Logo/LogoBlumContacto.webp" alt="Blum Logo" title='Logo Blum Club' width={200} height={200} />
                                             <p className={`mb-6 lg:mb-10 mt-4 font-light text-center ${classNameEstilo}`}>Completa tus datos y continuamos por WhatsApp</p>
                                         </div>
                                         <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>

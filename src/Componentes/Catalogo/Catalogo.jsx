@@ -14,7 +14,7 @@ const Catalogo = () => {
                 ${isMobile ? 'bg-primary m-2 my-6 shadow-lg shadow-neutral-800' : 'mx-1 md:w-60 lg:w-72 xl:w-96 shadow-xl shadow-neutral-800 bg-primary hover:scale-105'}`}>
                 <span className="absolute top-10 z-0 h-20 w-20 rounded-full bg-gradient-to-r from-[#1a4249] to-[#076885] transition-all duration-300 group-hover:scale-[21]"></span>
                 <div className={`relative z-10 ${isMobile ? 'grid grid-cols-3' : ''}`}>
-                    <img className={`object-cover w-full h-full ${isMobile ? '' : 'rounded-t-xl'}`} src={prod.img} alt={prod.nombre} />
+                    <img className={`object-cover w-full h-full ${isMobile ? '' : 'rounded-t-xl'}`} src={prod.img} alt={prod.nombre} title={prod.nombre}/>
                     <div className={`${isMobile ? 'col-span-2 p-3 flex flex-col justify-between items-end' : 'p-4 min-h-60'}`}>
                         <div>
                             <h3 className={`${isMobile ? 'text-lg font-semibold' : 'text-2xl font-bold'} text-gray-200`}>{prod.nombre}</h3>

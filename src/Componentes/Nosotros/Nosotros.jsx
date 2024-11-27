@@ -21,19 +21,19 @@ export default function Nosotros() {
           <br />
           <ol className="space-y-4">
             <li className="flex space-x-4 text-lg font-aileron align-middle items-center">
-              <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" width={40} height={40} />
+              <img src="/icons/icon-48x48.png" alt="Logo Blum Club" title="Logo Blum Club" aria-label="Logo Blum Club" className="w-12 h-12" width={40} height={40} />
               <span className="text-white">{userinfo.nosotrosText3()}</span>
             </li>
             <li className="flex items-center space-x-4 text-lg font-aileron">
-              <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" width={48} height={48}/>
+              <img src="/icons/icon-48x48.png" alt="Logo Blum Club" title="Logo Blum Club" aria-label="Logo Blum Club" className="w-12 h-12" width={48} height={48}/>
               <span className="text-white">{userinfo.nosotrosText4}</span>
             </li>
             <li className="flex items-center space-x-4 text-lg font-aileron">
-              <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" width={40} height={40}/>
+              <img src="/icons/icon-48x48.png" alt="Logo Blum Club" title="Logo Blum Club" aria-label="Logo Blum Club" className="w-12 h-12" width={40} height={40}/>
               <span className="text-white">{userinfo.nosotrosText5}</span>
             </li>
             <li className="flex items-center space-x-4 text-lg font-aileron align-middle">
-              <img src="/icons/icon-48x48.png" alt="icono" className="w-12 h-12" width={40} height={40}/>
+              <img src="/icons/icon-48x48.png" alt="Logo Blum Club" title="Logo Blum Club" aria-label="Logo Blum Club" className="w-12 h-12" width={40} height={40}/>
               <span className="text-white">{userinfo.nosotrosText6}</span>
             </li>
           </ol>

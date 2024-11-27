@@ -17,21 +17,21 @@ const Reprocan = () => {
             <li className='min-w-36'>
               <button onClick={() => handleTabClick('Tramites')} className={`inline-flex items-center px-4 py-3 rounded-lg w-full ${
                 activeTab === 'Tramites' ? 'bg-secondary text-primary font-aileron' : 'bg-white text-gray-500  hover:bg-primary '}`}>
-                <img src='Reprocam/tramitation.svg' alt='tramitacion' width={30} height={30} className='pr-2'/>
+                <img src='Reprocam/tramitation.svg' alt='tramitacion' width={30} height={30} className='pr-2' title='tramitacion'/>
                 Tramites
               </button>
             </li>
             <li className='min-w-36'>
               <button onClick={() => handleTabClick('Ley')} className={`inline-flex items-center px-4 py-3 rounded-lg w-full ${
                 activeTab === 'Ley' ? 'bg-secondary text-primary font-aileron' : 'bg-white text-gray-500  hover:bg-primary '}`}>
-                <img src='Reprocam/law.svg' alt='tramitacion' width={30} height={30} className='pr-2'/>
+                <img src='Reprocam/law.svg' alt='tramitacion' width={30} height={30} className='pr-2' title='tramitacion'/>
                 Ley
               </button>
             </li>
             <li className='min-w-36'>
               <button onClick={() => handleTabClick('Reprocann')} className={`inline-flex items-center px-4 py-3 rounded-lg w-full  ${
                 activeTab === 'Reprocann' ? 'bg-secondary text-primary font-aileron' : 'bg-white text-gray-500  hover:bg-primary ' }`}>
-                <img src='Reprocam/law-book.svg' alt='tramitacion' width={30} height={30} className='pr-2'/>
+                <img src='Reprocam/law-book.svg' alt='tramitacion' width={30} height={30} className='pr-2' title='tramitacion'/>
                 Reprocann
               </button>
             </li>

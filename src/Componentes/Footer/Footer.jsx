@@ -7,7 +7,7 @@ const Footer = () => {
             <article className="flex md:flex-row align-middle justify-around w-full">
                 <div className="flex flex-col items-center md:flex-row justify-around w-full max-w-screen-xl mx-auto gap-5">
                     <Link href="/" className=" md:flex flex-col items-center mb-10">
-                        <img src='/Logo/LogoBlumContacto.webp' alt="logo" width={160} height={160} />
+                        <img src='/Logo/LogoBlumContacto.webp' alt="logo" width={160} height={160} title="Logo Blum Club" />
                         <p className=" hidden md:block text-[40px] md:text-[62px] text-primary  text-center leading-none font-oxanium tracking-wider"><streong>Blüm</streong></p>
                     </Link>
                     <div className="flex flex-col gap-5 items-center justify-center">
