@@ -11,7 +11,7 @@ import { userinfo } from '@/app/Constants/userinfo';
 import { userData } from '@/app/Constants/userinfo';
 
 
-const Contactusform = ({ className= '', text, estilo }) => {
+const Contactusform = ({ classNameEstilo, text, estilo }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { register, handleSubmit, reset, formState: { errors }, watch } = useForm();
     const [showAdditionalFields, setShowAdditionalFields] = useState(false);
@@ -118,7 +118,7 @@ const Contactusform = ({ className= '', text, estilo }) => {
     return (
         <>
 
-            <div className={`flex items-center ${className}`}>
+            <div className={`flex items-center ${classNameEstilo} justify-center`}>
                 <button type="button" className={estilo?`${estilo} md:hidden font-aileron`:"flex justify-center font-aileron text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-tertiary text-gray-200 "} onClick={openModal} aria-label="Abrir formulario de contacto" >
                     {text}
                 </button>
@@ -144,7 +144,7 @@ const Contactusform = ({ className= '', text, estilo }) => {
                                     <div className="py-2 px-4 mx-auto max-w-screen-md">
                                         <div className="flex flex-col items-center">
                                             <img className="lg:block border-none" src="/Logo/LogoBlumContacto.webp" alt="Blum Logo" width={200} height={200} />
-                                            <p className={`mb-6 lg:mb-10 mt-4 font-light text-center ${className}`}>Completa tus datos y continuamos por WhatsApp</p>
+                                            <p className={`mb-6 lg:mb-10 mt-4 font-light text-center ${classNameEstilo}`}>Completa tus datos y continuamos por WhatsApp</p>
                                         </div>
                                         <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
                                             <div>

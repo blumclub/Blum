@@ -11,7 +11,7 @@ export const userinfo = {
     socials: [
         //{ type: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61551846219257', icon: <FaFacebook className='text-primary'/> },
         { type: 'Instagram', link: 'https://www.instagram.com/blum.club/', icon: <FaInstagram className='text-primary'/> },
-        { type: 'WhatsApp', link:'https://api.whatsapp.com/send?phone=5491123960360', icon: <FaWhatsapp className='text-primary'/> },
+        { type: 'WhatsApp', link:'https://api.whatsapp.com/send/?phone=541162574919&text=Hola%2C+te+escribo+desde+la+web%2C++&type=phone_number&app_absent=0', icon: <FaWhatsapp className='text-primary'/> },
         { type: 'Phone', link:'https://api.whatsapp.com/send?phone=5491123960360' },  
     ],
     nosotrosTitle:'Somos el primer club de cultivo de Bernal, que realiza producciones cannábicas orientadas exclusivamente a fines medicinales',
@@ -129,14 +129,14 @@ export const catalogo = [
         "question": "¿Qué geneticas de cannabis están disponibles para los socios?",
         "answer": "Ofrecemos una variedad de geneticas de cannabis, tanto índicas como sativas, seleccionadas cuidadosamente por su calidad y propiedades terapéuticas. Visita nuestro catalogo para conocer las opciones disponibles.",
         "linkText": "Ver el catalgo de geneticas",
-        "linkUrl": "/catalogo/geneticas"
+        "linkUrl": "/catalogo/geneticas_de_cannabis"
     },
     {
         "id": 3,
         "question": "¿El club ofrece asesoramiento sobre el uso de cannabis medicinal?",
         "answer": "Sí, ofrecemos asesoramiento personalizado sobre el uso de cannabis medicinal para tratar distintas condiciones. Puedes agendar una consulta con nuestros especialistas en cannabis medicinal a través de nuestro formulario en línea.",
         "linkText": "Agenda una consulta sobre cannabis medicinal",
-        "linkUrl": "https://api.whatsapp.com/send/?phone=541162574919&text=Hola%2C+te+escribo+desde+la+web%2C++&type=phone_number&app_absent=0"
+        "linkUrl": "https://api.whatsapp.com/send/?phone=541162574919&text=Hola%2C+te+escribo+desde+la+web+para+agendar+una+consulta+con+el+Dr.+Tomás+León.+&type=phone_number&app_absent=0"
     },
     {
         "id": 4,

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { faqData } from "@/app/Constants/userinfo";
+import Contactusform from "../Contact/Contactus";
 
 const PreguntasFrecuentes = () => {
   const [accordionOpen, setAccordionOpen] = useState({
@@ -27,7 +28,7 @@ const PreguntasFrecuentes = () => {
             {faqData.map((faq) => (
               <div key={faq.id} className="mb-4 border border-gray-200 rounded-xl">
                 <h2 id={`accordion-open-heading-${faq.id}`}>
-                  <button type="button" className="flex items-center justify-between w-full p-4 font-medium text-gray-600 bg-gray-50 rounded-t-xl focus:outline-none rounded-xl" onClick={() => toggleAccordion(faq.id)}
+                  <button type="button" className={`flex items-center justify-between w-full p-4 font-medium text-gray-600 bg-gray-50 ${accordionOpen[faq.id] ? "rounded-t-xl border-none" : "rounded-xl " }  focus:outline-none`} onClick={() => toggleAccordion(faq.id)}
                     aria-expanded={accordionOpen[faq.id]} aria-controls={`accordion-open-body-${faq.id}`}>
                     <span className="flex items-center">
                       <svg className={`w-5 h-5 mr-2 transition-transform ${accordionOpen[faq.id] ? "rotate-180 text-text-primary-active" : "" }`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -44,15 +45,13 @@ const PreguntasFrecuentes = () => {
                   <div className="p-4 ">
                     <p className="mb-2 text-gray-700">{faq.answer}</p>
                     {faq.linkText && (
-                      <p className="mb-2 text-gray-700">
-                        <Link href={faq.linkUrl} className="text-blue-600 hover:underline" target="_blank" title={faq.linkUrl?faq.linkText:''} >{faq.linkUrl?faq.linkText:''}</Link>
-                      </p>
+                        faq.id === 1?<Contactusform text={faq.linkText} estilo="text-blue-600 hover:underline"/>:<Link href={faq.linkUrl} className="text-blue-600 hover:underline" target="_blank" title={faq.linkUrl?faq.linkText:''} >{faq.linkUrl?faq.linkText:''}</Link>
                     )}
                     {faq.additionalInfo && (
                       <div className="">
                         <p className="mb-2 text-gray-700">{faq.additionalInfo[0].text}</p>
                         <ul className="pl-4 text-gray-700 list-disc">{faq.additionalInfo[0].links.map((link, index) => (
-                            <li key={index}><Link href={link.url} className="text-blue-600 hover:underline" title={link.text}>{link.text}</Link> </li>
+                          <li key={index}>{index===0?<Contactusform text={link.text} estilo="text-blue-600 hover:underline justify-center" classNameEstilo='justify-center'/>:<Link href={link.url} className="text-blue-600 hover:underline justify-center" title={link.text}>{link.text}</Link>}</li>
                           ))}
                         </ul>
                       </div>

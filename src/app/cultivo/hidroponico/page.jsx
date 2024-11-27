@@ -56,7 +56,7 @@ const Cultivo = () => {
           <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1731518061/Bl%C3%BCm-0597-b_aocvuy.webp" alt="Sistema de cultivo hidropónico" className="rounded-lg shadow-lg w-full max-w-md" />
         </article>
         <article className="mt-12 flex justify-center">
-          <Link href={'https://api.whatsapp.com/send?phone=5491123960360'} target="_blank" >
+          <Link href={'https://api.whatsapp.com/send/?phone=541162574919&text=Hola%2C+te+escribo+desde+la+web%2C++&type=phone_number&app_absent=0'} target="_blank" >
             <button className="bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-secondary transition">Contáctanos para más información</button>
           </Link>
         </article>

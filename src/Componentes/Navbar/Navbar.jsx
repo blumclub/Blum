@@ -73,7 +73,7 @@ export default function Navbar(contacto) {
                           </Link>
                         );
                       })}
-                      <Contactusform className="text-navbar-style font-bold" contacto={contacto} text={'CONOCENOS!'}/>
+                      <Contactusform classNameEstilo="text-navbar-style font-bold" contacto={contacto} text={'CONOCENOS!'} />
 
                     </div>
                   </div>
