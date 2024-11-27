@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FaArrowLeft } from "react-icons/fa";
 import React from 'react';
 
 const Cultivo = () => {
@@ -60,9 +61,11 @@ const Cultivo = () => {
             <button className="bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-secondary transition">Contáctanos para más información</button>
           </Link>
         </article>
-      <Link href={'/#cultivoHidroponico'}>
-            <button className="bg-primary text-white font-semibold py-3 px-6 w-full md:w-40 rounded-lg hover:bg-secondary transition mt-6">VOLVER</button>
-      </Link>
+        <Link href={'/#cultivoHidroponico'}>
+          <button className="bg-primary text-white font-semibold py-3 px-6 w-full md:w-40 rounded-lg hover:bg-secondary transition mt-6 flex items-center justify-center space-x-2">
+            <FaArrowLeft className="w-5 h-5" />
+          </button>
+        </Link>
       </div>
     </section>
   );
