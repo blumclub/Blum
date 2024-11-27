@@ -10,7 +10,7 @@ export default function Notfound() {
           <h1 className="text-6xl font-bold text-gray-200 mb-4">404</h1>
           <p className="text-xl text-gray-400 mb-8">Página no encontrada</p>
         </div>
-        <Link href="/">
+        <Link href="/" title='volver a pagina principal'>
           <p className="text-secondary hover:text-blue-700 text-xl">Volver a la página principal</p>
         </Link>
     </div>

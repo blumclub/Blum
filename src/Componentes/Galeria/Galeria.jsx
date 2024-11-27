@@ -63,6 +63,9 @@ export default function Gallery() {
                 small={src} 
                 large={src}
                 className={`h-auto max-w-full rounded-lg transition-transform duration-300 ease-in-out transform ${randomEffects[index]}`}
+                title={`Galeria de imagenes- Imagen N° ${index}`}
+                alt={`Galeria de imagenes- Imagen N° ${index}`}
+                aria-label={`Galeria de imagenes- Imagen N° ${index}`}
               />
             </div>
           ))}
@@ -78,6 +81,9 @@ export default function Gallery() {
                 small={src} 
                 large={src}
                 className={`h-auto max-w-full rounded-lg transition-transform duration-300 ease-in-out transform ${randomEffects[index]}`}
+                title={`Galeria de imagenes- Imagen N° ${index}`}
+                alt={`Galeria de imagenes- Imagen N° ${index}`}
+                aria-label={`Galeria de imagenes- Imagen N° ${index}`}
               />
             </div>
           ))}

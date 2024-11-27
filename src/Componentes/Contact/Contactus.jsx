@@ -302,7 +302,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                             <ul className="text-[40px] flex gap-4 text-gray-30">
                                                 {userinfo.socials.map((link, key) => (
                                                 <li key={key} className="transition-transform duration-200 ease-in-out transform hover:scale-110">
-                                                    <Link href={link.link} target="_blank" rel="noreferrer">
+                                                    <Link href={link.link} target="_blank" rel="noreferrer" title={link.link}>
                                                     {link.icon}
                                                     </Link>
                                                 </li>

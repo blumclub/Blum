@@ -13,12 +13,12 @@ const RedesSociales = ({ instagram = '', facebook = '', contact, linea = 0, emai
   return (
     <div className='flex flex-wrap items-center'>
       {facebook && facebook !== 'No tengo' && (
-        <Link href={facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <Link href={facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" title='Facebook'>
           <FaFacebookSquare className='m-3' style={{ color: '#4267B2' }} size={35} />
         </Link>
       )}
       {instagram && instagram !== 'No tengo' && (
-        <Link href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <Link href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" title='Instagram'>
           <FaInstagram size={32} className='m-3 rounded-xl p-1 mt-3.5'
             style={{
               background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)',
@@ -27,22 +27,22 @@ const RedesSociales = ({ instagram = '', facebook = '', contact, linea = 0, emai
         </Link>
       )}
       {contact !== 0 && (
-        <Link href={enviar} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <Link href={enviar} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title='WhatsApp'>
           <FaWhatsapp size={32} className='m-3 rounded-xl p-1 mt-3.5' style={{ background: '#25D366', color: 'white' }} />
         </Link>
       )}
       {linea !== 0 && (
-        <Link href={`tel:${linea}`} target="_blank" rel="noopener noreferrer" aria-label="Phone">
+        <Link href={`tel:${linea}`} target="_blank" rel="noopener noreferrer" aria-label="Phone" title='Phone'>
           <FaPhone size={32} className='m-3 rounded-xl p-1 mt-3.5' />
         </Link>
       )}
       {email && email !== 'No tengo' && (
-        <Link href={`mailto:${email}`} target="_blank" rel="noopener noreferrer" aria-label="Email">
+        <Link href={`mailto:${email}`} target="_blank" rel="noopener noreferrer" aria-label="Email" title='Email'>
           <FaEnvelope size={32} className='grid-cols-1 m-3 rounded-xl p-1 mt-3.5' style={{ background: '#007bff', color: 'white' }} />
         </Link>
       )}
       {web && web !== 'No tengo' && (
-        <Link href={web} target="_blank" rel="noopener noreferrer" aria-label="web">
+        <Link href={web} target="_blank" rel="noopener noreferrer" aria-label="web" title='web'>
           <TbWorldWww size={32} className='grid-cols-1 m-3 rounded-xl p-1 mt-3.5' style={{ background: '#007bff', color: 'white' }} />
         </Link>
       )}

@@ -41,15 +41,15 @@ const Reprocan = () => {
             {activeTab === 'Tramites' && (
               <div>
                 <h2 className="text-lg font-bold text-primary font-aileron uppercase mb-2">Tramites relacionados</h2><br/>
-                <Link href="https://www.argentina.gob.ar/salud/cannabis-medicinal/reprocann" className='pointer no-underline' target='_blank'>
+                <Link href="https://www.argentina.gob.ar/salud/cannabis-medicinal/reprocann" className='pointer no-underline' target='_blank' title='https://www.argentina.gob.ar/salud/cannabis-medicinal/reprocann'>
                   <p>Trámite REPROCANN</p>
                 </Link>
                 <br/>
-                <Link href="https://d2qp.short.gy/Instructivo_REPROCANN" className='pointer no-underline ' target='_blank'>
+                <Link href="https://d2qp.short.gy/Instructivo_REPROCANN" className='pointer no-underline ' target='_blank' title='https://d2qp.short.gy/Instructivo_REPROCANN'>
                   <p>Instructivo REPROCANN</p>
                 </Link>
                 <br/>
-                <Link href="https://www.argentina.gob.ar/salud/cannabis-medicinal/frecuentes#:~:text=El%20REPROCANN%20es%20una%20base,y%2Fo%20paliativo%20del%20dolor." className='pointer no-underline' target='_blank'>
+                <Link href="https://www.argentina.gob.ar/salud/cannabis-medicinal/frecuentes#:~:text=El%20REPROCANN%20es%20una%20base,y%2Fo%20paliativo%20del%20dolor." className='pointer no-underline' target='_blank' title='https://www.argentina.gob.ar/salud/cannabis-medicinal/frecuentes#:~:text=El%20REPROCANN%20es%20una%20base,y%2Fo%20paliativo%20del%20dolor.'>
                   <p>Preguntas frecuentes sobre el REPROCANN</p>
                 </Link>
               </div>

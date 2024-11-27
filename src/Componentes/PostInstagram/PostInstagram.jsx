@@ -62,7 +62,7 @@ const PostInstagram = () => {
   return (
     <section className="bg-secondary shadow-xl">
       <article className="p-6 rounded-lg max-w-7xl mx-auto py-12 ">
-        <Link target='_blank' href={posts[currentIndex].permalink}>
+        <Link target='_blank' href={posts[currentIndex].permalink} title={posts[currentIndex].permalink}>
           <div className="flex flex-col md:flex-row items-center transition-transform duration-500 ease-in-out">
             <div className="md:w-2/3 text-primary mb-6 md:mb-0 md:pr-6">
               <h2 className="text-3xl font-bold font-aileron text-primary mb-4">Última publicación de Instagram</h2>

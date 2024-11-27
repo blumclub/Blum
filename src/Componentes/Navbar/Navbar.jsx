@@ -43,7 +43,7 @@ export default function Navbar(contacto) {
               <div className="relative flex h-16 items-center justify-start md:justify-around">
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10 ">
-                    <Link href="/" className="z-20 py-2">
+                    <Link href="/" className="z-20 py-2" title="Ir a Home">
                       <img src="/Logo/LogoBlum160.webp" alt="Logo Blum Club" title="Logo Blum Club" className="" aria-label="Logo Blum Club" width={80} height={80} />
                     </Link>
                   </div>
@@ -56,6 +56,7 @@ export default function Navbar(contacto) {
                           <Link 
                             key={item.name} 
                             href={href} 
+                            title={item.name} 
                             className={classNames(
                               activeLink === item.href 
                               ? "relative inline-block group text-lg font-semibold hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110 "

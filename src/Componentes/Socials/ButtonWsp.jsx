@@ -19,7 +19,7 @@ const ButtonWsp = ({ text , contact }) => {
 
   return (
     <article className="buttonWspPosition">
-      <Link href={enviar} passHref target="_blank">
+      <Link href={enviar} passHref target="_blank" title={enviar}>
         <button
           rel="noopener noreferrer"
           className='buttonWspDesign'

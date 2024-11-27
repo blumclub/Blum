@@ -14,12 +14,12 @@ function Hidroponico() {
         </Fade>
         <article className="flex flex-col w-full px-8 xl:flex-row mb-8">
           <p className="text-xl">Utilizamos el avanzado método de cultivo hidropónico, asegurando un entorno óptimo para el crecimiento de plantas de alta calidad.</p>
-          <Link href="/cultivo/hidroponico">
+          <Link href="/cultivo/hidroponico" title='Link a cultivo hidropónico'>
             <button className="mt-4 xl:mt-0 xl:ml-4 w-20 text-sm border px-2 py-1 rounded-md hover:translate-y-[1px] hover:bg-secondary hover:text-primary hover:font-semibold hover:border-secondary">Ver más</button>
           </Link>
         </article>
         <article className="max-w-7xl mx-auto mt-8 md:p-8">
-          <Gallery items={imagesHidroponico} showFullscreenButton={false} showPlayButton={false} slideDuration={450} />
+          <Gallery items={imagesHidroponico} showFullscreenButton={false} showPlayButton={false} slideDuration={450}/>
         </article>
       </div>
     </section>
