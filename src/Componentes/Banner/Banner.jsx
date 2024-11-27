@@ -7,17 +7,17 @@ const Banner = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const slides = [
-    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/4_yhe8pc.jpg",
-    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/3_hl4a2i.jpg",
-    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643288/2_kpxnaj.jpg",
-    "/BG/perro.webp"
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715062/2_oic71f.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715061/3_ixuysv.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715062/1_o6fuec.webp",
   ];
 
   const SlidesMovil = [
-    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/2m_jsr3gb.jpg",
-    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/4m_mo1so8.jpg",
-    // "https://res.cloudinary.com/deueso3sr/image/upload/v1725643232/3m_emq9fj.jpg",
-    "/BG/perro.webp"
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715039/1_bcph3c.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715038/5_abow0c.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715038/2_s2g3wl.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715038/4_czpmd6.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715038/3_nhvmyy.webp",
   ];
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Banner = () => {
   const currentSlides = isMobile ? SlidesMovil : slides;
 
   return (
-    <section id='inicio' className="bg-black">
+    <section id='inicio' className="bg-black mt-24">
       <div className="relative w-full">
         <div className="relative min-h-screen overflow-hidden rounded-lg md:h-96">
           {currentSlides.map((slide, index) => (

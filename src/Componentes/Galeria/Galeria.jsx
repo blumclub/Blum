@@ -20,15 +20,15 @@ export default function Gallery() {
   const [randomEffects, setRandomEffects] = useState([]);
 
   const images = [
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/2_ouoygy.webp",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/7_relwn9.webp",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/8_t79umg.webp",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726162508/10_gjh3q6.webp",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/5_vaxghv.webp",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/6_oo4nib.webp",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/3_ki9gn1.webp",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/7_relwn9.webp",
-    "https://res.cloudinary.com/deueso3sr/image/upload/v1726160665/8_t79umg.webp"
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715003/9_gyyvhl.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732716547/10_k2pvni.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715003/3_lycxg1.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715003/5_kkzkh9.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715004/1_uv6aho.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715002/6_n7cwpt.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715004/2_tyekvi.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715002/8_x6pd3w.webp",
+    "https://res.cloudinary.com/deueso3sr/image/upload/v1732715003/4_uceo2t.webp"
   ];
   
   const showImages = images.length % 2 === 1 ? images.slice(0, images.length - 1) : images;

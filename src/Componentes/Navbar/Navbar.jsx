@@ -59,14 +59,14 @@ export default function Navbar(contacto) {
                             className={classNames(
                               activeLink === item.href 
                               ? "relative inline-block group text-lg font-semibold hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110 "
-                              : "relative inline-block group text-text-link font-bold hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110"
+                              : "relative inline-block group text-text-link font-bold hover:text-tertiary text-gray-200 transform transition-transform duration-200 hover:scale-110 md:text-sm lg:text-lg"
                             )} 
                             aria-current={activeLink === item.href ? "page" : undefined} 
                             onClick={() => handleLinkClick(item.href)} 
                             aria-label={item.name}
                           >
                             <span className={classNames(
-                              "absolute bottom-[-1px] h-[1.5px] bg-secondary transition-transform duration-300 ease-out", 
+                              "absolute bottom-[-1px] h-[1.5px] bg-secondary transition-transform duration-300 ease-out ", 
                               activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
                             )}></span>
                             {item.name.toLocaleUpperCase()}
