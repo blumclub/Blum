@@ -6,41 +6,55 @@ export const catalogo = [
       "productos": [
         {
           "id": 1,
-          "nombre": "Aceite de cannabis 10%",
-          "descripcion": "Aceite con una concentración de 10% de CBD.",
-          "cbd": "10",
-          "THC":"0",
-          "sativa": "70",
-          "indica": "30",
+          "nombre": "Aceite de cannabis CBD",
+          "descripcion": "Aceite con una concentración de CBD.",
+          "cbd": "",
+          "THC":"",
+          "sativa": "",
+          "indica": "",
           "recomendadoPara": ["Dolor", "Inflamación", "Artritis"],
           "efectos": ["Eufórico", "Motivado", "Relajado"],
-          "perfilTerpenos": {
-            "especiado": "Cariofileno",
-            "terroso": "Humuleno",
-            "floral1": "Ocimeno",
-            "floral2": "Terpinoleno"
-          },
           "sabor": ["Cítrico", "Terroso", "Herbario", "Pimienta"],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp"
         },
         {
           "id": 2,
-          "nombre": "Aceite de cannabis 20%",
-          "descripcion": "Aceite con una concentración de 20% de CBD.",
-          "cbd": "20",
-          "THC":"0",
-          "sativa": "60",
-          "indica": "40",
+          "nombre": "Aceite de cannabis CBD PLUS",
+          "descripcion": "Aceite con una concentración del 50% mas de CBD.",
+          "cbd": "",
+          "THC":"",
+          "sativa": "",
+          "indica": "",
           "recomendadoPara": ["Dolor", "Estrés"],
           "efectos": ["Relajado", "Calmado"],
-          "perfilTerpenos": {
-            "especiado": "Cariofileno",
-            "terroso": "Humuleno",
-            "floral1": "Ocimeno",
-            "floral2": "Terpinoleno"
-          },
           "sabor": ["Frutal", "Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp" // Agrega la URL de la imagen aquí
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp" 
+        },
+        {
+          "id": 3,
+          "nombre": "Aceite de cannabis THC",
+          "descripcion": "Aceite con una concentración de THC",
+          "cbd": "",
+          "THC":"",
+          "sativa": "",
+          "indica": "",
+          "recomendadoPara": ["Dolor", "Estrés"],
+          "efectos": ["Relajado", "Calmado"],
+          "sabor": ["Frutal", "Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp" 
+        },
+        {
+          "id": 4,
+          "nombre": "Aceite de cannabis THC PLUS",
+          "descripcion": "Aceite con una concentración del 50% mas THC ",
+          "cbd": "",
+          "THC":"",
+          "sativa": "",
+          "indica": "",
+          "recomendadoPara": ["Dolor", "Estrés"],
+          "efectos": ["Relajado", "Calmado"],
+          "sabor": ["Frutal", "Terroso"],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp" 
         }
       ]
     },
@@ -50,7 +64,7 @@ export const catalogo = [
       "parrafo":'Las genéticas de flores de cannabis varían en función de su origen y sus características genéticas, lo que influye en la potencia, el sabor y los efectos terapéuticos. Estas genéticas se dividen en tres tipos principales: Indica, Sativa y híbridas, cada una con sus propias propiedades únicas. Las variedades Indica tienden a tener efectos relajantes y calmantes, ideales para la relajación muscular y el alivio del estrés, mientras que las Sativa son conocidas por su capacidad para aumentar la energía y la creatividad. Los híbridos combinan lo mejor de ambos mundos, ofreciendo una experiencia equilibrada. Además, cada genética puede ser rica en diferentes compuestos como el THC, el CBD o terpenos específicos, lo que determina su aplicación en tratamientos médicos o recreativos.',
       "productos": [
         {
-          "id": 3,
+          "id": 5,
           "nombre": "AMG - Amnesia Mac Ganja",
           "descripcion": "Genética galardonada descendiente de Amnesia y Mexican Haze",
           "cbd": "0.3",
@@ -63,7 +77,7 @@ export const catalogo = [
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1730295192/amg-amnesia-mac-ganja_stnglb.webp"
         },
         {
-          "id": 4,
+          "id": 6,
           "nombre": "CRITICAL de Royal queen seeds",
           "descripcion": "Descendiente de la Afghani x Skunk",
           "cbd": "0.3",
@@ -76,8 +90,8 @@ export const catalogo = [
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1730295192/critical_upfgys.webp"
         },
         {
-          "id": 5,
-          "nombre": "DOSIDOS automatica",
+          "id": 7,
+          "nombre": "DOSIDOS",
           "descripcion": "Descendiente de Girl Scout Cookies x OG Kush ",
           "cbd": "0.5",
           "THC":"19",
@@ -89,7 +103,7 @@ export const catalogo = [
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/v1730295192/do-si-dos-automatic_mykrbz.webp"
         },
         {
-          "id": 6,
+          "id": 8,
           "nombre": "PINAPLE dream",
           "descripcion": "Descendiente de somango x pineapple ",
           "cbd": "0.5",
@@ -109,31 +123,18 @@ export const catalogo = [
       "parrafo":'Los ungüentos de cannabis son productos tópicos formulados con extractos de la planta, diseñados para aplicar directamente sobre la piel. Estos ungüentos aprovechan los compuestos activos del cannabis, como el CBD y el THC, para ofrecer alivio localizado en casos de dolor muscular, inflamación o irritaciones cutáneas. A diferencia de otros métodos de consumo de cannabis, los ungüentos no son psicoactivos, lo que permite disfrutar de los beneficios terapéuticos sin los efectos mentales típicos del cannabis. Son especialmente útiles para el tratamiento de afecciones como la artritis, eczema, y dolor crónico, proporcionando una forma natural y efectiva de aliviar síntomas sin recurrir a productos farmacéuticos.',
       "productos": [
         {
-          "id": 5,
+          "id": 9,
           "nombre": "Ungüento con CBD",
           "descripcion": "Ungüento para uso tópico con CBD para aliviar el dolor.",
-          "cbd": "5",
-          "THC":"0",
-          "sativa": "0",
-          "indica": "0",
-          "recomendadoPara": ["Dolor", "Inflamación"],
+          "cbd": "",
+          "THC":"",
+          "sativa": "",
+          "indica": "",
+          "recomendadoPara": ["Dolor", "Inflamación","Contracturas"],
           "efectos": ["Calmante"],
-          "sabor": ["Terroso"],
+          "sabor": [],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715039/1_bcph3c.webp" 
         },
-        {
-          "id": 6,
-          "nombre": "Ungüento con árnica y cannabis",
-          "descripcion": "Ungüento con árnica y extracto de cannabis.",
-          "cbd": "7",
-          "THC":"0",
-          "sativa": "0",
-          "indica": "0",
-          "recomendadoPara": ["Dolor", "Inflamación"],
-          "efectos": ["Calmante", "Relajante"],
-          "sabor": ["Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715039/1_bcph3c.webp" 
-        }
       ]
     }
   ];

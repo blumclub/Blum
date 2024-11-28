@@ -54,9 +54,9 @@ export default function Card({ producto }) {
                                 <p className="text-gray-600 mt-2 leading-relaxed text-md items-center text-center">{producto.descripcion}</p>
                             </div>
                             <div className="relative grid gap-1 grid-cols-2 p-1">
-                                <ListaConTitulo titulo="Recomendado" items={producto.recomendadoPara} />
-                                <ListaConTitulo titulo="Efectos" items={producto.efectos} />
-                                <ListaConTitulo titulo="Sabor" items={producto.sabor} />
+                                {producto.recomendadoPara.length?<ListaConTitulo titulo="Recomendado" items={producto.recomendadoPara} /> : null}
+                                {producto.efectos.length?<ListaConTitulo titulo="Efectos" items={producto.efectos} /> : null}
+                                {producto.sabor.length?<ListaConTitulo titulo="Sabor" items={producto.sabor} /> : null}
                             </div>
                         </div>
                     </div>

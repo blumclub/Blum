@@ -1,21 +1,17 @@
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
-export default function PorcentajeAnimado({ producto, estilo }) {
-  // Estado para almacenar los porcentajes animados
+export default function PorcentajeAnimado({ producto = {}, estilo = '' }) {
   const [cbd, setCbd] = useState(0);
   const [sativa, setSativa] = useState(0);
   const [indica, setIndica] = useState(0);
-  const [thc, setthc] = useState(0);
+  const [thc, setThc] = useState(0);
 
   useEffect(() => {
-    // Iniciar las animaciones cuando el componente monte
-    const duration = 8000; // Duración de la animación en milisegundos
-
-    // Función para animar cada propiedad
+    const duration = 3000; // Shortened animation duration
     const animateValue = (setValue, toValue) => {
       let startValue = 0;
-      const increment = toValue / (duration / 100); // Incremento por cada intervalo
+      const increment = toValue / (duration / 16); // Approx. 60 FPS
 
       const animate = () => {
         if (startValue < toValue) {
@@ -28,45 +24,38 @@ export default function PorcentajeAnimado({ producto, estilo }) {
       animate();
     };
 
-    // Llamar a la función de animación para cada propiedad
-    animateValue(setCbd, producto.cbd);
-    animateValue(setthc, producto.THC);
-    animateValue(setSativa, producto.sativa);
-    animateValue(setIndica, producto.indica);
+    if (producto) {
+      animateValue(setCbd, producto.cbd || 0);
+      animateValue(setThc, producto.THC || 0);
+      animateValue(setSativa, producto.sativa || 0);
+      animateValue(setIndica, producto.indica || 0);
+    }
   }, [producto]);
 
-  return (
-      <div className={`rounded-xl ${estilo}`}>
-        <div className="absolute inset-0 bg-black opacity-70 rounded-xl" />
-          <div className="p-2 mb-2 flex flex-col md:flex-row relative z-10">
-            <div className="flex justify-around w-full">
-            <div className="flex flex-col items-center space-y-2">
-                <motion.p className="text-xs font-bold text-yellow-500 transition duration-400 ease-in-out transform hover:scale-110 uppercase">
-                  THC: {Math.round(thc)}%
-                </motion.p>
-                <div className="h-1 w-14 md:w-20 md:text-sm bg-yellow-500 rounded-full" />
-              </div>
-              <div className="flex flex-col items-center space-y-2">
-                <motion.p className="text-xs font-bold text-green transition duration-400 ease-in-out transform hover:scale-110 uppercase">
-                  CBD: {cbd.toPrecision(2)}%
-                </motion.p>
-                <div className="h-1 w-14 md:w-20 md:text-sm bg-green rounded-full" />
-              </div>
-              <div className="flex flex-col items-center space-y-2">
-                <motion.p className="text-xs font-bold text-blue-400 transition duration-400 ease-in-out transform hover:scale-110 uppercase">
-                 Sativa: {Math.round(sativa)}% 
-                </motion.p>
-                <div className="h-1 w-14 md:w-20 md:text-sm bg-blue-400 rounded-full" />
-              </div>
-              <div className="flex flex-col items-center space-y-2">
-                <motion.p className="text-xs font-bold text-pink-500 transition duration-400 ease-in-out transform hover:scale-110 uppercase">
-                  Indica: {Math.round(indica)}%
-                </motion.p>
-                <div className="h-1 w-14 md:w-20 md:text-sm bg-pink-500 rounded-full" />
-              </div>
-            </div>
-          </div>
-      </div>
+  if (!producto.cbd && !producto.THC && !producto.sativa && !producto.indica) return null;
 
+  return (
+    <div className={`rounded-xl ${estilo}`}>
+      <div className="absolute inset-0 bg-black opacity-70 rounded-xl" />
+      <div className="p-2 mb-2 flex flex-col md:flex-row relative z-10">
+        <div className="flex justify-around w-full">
+          {[
+            { label: 'THC', value: thc, color: 'yellow-500' },
+            { label: 'CBD', value: cbd.toFixed(2), color: 'green' },
+            { label: 'Sativa', value: sativa, color: 'blue-400' },
+            { label: 'Indica', value: indica, color: 'pink-500' },
+          ].map(({ label, value, color }) => (
+            <div key={label} className="flex flex-col items-center space-y-2">
+              <motion.p
+                className={`text-xs font-bold text-${color} transition duration-400 ease-in-out transform hover:scale-110 uppercase`}
+              >
+                {label}: {Math.round(value)}%
+              </motion.p>
+              <div className={`h-1 w-14 md:w-20 bg-${color} rounded-full`} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
