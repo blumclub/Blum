@@ -49,6 +49,12 @@ module.exports = {
         'offblack': '#333333',
         'red': '#FF605C',
       },
+      safelist: [
+        'text-yellow-500',
+        'text-green-500',
+        'text-blue-500',
+        'text-pink-500',
+      ],
       fontFamily: {
         'inter': ['Inter', "sans-serif"],
         'oxanium': ['Oxanium', 'sans-serif'],

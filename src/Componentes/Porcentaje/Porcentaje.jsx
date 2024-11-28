@@ -40,18 +40,16 @@ export default function PorcentajeAnimado({ producto = {}, estilo = '' }) {
       <div className="p-2 mb-2 flex flex-col md:flex-row relative z-10">
         <div className="flex justify-around w-full">
           {[
-            { label: 'THC', value: thc, color: 'yellow-500' },
-            { label: 'CBD', value: cbd.toFixed(2), color: 'green' },
-            { label: 'Sativa', value: sativa, color: 'blue-400' },
-            { label: 'Indica', value: indica, color: 'pink-500' },
-          ].map(({ label, value, color }) => (
+            { label: 'THC', value: thc, color: 'text-yellow-500', backg:'bg-yellow-500' },
+            { label: 'CBD', value: cbd.toFixed(2), color: 'text-green', backg:'bg-green' },
+            { label: 'Sativa', value: sativa, color: 'text-blue-500', backg:'bg-blue-500' },
+            { label: 'Indica', value: indica, color: 'text-pink-500', backg:'bg-pink-500' },
+          ].map(({ label, value, color, backg }) => (
             <div key={label} className="flex flex-col items-center space-y-2">
-              <motion.p
-                className={`text-xs font-bold text-${color} transition duration-400 ease-in-out transform hover:scale-110 uppercase`}
-              >
+              <motion.p className={`text-xs font-bold ${color} transition duration-400 ease-in-out transform hover:scale-110 uppercase`} >
                 {label}: {Math.round(value)}%
               </motion.p>
-              <div className={`h-1 w-14 md:w-20 bg-${color} rounded-full`} />
+              <div className={`h-1 w-14 md:w-20 ${backg} rounded-full`} />
             </div>
           ))}
         </div>
