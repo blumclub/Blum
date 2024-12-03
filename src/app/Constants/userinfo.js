@@ -67,24 +67,24 @@ export const steps = [
 
 export const imagesHidroponico = [
   {
-    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/4_vkg8mv.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/4_vkg8mv.webp"
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/5_buredi.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/5_buredi.webp"
   },
   {
-    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/6_oo4nib.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/6_oo4nib.webp"
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/3_hkmv0k.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/3_hkmv0k.webp"
   },
   {
-    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/5_vaxghv.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/5_vaxghv.webp"
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/4_rkrkgh.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/4_rkrkgh.webp"
   },
   {
-    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/3_ki9gn1.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/3_ki9gn1.webp"
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/v1733230834/1_ogfa09.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/v1733230834/1_ogfa09.webp"
   },
   {
-    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/9_oozgob.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1726160665/9_oozgob.webp"
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/v1733230834/2_svipoh.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/v1733230834/2_svipoh.webp"
   }
 ];
 

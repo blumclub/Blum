@@ -5,7 +5,6 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { steps } from "@/app/Constants/userinfo";
 import { Fade } from "react-awesome-reveal";
-import Link from "next/link";
 import Contactusform from "../Contact/Contactus";
 
 
@@ -21,7 +20,7 @@ export default function Consultorio() {
           <h2 className="text-3xl lg:text-5xl font-aileron text-primary uppercase mt-16 mb-4">Consultorio Medico</h2>
         </Fade>
         <div className="flex flex-col items-center md:flex-row max-w-7xl mx-auto rounded-md p-4">
-          <img src="https://res.cloudinary.com/deueso3sr/image/upload/v1726241033/10_1_ewahjz.webp" alt="Medico Tomás León" title="Medico Tomás León"  aria-label="Medico Tomás León" className=" rounded-xl w-72 h-48 sm:w-96 lg:w-72 md:h-72 lg:h-80 object-cover mb-8 shadow-yellow-400 shadow-xl" />
+          <img src="https://res.cloudinary.com/deueso3sr/image/upload/t_cuadrado/v1733235356/Bl%C3%BCm-0690_glxd3w.webp" alt="Medico Tomás León" title="Medico Tomás León"  aria-label="Medico Tomás León" className=" rounded-xl w-72 h-48 sm:w-96  md:h-72 lg:h-80 lg:w-72 object-cover mb-8 shadow-yellow-400 shadow-xl" />
           <div className="px-4 mx-6">
             <p className="text-start text-lg lg:text-xl xl:text-2xl xl:pl-8 text-primary font-aileron font-semibold mb-4 lg:mb-10 xl:mb-16">
               En nuestro compromiso continuo de ofrecer soluciones integrales y
