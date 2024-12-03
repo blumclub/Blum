@@ -1,6 +1,6 @@
 import React from 'react';
 import Script from 'next/script';
-import { Analytics } from '@vercel/analytics/react';
+//import { Analytics } from '@vercel/analytics/react';
 import ClientLayout from './clientLayout';
 import './globals.css';
 
@@ -89,7 +89,7 @@ export default function RootLayout({ children }) {
         <ClientLayout>
           {children}
         </ClientLayout>
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );
