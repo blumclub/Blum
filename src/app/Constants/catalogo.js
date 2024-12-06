@@ -7,54 +7,54 @@ export const catalogo = [
         {
           "id": 1,
           "nombre": "Aceite de cannabis CBD",
-          "descripcion": "Aceite con una concentración de CBD.",
+          "descripcion": "Recomendado para trastornos de ansiedad, epilepsia, y dolor leve a moderado sin efectos psicoactivos. Ideal para quienes buscan un efecto terapéutico suave y seguro.",
           "cbd": "",
           "THC":"",
           "sativa": "",
           "indica": "",
-          "recomendadoPara": ["Dolor", "Inflamación", "Artritis"],
-          "efectos": ["Eufórico", "Motivado", "Relajado"],
-          "sabor": ["Cítrico", "Terroso", "Herbario", "Pimienta"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp"
+          "recomendadoPara": ["Ansiedad", "Epilepsia", "Dolor leve"],
+          "efectos": ["sin efectos psicoactivos"],
+          "sabor": [],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_CBD_xograz.webp"
         },
         {
           "id": 2,
           "nombre": "Aceite de cannabis CBD PLUS",
-          "descripcion": "Aceite con una concentración del 50% mas de CBD.",
+          "descripcion": "Dirigido a pacientes con necesidades específicas en epilepsia refractaria, enfermedades neurodegenerativas, y condiciones inflamatorias crónicas. Mayor potencia para cuadros clínicos más complejos.",
           "cbd": "",
           "THC":"",
           "sativa": "",
           "indica": "",
-          "recomendadoPara": ["Dolor", "Estrés"],
-          "efectos": ["Relajado", "Calmado"],
-          "sabor": ["Frutal", "Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp" 
+          "recomendadoPara": ["Epilepsia Eefractaria", "Enfermedades Neurodegenerativas"],
+          "efectos": [],
+          "sabor": [],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_CBD_raeltg.webp" 
         },
         {
           "id": 3,
           "nombre": "Aceite de cannabis THC",
-          "descripcion": "Aceite con una concentración de THC",
+          "descripcion": " Ideal para el manejo de ansiedad, dolor crónico, náuseas, vómitos asociados a quimioterapia, y estimulación del apetito. Muy útil también en casos de insomnio. Uso recomendado para quienes inician tratamiento con cannabis medicinal.",
           "cbd": "",
           "THC":"",
           "sativa": "",
           "indica": "",
-          "recomendadoPara": ["Dolor", "Estrés"],
+          "recomendadoPara": ["Dolor crónico", "Náuseas","Ansiedad","insomnio"],
           "efectos": ["Relajado", "Calmado"],
-          "sabor": ["Frutal", "Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp" 
+          "sabor": [],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_THC_d8yhta.webp" 
         },
         {
           "id": 4,
           "nombre": "Aceite de cannabis THC PLUS",
-          "descripcion": "Aceite con una concentración del 50% mas THC ",
+          "descripcion": "Indicado para pacientes con tolerancia desarrollada al THC. Eficaz en dolores severos, espasticidad muscular, y control de síntomas en enfermedades avanzadas como el cáncer o la esclerosis múltiple.",
           "cbd": "",
           "THC":"",
           "sativa": "",
           "indica": "",
-          "recomendadoPara": ["Dolor", "Estrés"],
+          "recomendadoPara": ["Dolor Severo", "Espasticidad Muscular","Esclerosis Múltiple"],
           "efectos": ["Relajado", "Calmado"],
-          "sabor": ["Frutal", "Terroso"],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715038/2_s2g3wl.webp" 
+          "sabor": [],
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_THC_whamtm.webp" 
         }
       ]
     },
