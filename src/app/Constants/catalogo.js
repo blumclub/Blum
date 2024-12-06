@@ -13,7 +13,7 @@ export const catalogo = [
           "sativa": "",
           "indica": "",
           "recomendadoPara": ["Ansiedad", "Epilepsia", "Dolor leve"],
-          "efectos": ["sin efectos psicoactivos"],
+          "efectos": ["Analgésico"],
           "sabor": [],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_CBD_xograz.webp"
         },
@@ -26,7 +26,7 @@ export const catalogo = [
           "sativa": "",
           "indica": "",
           "recomendadoPara": ["Epilepsia Eefractaria", "Enfermedades Neurodegenerativas"],
-          "efectos": [],
+          "efectos": ['Analgésico'],
           "sabor": [],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_CBD_raeltg.webp" 
         },
@@ -39,7 +39,7 @@ export const catalogo = [
           "sativa": "",
           "indica": "",
           "recomendadoPara": ["Dolor crónico", "Náuseas","Ansiedad","insomnio"],
-          "efectos": ["Relajado", "Calmado"],
+          "efectos": ["Sedativo"],
           "sabor": [],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_THC_d8yhta.webp" 
         },
@@ -52,7 +52,7 @@ export const catalogo = [
           "sativa": "",
           "indica": "",
           "recomendadoPara": ["Dolor Severo", "Espasticidad Muscular","Esclerosis Múltiple"],
-          "efectos": ["Relajado", "Calmado"],
+          "efectos": ["Sedativo"],
           "sabor": [],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_THC_whamtm.webp" 
         }
@@ -131,7 +131,7 @@ export const catalogo = [
           "sativa": "",
           "indica": "",
           "recomendadoPara": ["Dolor", "Inflamación","Contracturas"],
-          "efectos": ["Calmante"],
+          "efectos": ["Calmante","Descontracturante"],
           "sabor": [],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715039/1_bcph3c.webp" 
         },
