@@ -61,7 +61,7 @@ export const catalogo = [
     {
       "nombre": "geneticas_de_cannabis",
       "titulo":"Genéticas de Flores de Cannabis: Variedades, Características y Potencial Terapéutico",
-      "parrafo":'Las genéticas de flores de cannabis varían en función de su origen y sus características genéticas, lo que influye en la potencia, el sabor y los efectos terapéuticos. Estas genéticas se dividen en tres tipos principales: Indica, Sativa y híbridas, cada una con sus propias propiedades únicas. Las variedades Indica tienden a tener efectos relajantes y calmantes, ideales para la relajación muscular y el alivio del estrés, mientras que las Sativa son conocidas por su capacidad para aumentar la energía y la creatividad. Los híbridos combinan lo mejor de ambos mundos, ofreciendo una experiencia equilibrada. Además, cada genética puede ser rica en diferentes compuestos como el THC, el CBD o terpenos específicos, lo que determina su aplicación en tratamientos médicos o recreativos.',
+      "parrafo":'Las genéticas de flores de cannabis varían en función de su origen y sus características genéticas, lo que influye en la potencia, el sabor y los efectos terapéuticos. Estas genéticas se dividen en tres tipos principales: Indica, Sativa e híbridas, cada una con sus propias propiedades únicas. Las variedades Indica tienden a tener efectos relajantes y calmantes, ideales para la relajación muscular y el alivio del estrés, mientras que las Sativa son conocidas por su capacidad para aumentar la energía y la creatividad. Los híbridos combinan lo mejor de ambos mundos, ofreciendo una experiencia equilibrada. Además, cada genética puede ser rica en diferentes compuestos como el THC, el CBD o terpenos específicos, lo que determina su aplicación en tratamientos médicos o recreativos.',
       "productos": [
         {
           "id": 5,
@@ -133,7 +133,7 @@ export const catalogo = [
           "recomendadoPara": ["Dolor", "Inflamación","Contracturas"],
           "efectos": ["Calmante","Descontracturante"],
           "sabor": [],
-          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715039/1_bcph3c.webp" 
+          "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733752104/Unguento_cannabis_csiqw9.webp" 
         },
       ]
     }

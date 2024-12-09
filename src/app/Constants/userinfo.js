@@ -92,7 +92,7 @@ export const catalogo = [
     {
       nombre: 'Ungüentos de CANNABIS',
       // img:'https://res.cloudinary.com/deueso3sr/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1725643288/2_kpxnaj.jpg',
-      img:'https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1732715039/1_bcph3c.webp',
+      img:'https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733752104/Unguento_cannabis_csiqw9.webp',
       descripcion: 'Productos tópicos hechos a base de cannabis, ideales para aliviar dolores musculares, articulares y problemas en la piel.',
       href: 'unguentos_de_cannabis',
       btn: 'Ver mas'
