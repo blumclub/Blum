@@ -283,7 +283,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                         aria-label="Seleccionar lugar preferido"
                                                         >
                                                             <option value="Bernal">Bernal</option>
-                                                            <option value="CABA" disabled>CABA.{'(proximamente)'}</option>
+                                                            <option value="CABA" >CABA.</option>
                                                         </select>
                                                         <div className="absolute right-3 top-2 h-5 w-5 text-primary text-xl pointer-events-none">
                                                             <MdArrowDropDown />

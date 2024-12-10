@@ -25,7 +25,7 @@ export const catalogo = [
           "THC":"",
           "sativa": "",
           "indica": "",
-          "recomendadoPara": ["Epilepsia Eefractaria", "Enfermedades Neurodegenerativas"],
+          "recomendadoPara": ["Epilepsia Refractaria", "Enfermedades Neurodegenerativas"],
           "efectos": ['Analgésico'],
           "sabor": [],
           "imagen": "https://res.cloudinary.com/deueso3sr/image/upload/t_4-3 Horizontal/v1733489310/aceite_CBD_raeltg.webp" 
