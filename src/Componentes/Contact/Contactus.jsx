@@ -78,9 +78,9 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                     ...data,
                     motivo: selectedOption,
                 });
-                console.log('hola data:',data);                
+                //console.log('hola data:',data);                
                 Swal.close();
-                console.log('public');
+                //console.log('public');
                 
                 if (response.status === 200) {
                     const whatsappMessage = formatMessage(data);
@@ -283,7 +283,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                         aria-label="Seleccionar lugar preferido"
                                                         >
                                                             <option value="Bernal">Bernal</option>
-                                                            <option value="CABA" >CABA.</option>
+                                                            <option value="CABA" >CABA</option>
                                                         </select>
                                                         <div className="absolute right-3 top-2 h-5 w-5 text-primary text-xl pointer-events-none">
                                                             <MdArrowDropDown />
