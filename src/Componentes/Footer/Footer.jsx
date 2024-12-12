@@ -25,7 +25,7 @@ const Footer = () => {
             </article>
             <small className="px-4 text-primary text-center py-6">ASOCIACION CIVIL para el Estudio y la Investigación del Uso Medicinal de la Planta de Cannabis, sus Derivados y Tratamientos No Convencionales</small>
             <article>
-                <Link href='https://programundo.dev' title="https://programundo.dev">
+                <Link href='https://gonzalotorresgrau.com' title="https://gonzalotorresgrau.com">
                     <small className="text-sm text-primary sm:text-center">© 2024 - MATIGON. All Rights Reserved.</small>
                 </Link>
             </article>

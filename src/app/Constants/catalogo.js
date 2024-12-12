@@ -104,7 +104,7 @@ export const catalogo = [
         },
         {
           "id": 8,
-          "nombre": "PINAPLE dream",
+          "nombre": "PINEAPPLE dream",
           "descripcion": "Descendiente de somango x pineapple ",
           "cbd": "0.5",
           "THC":"19",
