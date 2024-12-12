@@ -120,7 +120,7 @@ export const catalogo = [
     {
         "id": 1,
         "question": "¿Cómo puedo hacerme socio del club de cannabis Blum?",
-        "answer": "Para hacerte socio, completa el formulario en contacto. Te pediremos algunos datos y, una vez verificada la información, podrás acceder a los beneficios exclusivos del club.",
+        "answer": "Para hacerte socio, completa el formulario en contacto. Te pediremos algunos datos y, una vez verificada la información, podrás acceder al club.",
         "linkText": "Únete al club de cannabis",
         "linkUrl": ""
     },
@@ -141,7 +141,7 @@ export const catalogo = [
     {
         "id": 4,
         "question": "¿Cuáles son los beneficios de ser socio del club?",
-        "answer": "Al ser socio, accedes a descuentos exclusivos, productos de alta calidad, eventos privados y asesoramiento personalizado. Además, estarás apoyando el acceso seguro y regulado al cannabis.",
+        "answer": "Al ser socio, accedes productos de alta calidad, eventos privados y asesoramiento personalizado. Además, estarás apoyando el acceso seguro y regulado al cannabis.",
         "linkText": "Conoce todos los beneficios de ser socio",
         "linkUrl": ""
     }
