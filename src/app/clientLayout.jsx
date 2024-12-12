@@ -7,6 +7,7 @@ import ButtonWsp from '../Componentes/Socials/ButtonWsp';
 import Navbar from '../Componentes/Navbar/Navbar';
 import Footer from '../Componentes/Footer/Footer';
 import BtnInstagram from '../Componentes/Instagram/Instagram';
+import { userinfo } from './Constants/userinfo';
 
 export default function ClientLayout({ children }) {
   const path = usePathname() || "";
@@ -26,7 +27,7 @@ export default function ClientLayout({ children }) {
       {!hideLayout && (
         <footer>
           <Footer /> 
-          <ButtonWsp contact={'1162574919'} text={'Hola'}/>
+          <ButtonWsp contact={userinfo.contact.phone} text={'Hola, te escribo desde la web'}/>
           <BtnInstagram />
         </footer>
       )}
