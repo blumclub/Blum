@@ -4,8 +4,8 @@ import {FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 export const userinfo = {
     logoText: "BLUM",
     contact: {
-        email: 'blumong.ok@gmail.com', 
-        phone: '1123960360', 
+        email: 'gonza_rionegro@hotmail.com', 
+        phone: '1162574919', 
         countrycode: '+54' 
     },
     socials: [

@@ -52,18 +52,20 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
     };
 
     const formatMessage = (data) => {
-        return (
-            `${data.Nombre ? `*Hola soy  ${data.Nombre} y estos son mis datos:*\n`: ''}`+
-            `${data.Email ? `*Email:* ${data.Email}\n`: ''}`+
-            `${data.Telefono ? `*Telefono:* ${data.Telefono}\n`: ''}`+
-            `${data.Motivo ? `*Motivo:* ${data.Motivo}\n`: ''}`+
-            `${data.Mensaje ? `*Mensaje:* ${data.Mensaje}\n`: ''}`+
-            `${data.Domicilio ? `*Domicilio:* ${data.Domicilio}\n`: ''}`+
-            `${data.Edad ? `*Edad:* ${data.Edad}\n`: ''}`+
-            `${data.Lugar ? `*Lugar:* ${data.Lugar}\n`: ''}`+
-            `${data.Referido ? `*Referido:* ${data.Referido}\n`: ''}`+
-            `${data.inscripto ? `*inscripto:* ${data.inscripto}\n `: ''}`
-        );
+        let message = `${data.Nombre ? `*Hola, soy ${data.Nombre} y estos son mis datos:*\n` : ''}`;
+        message += `${data.Email ? `*Email:* ${data.Email}\n` : ''}`;
+        message += `${data.Telefono ? `*Teléfono:* ${data.Telefono}\n` : ''}`;
+        message += `${data.Motivo ? `*Motivo:* ${data.Motivo}\n` : ''}`;
+        if (data.Motivo === 'Turno 1ª vez') {
+            message += `${data.Edad ? `*Edad:* ${data.Edad}\n` : ''}`;
+            message += `${data.Domicilio ? `*Localidad de Residencia:* ${data.Domicilio}\n` : ''}`;
+            message += `${data.Referido ? `*Referido por:* ${data.Referido}\n` : ''}`;
+            message += `${data.inscripto ? `*Inscripto en Reprocann:* ${data.inscripto}\n` : ''}`;
+            message += `${data.Lugar ? `*Dispensario preferido:* ${data.Lugar}\n` : ''}`;
+        } else if (data.Motivo === 'Consulta') {
+            message += `${data.Mensaje ? `*Mensaje:* ${data.Mensaje}\n` : ''}`;
+        }
+        return message;
     };
     
     
@@ -78,9 +80,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                     ...data,
                     motivo: selectedOption,
                 });
-                //console.log('hola data:',data);                
                 Swal.close();
-                //console.log('public');
                 
                 if (response.status === 200) {
                     const whatsappMessage = formatMessage(data);
@@ -150,12 +150,12 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                             <div>
                                                 <label htmlFor="text" className="block mb-2 text-sm font-medium text-text-primary">Nombre y Apellido</label>
                                                 <input
-                                                id="text"
-                                                {...register('Nombre', { required: true })}
-                                                type="text"
-                                                className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                                placeholder="Jhon Black"
-                                                aria-label="Ingresar nombre"
+                                                    id="text"
+                                                    {...register('Nombre', { required: true })}
+                                                    type="text"
+                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                    placeholder="Jhon Black"
+                                                    aria-label="Ingresar nombre"
                                                 />
                                                 {errors.Nombre && <span className="text-red">Nombre y Apellido es requerido</span>}
                                             </div>
@@ -209,12 +209,12 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                             </div>
                                             {showConsulta && (
                                                 <div>
-                                                    <label htmlFor="Mensaje" className="block mb-2 text-sm     text-text-primary">Mensaje</label>
+                                                    <label htmlFor="Mensaje" className="block mb-2 text-sm text-text-primary">Mensaje</label>
                                                     <textarea
                                                         id="Mensaje"
                                                         {...register('Mensaje', { required: true })}
                                                         type="text"
-                                                        className="relative block w-full appearance-none rounded-md     py-2 text-gray-900 placeholder-gray-500 focus:border    focus:ring-indigo-500 sm:text-sm"
+                                                        className="relative block w-full appearance-none rounded-md  py-2 text-gray-900 placeholder-gray-500 focus:border    focus:ring-indigo-500 sm:text-sm"
                                                         placeholder=" Mensaje"
                                                         aria-label="Ingresar edad"
                                                         />
@@ -229,7 +229,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                     <label htmlFor="edad" className="block mb-2 text-sm font-medium text-text-primary">Edad</label>
                                                     <input
                                                     id="edad"
-                                                    {...register('Edad', { required: true })}
+                                                    {...register('Edad', { required: selectedOption === 'Turno 1ª vez'})}
                                                     type="text"
                                                     className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                     placeholder="Edad"
@@ -242,7 +242,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                     <label htmlFor="domicilio" className="block mb-2 text-sm font-medium text-text-primary">Localidad de Residencia</label>
                                                     <input
                                                     id="domicilio"
-                                                    {...register('Domicilio', { required: true })}
+                                                    {...register('Domicilio', { required: selectedOption === 'Turno 1ª vez'})}
                                                     type="text"
                                                     className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                     placeholder="Quilmes"
