@@ -84,7 +84,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                 
                 if (response.status === 200) {
                     const whatsappMessage = formatMessage(data);
-                    const whatsappURL = `https://wa.me/+${userData.codigoPais}${userData.contact}?text=${encodeURIComponent(whatsappMessage)}`;
+                    const whatsappURL = `https://wa.me/${userinfo.contact.countrycode}${userinfo.contact.phone}?text=${encodeURIComponent(whatsappMessage)}`;
                     window.open(whatsappURL, '_blank');
                     alert(data.Nombre, data.Email);
                     reset();
