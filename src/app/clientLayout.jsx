@@ -27,7 +27,7 @@ export default function ClientLayout({ children }) {
       {!hideLayout && (
         <footer>
           <Footer /> 
-          <ButtonWsp contact={userinfo.contact.phone} text={'Hola, te escribo desde la web'}/>
+          <ButtonWsp contact={userinfo.contact.phone} text={'Hola'}/>
           <BtnInstagram />
         </footer>
       )}
