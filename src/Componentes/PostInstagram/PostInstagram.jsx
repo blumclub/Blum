@@ -78,7 +78,6 @@ const PostInstagram = () => {
                   img={post.media_url}
                   timestamp={publicado(post.timestamp)}
                   mediaType={post.media_type}
-                  children={null}
                 />
               </div>
             </div>
