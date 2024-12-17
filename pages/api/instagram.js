@@ -18,18 +18,35 @@ async function renewInstagramToken(token) {
   }
 }
 
+async function validateToken(token, appToken) {
+  try {
+    const response = await fetch(
+      `https://graph.instagram.com/debug_token?input_token=${token}&access_token=${appToken}`
+    );
+    const data = await response.json();
+
+    if (data.data && data.data.is_valid) {
+      console.log('Token is valid.');
+      return true;
+    } else {
+      console.warn('Token is invalid or expired.');
+      return false;
+    }
+  } catch (error) {
+    console.error('Error during token validation:', error);
+    throw error;
+  }
+}
+
 export default async function handler(req, res) {
   let { INSTAGRAM_TOKEN, APP_ACCESS_TOKEN } = process.env;
 
   try {
     // Validate token
-    const validateResponse = await fetch(
-      `https://graph.instagram.com/debug_token?input_token=${INSTAGRAM_TOKEN}&access_token=${APP_ACCESS_TOKEN}`
-    );
-    const validationData = await validateResponse.json();
+    const isTokenValid = await validateToken(INSTAGRAM_TOKEN, APP_ACCESS_TOKEN);
 
-    if (!validationData.data || !validationData.data.is_valid) {
-      console.warn('Token expired or invalid, attempting renewal...');
+    if (!isTokenValid) {
+      console.warn('Attempting to renew token...');
       INSTAGRAM_TOKEN = await renewInstagramToken(INSTAGRAM_TOKEN);
     }
 
@@ -37,7 +54,6 @@ export default async function handler(req, res) {
     const response = await fetch(
       `https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink,media_type,thumbnail_url,timestamp&access_token=${INSTAGRAM_TOKEN}`
     );
-
     const data = await response.json();
 
     if (data.error) {
@@ -46,7 +62,7 @@ export default async function handler(req, res) {
     }
 
     if (data.data && data.data.length > 0) {
-      console.log(data.data[0])
+      console.log('Fetched latest post:', data.data[0]);
       return res.status(200).json(data.data[0]);
     } else {
       console.warn('No posts found.');
@@ -54,6 +70,6 @@ export default async function handler(req, res) {
     }
   } catch (error) {
     console.error('Error fetching Instagram data:', error);
-    res.status(500).json({ error: 'Error fetching data' });
+    return res.status(500).json({ error: 'Error fetching data' });
   }
 }

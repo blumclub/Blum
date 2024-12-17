@@ -1,3 +1,6 @@
+'use client';
+import React from 'react';
+
 const InstagramPost = ({ username, img, timestamp, mediaType }) => {
 
     const MediaContainer = ({ children }) => {

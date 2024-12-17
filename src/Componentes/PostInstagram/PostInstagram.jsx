@@ -1,11 +1,11 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import publicado from '../Utils/publicacion';
+import publicado from '../../Componentes/Utils/publicacion';
 import Link from 'next/link';
 import InstagramPost from './InstagramPost';
 
 const Skeleton = () => (
-  <section className="bg-gradient-to-r from-primary to-secondary p-6 rounded-lg shadow-lg max-w-7xl mx-auto my-12 animate-pulse">
+  <section className="bg-gradient-to-r from-secondary to-primary p-6 rounded-lg shadow-lg max-w-6xl mx-auto my-8 animate-pulse">
     <h2 className="text-3xl font-bold text-white mb-4 bg-white bg-opacity-30 h-8 rounded"></h2>
     <div className="flex flex-col md:flex-row items-center">
       <div className="md:w-2/3 text-white mb-6 md:mb-0 md:pr-6">
@@ -28,7 +28,7 @@ const PostInstagram = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchLatestPosts = async () => {
+    const fetchLatestPost = async () => {
       try {
         const response = await fetch('/api/instagram');
         const data = await response.json();
@@ -44,7 +44,7 @@ const PostInstagram = () => {
       }
     };
 
-    fetchLatestPosts();
+    fetchLatestPost();
   }, []);
 
   if (loading) {
