@@ -1,6 +1,7 @@
 const InstagramPost = ({ username, img, timestamp, mediaType }) => {
-  
+
     const MediaContainer = ({ children }) => {
+
       return (
         <div className="relative w-[210px] h-[210px] overflow-hidden rounded-lg shadow-xl mx-auto">
           {children}
@@ -14,7 +15,7 @@ const InstagramPost = ({ username, img, timestamp, mediaType }) => {
         case 'IMAGE':
           return (
             <MediaContainer>
-              <img src={img || '/BG/flores.webp'} alt="Última publicación de Instagram" className="w-full h-full object-cover" loading="lazy"  title="Última publicación de Instagram"/>
+              <img src={img || '/Logo/LOGOBLUMX.webp'} alt="Última publicación de Instagram" className="w-full h-full object-cover" loading="lazy"  title="Última publicación de Instagram"/>
             </MediaContainer>
           );
         case 'VIDEO':
@@ -23,12 +24,19 @@ const InstagramPost = ({ username, img, timestamp, mediaType }) => {
               <video src={img} className="w-full h-full object-cover" autoPlay loop muted loading="lazy" title="Última publicación de Instagram" />
             </MediaContainer>
           );
-        case 'CAROUSEL_ALBUM':
-          return (
-            <MediaContainer>
-              <img src={post.children.data[0].media_url} alt="Última publicación de Instagram" className="w-full h-full object-cover" loading="lazy" title="Última publicación de Instagram"/>
-            </MediaContainer>
-          );
+          case 'CAROUSEL_ALBUM':
+            //console.log('children 2:',username, img, timestamp, mediaType)
+            return (
+              <MediaContainer>
+                <img
+                  src={img || '/Logo/LOGOBLUMX.webp'}
+                  alt="Última publicación de Instagram"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  title="Última publicación de Instagram"
+                />
+              </MediaContainer>
+            );
         default:
           return (
             <MediaContainer>
@@ -39,15 +47,16 @@ const InstagramPost = ({ username, img, timestamp, mediaType }) => {
     };
   
     return (
-      <div className="max-w-[270px] border rounded-lg bg-white shadow-lg">
+      <div className="max-w-80 border rounded-lg bg-white shadow-lg">
         {/* Header con avatar y nombre de usuario */}
         <div className="flex items-center p-3">
-            <img src='/Logo/LogoBlum160.webp' alt='Logo Blum Club' className="bg-primary rounded-full" width={40} height={40} title="Logo Blum Club" aria-label="Logo Blum Club"/> 
+            <img src='/Logo/LOGBLUMX.webp' alt='Logo Blum Club' className="bg-primary rounded-full" width={40} height={40} title="Logo Blum Club" aria-label="Logo Blum Club"/> 
             <p className="font-semibold text-xs ml-3 text-gray-500">{username}</p>
             <p className="ml-auto text-gray-400  tracking-wider">•••</p>
         </div>
   
         {/* Renderizar el media */}
+
         {renderMedia()}
       
         {/* Botones de interacción */}
