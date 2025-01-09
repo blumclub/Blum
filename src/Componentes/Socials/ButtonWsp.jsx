@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import '../../app/globals.css';
+import Contactusform from "../Contact/Contactus";
 
 const ButtonWsp = ({ text , contact }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,7 +20,7 @@ const ButtonWsp = ({ text , contact }) => {
 
   return (
     <article className="buttonWspPosition">
-      <Link href={enviar} passHref target="_blank" title={enviar}>
+      {/* <Link href={enviar} passHref target="_blank" title={enviar}>
         <button
           rel="noopener noreferrer"
           className='buttonWspDesign'
@@ -32,7 +33,9 @@ const ButtonWsp = ({ text , contact }) => {
           <FaWhatsapp className='iconWhatsApp'/>
           {isHovered && <h2 className='textWhatsApp'>{text}</h2>}
         </button>
-      </Link>
+      </Link> */}
+      <Contactusform estilo={'iconWhatsApp buttonWspDesign'} text={<FaWhatsapp />} />
+
     </article>
   );
 }

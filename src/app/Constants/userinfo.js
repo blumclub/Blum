@@ -16,8 +16,8 @@ export const userinfo = {
     ],
     nosotrosTitle:'Somos el primer club de cultivo de Bernal, que realiza producciones cannábicas orientadas exclusivamente a fines medicinales',
     nosotrosSub:'Blüm',
-    nosotrosText1:'En nuestro compromiso con la salud y el bienestar, nuestra misión es liderar la revolución del cannabis medicinal en Bernal, Argentina. Nos dedicamos a investigar, educar y acompañar a nuestros pacientes y la comunidad en general en el uso responsable y terapéutico del cannabis. ',
-    nosotrosText2:'Buscamos proporcionar alternativas de tratamiento efectivas y de alta calidad, marcando la pauta como el primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad. Partimos del marco legal de la Ley de Cannabis Medicinal (Ley N°27.350), llevando adelante nuestras actividades bajo los estándares de la misma.',
+    nosotrosText1:'En nuestro compromiso con la salud y el bienestar, nuestra misión es liderar la revolución del cannabis medicinal en Bernal y en microcentro, Buenos Aires, Argentina. Nos dedicamos a investigar, educar y acompañar a nuestros pacientes y a la comunidad en general en el uso responsable y terapéutico del cannabis ',
+    nosotrosText2:'Buscamos proporcionar alternativas de tratamiento efectivas y de alta calidad, marcando la pauta como el primer Club Asociación Civil sin fines de lucro de Cannabis Medicinal en la localidad de Bernal. Partimos del marco legal de la Ley de Cannabis Medicinal (Ley N°27.350), llevando adelante nuestras actividades bajo los estándares de la misma.',
     nosotrosTitle2:'¿Como Funciona Blüm?',
     nosotrosText3: () => (<><Contactusform text={(<>Primero tenés que completar el formulario que se encuentra <strong className='text-secondary'>aqui</strong> y seleccionar tu sede.</>)} estilo={'font-aileron'} /> </>),
     nosotrosText4: 'Una vez que llenes el formulario y lo envies, te vamos a contactar para una cita presencial con el Dr. Tomás León.',
@@ -26,7 +26,6 @@ export const userinfo = {
   }
 
 export const news = {
-        //this text goes on your landing page
         title: 'Sumate al Newsletter', 
         subTitle: 'Anotate para conocer los próximos eventos.',
         btn: 'Suscribirme',
@@ -117,6 +116,13 @@ export const catalogo = [
 
 
   export const faqData = [
+    {
+      "id": 0,
+      "question": "¿Que es Blum?",
+      "answer": "Blum es un Club Cannabico de cultivo solidario en red, situado en Buenos Aires (Bernal y CABA) que realiza cultivo de cannabis, garantizando el acceso de forma segura y para fines medicinales.",
+      "linkText": "Sumate al club cannabico en Buenos Aires",
+      "linkUrl": ""
+    },
     {
         "id": 1,
         "question": "¿Cómo puedo hacerme socio del club de cannabis Blum?",

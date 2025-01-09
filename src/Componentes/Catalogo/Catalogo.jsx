@@ -23,7 +23,7 @@ const Catalogo = () => {
                                 {prod.descripcion}
                             </p>
                         </div>
-                        <button className={`text-sm border px-2 py-1 rounded-md ${isMobile ? '' : 'absolute bottom-0 right-0 md:w-[90%] lg:w-1/2 m-2'} hover:translate-y-[1px] hover:bg-secondary hover:text-primary hover:font-semibold`}>
+                        <button className={`text-sm border px-2 py-1 text-secondary rounded-md ${isMobile ? '' : 'absolute bottom-0 right-0 md:w-[90%] lg:w-1/2 m-2'} hover:translate-y-[1px] hover:bg-secondary hover:text-primary hover:font-semibold`}>
                             {prod.btn}
                         </button>
                     </div>
