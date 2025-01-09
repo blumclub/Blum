@@ -1,6 +1,6 @@
 'use client';
 import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Swal from 'sweetalert2';
@@ -13,14 +13,6 @@ import { userinfo } from '@/app/Constants/userinfo';
 const Contactusform = ({ classNameEstilo, text, estilo }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { register, handleSubmit, reset, formState: { errors }, watch } = useForm();
-    const [showAdditionalFields, setShowAdditionalFields] = useState(false);
-    const [showConsulta, setShowConsulta] = useState(false)
-    const selectedOption = watch('Motivo', 'Consulta');
-
-    useEffect(() => {
-        setShowAdditionalFields(selectedOption === 'Turno 1ª vez');
-        setShowConsulta(selectedOption === 'Consulta');
-    }, [selectedOption]);
 
     const alert = (Nombre) => {
         Swal.fire({
@@ -76,8 +68,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
             try {
                 alertLoading();
                 const response = await axios.post('/api/contact', {
-                    ...data,
-                    motivo: selectedOption,
+                    ...data
                 });
                 Swal.close();
                 
@@ -94,22 +85,6 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
             }
         }
     };
-
-    const selectedMotivo = watch('Motivo');
-
-    if (selectedMotivo === 'Turno 1ª vez' && !showAdditionalFields) {
-      setShowAdditionalFields(true);
-      
-    } else if (selectedMotivo !== 'Turno 1ª vez' && showAdditionalFields) {
-        setShowAdditionalFields(false);
-    }
-
-    if (selectedMotivo === 'Consulta' && !showConsulta) {
-        setShowConsulta(true);
-        
-      } else if (selectedMotivo !== 'Consulta' && showConsulta) {
-        setShowConsulta(false);
-      }
 
     const closeModal = () => setIsOpen(false);
     const openModal = () => setIsOpen(true);
@@ -184,51 +159,11 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                 />
                                                 {errors.Telefono && <span className="text-red">Celular es requerido</span>}
                                             </div>
-
-                                            <div className="relative">
-                                                <label htmlFor="options" className="block mb-2 text-sm font-medium text-text-primary">Motivo</label>
-                                                <div className="relative">
-                                                    <select
-                                                    id="options"
-                                                    {...register('Motivo')}
-                                                    className="block w-full appearance-none rounded-md border px-3 py-2 pr-10 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                                    aria-label="Seleccionar motivo de contacto"
-                                                    defaultValue="Contacto"
-                                                    >
-                                                    <option value="Contacto" disabled hidden>Contacto</option>
-                                                    <option value="Turno 1ª vez">Turno 1ª vez</option>
-                                                    <option value="Consulta">Consulta</option>
-                                                    </select>
-                                                    {/* Icono de flecha dentro del select */}
-                                                    <div className="absolute right-3 top-2 h-5 w-5 text-primary text-xl pointer-events-none">
-                                                        <MdArrowDropDown />
-                                                    </div>
-                                                </div>
-                                                {errors.Motivo && <span className="text-red">Seleccione un motivo</span>}
-                                            </div>
-                                            {showConsulta && (
-                                                <div>
-                                                    <label htmlFor="Mensaje" className="block mb-2 text-sm text-text-primary">Mensaje</label>
-                                                    <textarea
-                                                        id="Mensaje"
-                                                        {...register('Mensaje', { required: true })}
-                                                        type="text"
-                                                        className="relative block w-full appearance-none rounded-md  py-2 text-gray-900 placeholder-gray-500 focus:border    focus:ring-indigo-500 sm:text-sm"
-                                                        placeholder=" Mensaje"
-                                                        aria-label="Ingresar edad"
-                                                        />
-                                                    {errors.Edad && <span className="text-red">Edad es requerida</span>}
-                                                </div>
-                                            
-                                            )}
-                                            {/* Conditional fields */}
-                                            {showAdditionalFields && (
-                                                <>
                                                 <div>
                                                     <label htmlFor="edad" className="block mb-2 text-sm font-medium text-text-primary">Edad</label>
                                                     <input
                                                     id="edad"
-                                                    {...register('Edad', { required: selectedOption === 'Turno 1ª vez'})}
+                                                    {...register('Edad')}
                                                     type="text"
                                                     className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                     placeholder="Edad"
@@ -241,7 +176,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                     <label htmlFor="domicilio" className="block mb-2 text-sm font-medium text-text-primary">Localidad de Residencia</label>
                                                     <input
                                                     id="domicilio"
-                                                    {...register('Domicilio', { required: selectedOption === 'Turno 1ª vez'})}
+                                                    {...register('Domicilio')}
                                                     type="text"
                                                     className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                     placeholder="Quilmes"
@@ -290,10 +225,8 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                     </div>
                                                     {errors.Lugar && <span className="text-red">Lugar es requerido</span>}
                                                 </div>
-                                                </>
-                                            )}
 
-                                            <button type="submit" className="py-2 px-5 text-sm bg-primary font-medium w-full text-center text-text-tertiary rounded-lg hover:bg-primary-hover hover:text-primary hover:font-semibold" aria-label="Enviar formulario">
+                                            <button type="submit" className="py-2 px-5 text-sm bg-primary font-medium w-full text-center text-secondary rounded-lg hover:bg-primary-hover hover:text-primary hover:font-semibold" aria-label="Enviar formulario">
                                                 Enviar
                                             </button>
                                         </form>
