@@ -21,7 +21,7 @@ export default async function handler(req, res) {
             const mailData = {
                 from: SENDER,
                 to: TO,
-                subject: req.body.Motivo || 'No especificado',  // Asunto debe ser una cadena
+                subject: req.body.Motivo || 'Contacto desde la web',  // Asunto debe ser una cadena
                 html: `
                     <!DOCTYPE html>
                     <html lang="es">
@@ -59,7 +59,6 @@ export default async function handler(req, res) {
                                 <p><strong>Nombre:</strong> ${req.body.Nombre || 'No proporcionado'}</p>
                                 <p><strong>Email:</strong> ${req.body.Email || 'No proporcionado'}</p>
                                 <p><strong>Teléfono:</strong> ${req.body.Telefono || 'No proporcionado'}</p>
-                                <p><strong>Motivo:</strong> ${req.body.Motivo || 'No especificado'}</p>
                                 ${req.body.Mensaje ? `<p><strong>Mensaje:</strong> ${req.body.Mensaje}</p>` : ''}
                                 ${req.body.Edad ? `<p><strong>Edad:</strong> ${req.body.Edad}</p>` : ''}
                                 ${req.body.inscripto ? `<p><strong>Reprocann:</strong> ${req.body.inscripto}</p>` : ''}
