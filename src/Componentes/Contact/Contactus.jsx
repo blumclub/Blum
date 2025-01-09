@@ -44,18 +44,15 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
 
     const formatMessage = (data) => {
         let message = `${data.Nombre ? `*Hola, soy ${data.Nombre} y estos son mis datos:*\n` : ''}`;
-        message += `${data.Email ? `*Email:* ${data.Email}\n` : ''}`;
-        message += `${data.Telefono ? `*Teléfono:* ${data.Telefono}\n` : ''}`;
-        message += `${data.Motivo ? `*Motivo:* ${data.Motivo}\n` : ''}`;
-        if (data.Motivo === 'Turno 1ª vez') {
+            message += `${data.Email ? `*Email:* ${data.Email}\n` : ''}`;
+            message += `${data.Telefono ? `*Teléfono:* ${data.Telefono}\n` : ''}`;
+            message += `${data.Motivo ? `*Motivo:* ${data.Motivo}\n` : ''}`
             message += `${data.Edad ? `*Edad:* ${data.Edad}\n` : ''}`;
             message += `${data.Domicilio ? `*Localidad de Residencia:* ${data.Domicilio}\n` : ''}`;
             message += `${data.Referido ? `*Referido por:* ${data.Referido}\n` : ''}`;
             message += `${data.inscripto ? `*Inscripto en Reprocann:* ${data.inscripto}\n` : ''}`;
             message += `${data.Lugar ? `*Dispensario preferido:* ${data.Lugar}\n` : ''}`;
-        } else if (data.Motivo === 'Consulta') {
-            message += `${data.Mensaje ? `*Mensaje:* ${data.Mensaje}\n` : ''}`;
-        }
+        
         return message;
     };
     
