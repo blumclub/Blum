@@ -7,7 +7,7 @@ import './globals.css';
 export const metadata = {
   manifest: "/manifest.json",
   title: 'Blum Club - cultivo de Cannabis Medicinal - Marihuana',
-  description: 'Blun es un club de cultivo de Cannabis medicinal, ubicado en Bernal y en CABA Buenos Aires Argentina. Contamos con un consultorio medico para asesoramiento sobre la marihuana medicinal. Utilizamos metodos de cultivo Hidroponico para otorgar el mejor producto. Agenda una entrevista con el Dr. Tomás León.',
+  description: 'Blum es un club de cultivo de Cannabis medicinal, ubicado en Bernal y en CABA Buenos Aires Argentina. Contamos con un consultorio medico para asesoramiento sobre la marihuana medicinal. Utilizamos metodos de cultivo Hidroponico para otorgar el mejor producto. Agenda una entrevista con el Dr. Tomás León.',
   charSet: 'UTF-8',
   icon: '/favicon.ico',
   keywords: 'Club, cannabis, blum, cannabis recreacional, cannabis medicinal, bernal, buenos aires, argentina',
@@ -17,7 +17,7 @@ export const metadata = {
   authors: [{ name: 'Gonzalo Torres Grau', url: 'https://gonzalotorresgrau.com' }],
   openGraph: {
     title: 'Blum Club - cultivo de Cannabis Medicinal - Marihuana',
-    description: "Blun es un club de cultivo de Cannabis medicinal, ubicado en Bernal y en CABA Buenos Aires Argentina. Contamos con un consultorio medico para asesoramiento sobre la marihuana medicinal. Utilizamos metodos de cultivo Hidroponico para otorgar el mejor producto. Agenda una entrevista con el Dr. Tomás León.",
+    description: "Blum es un club de cultivo de Cannabis medicinal, ubicado en Bernal y en CABA Buenos Aires Argentina. Contamos con un consultorio medico para asesoramiento sobre la marihuana medicinal. Utilizamos metodos de cultivo Hidroponico para otorgar el mejor producto. Agenda una entrevista con el Dr. Tomás León.",
     type: 'website',
     url: 'https://blumclub.com.ar/',
     image: 'https://blumclub.com.ar/Logo/LogoBlumTransparente.png',
@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Blum Club - cultivo de Cannabis Medicinal - Marihuana",
-              "description": "Blun es un club de cultivo de Cannabis medicinal, ubicado en Bernal y en CABA Buenos Aires Argentina. Contamos con un consultorio medico para asesoramiento sobre la marihuana medicinal. Utilizamos metodos de cultivo Hidroponico para otorgar el mejor producto. Agenda una entrevista con el Dr. Tomás León.",
+              "description": "Blum es un club de cultivo de Cannabis medicinal, ubicado en Bernal y en CABA Buenos Aires Argentina. Contamos con un consultorio medico para asesoramiento sobre la marihuana medicinal. Utilizamos metodos de cultivo Hidroponico para otorgar el mejor producto. Agenda una entrevista con el Dr. Tomás León.",
               "image": "https://blumclub.com.ar/Logo/LogoBlumTransparente.png",
               "logo": "https://blumclub.com.ar/Logo/LogoBlumTransparente.png",
               "address": {
