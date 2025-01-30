@@ -57,6 +57,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
     };
     
     
+    
     const onSubmit = async (data) => {
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!data.Email.match(emailPattern)) {
