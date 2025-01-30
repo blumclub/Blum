@@ -53,7 +53,6 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
             message += `${data.inscripto ? `*Inscripto en Reprocann:* ${data.inscripto}\n` : ''}`;
             message += `${data.Lugar ? `*Sede de Preferencia:* ${data.Lugar}\n` : ''}`;
             message += `${data.insta ? `*Usuario de Instagram:* ${data.insta}\n` : ''}`;
-        
         return message;
     };
     
