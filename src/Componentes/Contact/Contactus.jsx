@@ -51,7 +51,8 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
             message += `${data.Domicilio ? `*Localidad de Residencia:* ${data.Domicilio}\n` : ''}`;
             message += `${data.Referido ? `*Referido por:* ${data.Referido}\n` : ''}`;
             message += `${data.inscripto ? `*Inscripto en Reprocann:* ${data.inscripto}\n` : ''}`;
-            message += `${data.Lugar ? `*Dispensario preferido:* ${data.Lugar}\n` : ''}`;
+            message += `${data.Lugar ? `*Sede de Preferencia:* ${data.Lugar}\n` : ''}`;
+            message += `${data.insta ? `*Usuario de Instagram:* ${data.insta}\n` : ''}`;
         
         return message;
     };
@@ -201,7 +202,7 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                         type="text"
                                                         className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                                         placeholder="Si - No"
-                                                        aria-label="Ingresar nombre de la persona que lo refirió"
+                                                        aria-label="¿Estas inscripto al Reprocann? "
                                                     />
                                                 </div>
                                                 <div className="relative">
@@ -221,6 +222,17 @@ const Contactusform = ({ classNameEstilo, text, estilo }) => {
                                                         </div>
                                                     </div>
                                                     {errors.Lugar && <span className="text-red">Lugar es requerido</span>}
+                                                </div>
+                                                <div>
+                                                    <label htmlFor="instagram" className="block mb-2 text-sm font-medium text-text-primary">Dejanos tu IG</label>
+                                                    <input
+                                                    id="insta"
+                                                    {...register('insta')}
+                                                    type="text"
+                                                    className="relative block w-full appearance-none rounded-md border px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                                    placeholder="@blum.club"
+                                                    aria-label="Ingresa tu instagram"
+                                                    />
                                                 </div>
 
                                             <button type="submit" className="py-2 px-5 text-sm bg-primary font-medium w-full text-center text-secondary rounded-lg hover:bg-primary-hover hover:text-primary hover:font-semibold" aria-label="Enviar formulario">
