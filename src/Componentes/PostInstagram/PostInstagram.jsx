@@ -70,7 +70,7 @@ const PostInstagram = () => {
             </div>
             <div className="w-60 mx-auto relative">
               <div className="absolute inset-0 bg-white opacity-30 rounded-full scale-110 -rotate-12 transform"></div>
-              <div className="absolute inset-0 bg-yellow-300 opacity-30 rounded-full scale-110 -rotate-45 transform"></div>
+              <div className="absolute inset-0 bg-yellow-300 opacity-30 rounded-full scale-110 -rotate-45 transform hidden md:flex"></div>
               <div className="absolute inset-0 bg-amber-800 opacity-30 rounded-full scale-110 rotate-12 transform"></div>
               <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300">
                 <InstagramPost
