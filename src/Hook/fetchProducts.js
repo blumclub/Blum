@@ -4,7 +4,7 @@ export default async function fetchProducts() {
         const csv = await response.text();
 
         const productos = csv.split("\n").slice(1).map((row) => {
-            const [idProducto, NombreProducto, Descripcion, Precio, Imagen] = row.split(',');
+            const [idProducto, NombreProducto, Descripcion, Precio, Imagen ] = row.split(',');
             return { idProducto, NombreProducto, Descripcion, Precio, Imagen };
         });
 
