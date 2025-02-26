@@ -6,7 +6,7 @@ async function renewInstagramToken(token) {
     const data = await response.json();
 
     if (data.access_token) {
-      console.log('Token successfully renewed.');
+      //console.log('Token successfully renewed.');
       return data.access_token;
     } else {
       console.error('Failed to renew token:', data);
@@ -26,10 +26,10 @@ async function validateToken(token, appToken) {
     const data = await response.json();
 
     if (data.data && data.data.is_valid) {
-      console.log('Token is valid.');
+      //console.log('Token is valid.');
       return true;
     } else {
-      console.warn('Token is invalid or expired.');
+      //console.warn('Token is invalid or expired.');
       return false;
     }
   } catch (error) {
@@ -46,7 +46,7 @@ export default async function handler(req, res) {
     const isTokenValid = await validateToken(INSTAGRAM_TOKEN, APP_ACCESS_TOKEN);
 
     if (!isTokenValid) {
-      console.warn('Attempting to renew token...');
+      //console.warn('Attempting to renew token...');
       INSTAGRAM_TOKEN = await renewInstagramToken(INSTAGRAM_TOKEN);
     }
 
@@ -62,7 +62,7 @@ export default async function handler(req, res) {
     }
 
     if (data.data && data.data.length > 0) {
-      console.log('Fetched latest post:', data.data[0]);
+      //console.log('Fetched latest post:', data.data[0]);
       return res.status(200).json(data.data[0]);
     } else {
       console.warn('No posts found.');
