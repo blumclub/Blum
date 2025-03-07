@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { imagesHidroponico } from '@/app/Constants/userinfo';
 import { Fade } from 'react-awesome-reveal';
 
-function Hidroponico() {
+function CarruselImages() {
   return (
     <section id="cultivoHidroponico" className="my-16 scroll-mt-20 lg:scroll-mt-28">
       <div className="max-w-7xl mx-auto">
@@ -18,7 +18,7 @@ function Hidroponico() {
             <button className="mt-4 xl:mt-0 xl:ml-4 w-20 text-sm border px-2 py-1 rounded-md hover:translate-y-[1px] hover:bg-secondary hover:text-primary hover:font-semibold hover:border-secondary">Ver más</button>
           </Link>
         </article>
-        <article className="max-w-7xl mx-auto mt-8 md:p-8">
+        <article className="max-w-7xl mx-auto mt-8 md:p-8 ">
           <Gallery items={imagesHidroponico} showFullscreenButton={false} showPlayButton={false} slideDuration={450}/>
         </article>
       </div>
@@ -26,4 +26,4 @@ function Hidroponico() {
   );
 }
 
-export default Hidroponico;
+export default CarruselImages;

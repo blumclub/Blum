@@ -78,12 +78,12 @@ export const imagesHidroponico = [
     thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/4_rkrkgh.webp"
   },
   {
-    original: "https://res.cloudinary.com/deueso3sr/image/upload/v1733230834/1_ogfa09.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/v1733230834/1_ogfa09.webp"
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/1_ogfa09.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/1_ogfa09.webp"
   },
   {
-    original: "https://res.cloudinary.com/deueso3sr/image/upload/v1733230834/2_svipoh.webp",
-    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/v1733230834/2_svipoh.webp"
+    original: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/2_svipoh.webp",
+    thumbnail: "https://res.cloudinary.com/deueso3sr/image/upload/t_wide/v1733230834/2_svipoh.webp"
   }
 ];
 

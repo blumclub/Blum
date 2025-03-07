@@ -5,10 +5,10 @@ import Gallery from '../Componentes/Galeria/Galeria';
 import Reprocan from '../Componentes/Reprocan/Reprocan';
 import PostInstagram from '../Componentes/PostInstagram/PostInstagram';
 import Consultorio from '../Componentes/Consultorio/Consultorio';
-import Hidroponico from '../Componentes/Hidroponico/Hidroponico';
+import CarruselImages from '../Componentes/Hidroponico/CarruselImages';
 import Catalogo from '../Componentes/Catalogo/Catalogo';
 import PreguntasFrecuentes from '../Componentes/PreguntasFrecuentas/PreguntasFrecuentas';
-//import { ProductCarousel } from '@/Componentes/ProductCard/ProductCard';
+// import { ProductCarousel } from '../Componentes/ProductCard/ProductCarousel';
 // import Comentarios from '@/Componentes/Comentarios/Comentarios';
 
 
@@ -20,7 +20,7 @@ export default function Home() {
         <Nosotros />
         <Gallery />
         <Consultorio />
-        <Hidroponico />
+        <CarruselImages />
         <PostInstagram />
         <Catalogo/>
         {/* <ProductCarousel /> */}
