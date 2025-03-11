@@ -4,8 +4,8 @@ export default async function fetchProducts() {
         const csv = await response.text();
 
         const productos = csv.split("\n").slice(1).map((row) => {
-            const [idProducto, NombreProducto, Descripcion, DescripcionExt, Precio, ImagenV, ImagenH ] = row.split(',');
-            return { idProducto, NombreProducto, Descripcion, DescripcionExt, Precio, ImagenV, ImagenH };
+            const [idProducto, NombreProducto, Descripcion, DescripcionExt, Precio, ImagenV, imgV1, imgV2, imgV3, imgV4, ImagenH, imgH1, imgH2, imgH3, imgH4 ] = row.split(',');
+            return { idProducto, NombreProducto, Descripcion, DescripcionExt, Precio, ImagenV, imgV1, imgV2, imgV3, imgV4, ImagenH, imgH1, imgH2, imgH3, imgH4 };
         });
 
         return productos.filter(p => p.idProducto); // Filtra elementos vacíos

@@ -1,37 +1,39 @@
 "use client";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import ButtonWhats from "../Socials/ButtonWhats";
 import { userinfo } from "@/app/Constants/userinfo";
-import { useEffect, useState } from "react";
 
 export default function ProductModal({ product, onClose, onNavigate }) {
-  const getInitialImage = () =>
-    window.innerWidth < 768 ? product.ImagenV || "/placeholderV.webp" : product.ImagenH || "/placeholderH.webp";
+  const [imageSrc, setImageSrc] = useState("");
+  const [thumbnails, setThumbnails] = useState([]);
 
-  const [imageSrc, setImageSrc] = useState(getInitialImage());
+  // Función para obtener la imagen principal y miniaturas según el tamaño de pantalla
+  const updateImages = () => {
+    const isMobile = window.innerWidth < 768;
+    const images = isMobile
+      ? [product.ImagenV, product.imgV1, product.imgV2, product.imgV3, product.imgV4]
+      : [product.ImagenH, product.imgH1, product.imgH2, product.imgH3, product.imgH4];
+
+    setImageSrc(images[0] || "/placeholder.webp");
+    setThumbnails(images.filter(Boolean));
+  };
 
   useEffect(() => {
-    setImageSrc(getInitialImage());
-  }, [product]); // 🔹 Se ejecuta cada vez que 'product' cambia
+    updateImages();
+    window.addEventListener("resize", updateImages);
+    return () => window.removeEventListener("resize", updateImages);
+  }, [product]);
 
-  useEffect(() => {
-    const updateImage = () => {
-      const newImage = window.innerWidth < 768 ? product.ImagenV || "/placeholderV.webp" : product.ImagenH || "/placeholderH.webp";
-      setImageSrc(newImage);
-    };
-
-    window.addEventListener("resize", updateImage);
-    return () => window.removeEventListener("resize", updateImage);
-  }, [product.ImagenV, product.ImagenH]);
-
-  console.log("ImagenV:", product.ImagenV);
-  console.log("ImagenH:", product.ImagenH);
-  console.log("Usando imagen:", imageSrc);
+  // Función para cambiar la imagen principal al hacer clic en una miniatura
+  const handleThumbnailClick = (src) => {
+    if (src) setImageSrc(src);
+  };
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white rounded-lg p-4 max-w-3xl w-5/6 md:w-full relative gap-4">
+      <div className="bg-white rounded-lg p-4 max-w-3xl w-5/6 md:w-full relative">
         <button className="absolute top-2 right-2 text-gray-700 hover:text-gray-900" onClick={onClose}>
           <X className="h-6 w-6" />
         </button>
@@ -46,22 +48,24 @@ export default function ProductModal({ product, onClose, onNavigate }) {
           </button>
         </div>
 
-        <div className="relative w-full h-80 md:h-96 mb-4">
-
-          {imageSrc ? (
-            <Image
-                key={imageSrc}
-                src={imageSrc}
-                alt={product.NombreProducto}
-                width={500} // Ajusta el tamaño según necesites
-                height={700} // Ajusta el tamaño según necesites
-                className="object-contain w-full h-full"
-                title={product.NombreProducto}
-                aria-label={product.NombreProducto}
-                />
-          ) : (
-            <p className="text-red-500">Imagen no disponible</p>
-          )}
+        {/* Imágenes */}
+        <div className="relative flex flex-col md:flex-row ">
+          <div className="flex">
+            {/* Imagen principal */}
+            <Image key={imageSrc} src={imageSrc} alt={`Imagen de ${product.NombreProducto}`} width={500} height={500} className="rounded-lg object-contain w-full h-80 md:h-96" title={`Imagen de ${product.NombreProducto}`} loading="lazy" />
+          </div>
+          <div className="flex p-4 justify-center">
+            {/* Miniaturas */}
+            {thumbnails.length > 0 && (
+              <div className="flex flex-row md:flex-col justify-center gap-2">
+                {thumbnails.map((thumb, index) => (
+                  <button key={index} type="button" onClick={() => handleThumbnailClick(thumb)}>
+                    <Image src={thumb} alt={`Miniatura ${index + 1}`} width={64} height={64} className="h-10 w-10 md:w-16 md:h-16 rounded-lg border border-gray-300 p-1 object-cover" loading="lazy" />
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         <p className="text-gray-700">{product.DescripcionExt}</p>
@@ -69,7 +73,7 @@ export default function ProductModal({ product, onClose, onNavigate }) {
 
         {userinfo?.contact?.phone && (
           <div className="mt-4 min-h-10 absolute bottom-4 right-4 z-20">
-            <ButtonWhats contact={userinfo.contact.phone} textContact={`Hola, me interesa: ${product.NombreProducto}`} text={" Lo quiero"} />
+            <ButtonWhats contact={userinfo.contact.phone} textContact={`Hola, me interesa: ${product.NombreProducto}`} text={"Lo quiero"} />
           </div>
         )}
       </div>
