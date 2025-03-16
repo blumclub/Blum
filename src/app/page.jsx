@@ -8,7 +8,7 @@ import Consultorio from '../Componentes/Consultorio/Consultorio';
 import CarruselImages from '../Componentes/Hidroponico/CarruselImages';
 import Catalogo from '../Componentes/Catalogo/Catalogo';
 import PreguntasFrecuentes from '../Componentes/PreguntasFrecuentas/PreguntasFrecuentas';
-import { ProductCarousel } from '../Componentes/ProductCard/ProductCarousel';
+// import { ProductCarousel } from '../Componentes/ProductCard/ProductCarousel';
 // import Comentarios from '@/Componentes/Comentarios/Comentarios';
 
 
@@ -23,7 +23,7 @@ export default function Home() {
         <CarruselImages />
         <PostInstagram />
         <Catalogo/>
-        <ProductCarousel  />
+        {/* <ProductCarousel  /> */}
         {/* <Comentarios />  */}
         <Reprocan />
         <PreguntasFrecuentes />
