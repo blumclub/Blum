@@ -11,14 +11,22 @@ export default function ProductModal({ product, onClose, onNavigate }) {
 
   // Función para obtener la imagen principal y miniaturas según el tamaño de pantalla
   const updateImages = () => {
-    const isMobile = window.innerWidth < 768;
-    const images = isMobile
-      ? [product.ImagenV, product.imgV1, product.imgV2, product.imgV3, product.imgV4]
-      : [product.ImagenH, product.imgH1, product.imgH2, product.imgH3, product.imgH4];
+    if (!product) return;
 
-    setImageSrc(images[0] || "/placeholder.webp");
-    setThumbnails(images.filter(Boolean));
-  };
+    const isMobile = window.innerWidth < 768;
+    
+    // Filtrar imágenes válidas y evitar que se mezclen las categorías
+    const verticalImages = [product.ImagenV, product.imgV1, product.imgV2, product.imgV3].filter(img => img);
+    const horizontalImages = [product.ImagenH, product.imgH1, product.imgH2, product.imgH3].filter(img => img);
+
+    // Usar imágenes según el tipo de pantalla
+    const images = isMobile ? verticalImages : horizontalImages;
+
+    setImageSrc(images.length > 0 ? images[0] : "/placeholder.webp");
+    setThumbnails(images);
+};
+
+
 
   useEffect(() => {
     updateImages();
@@ -49,26 +57,37 @@ export default function ProductModal({ product, onClose, onNavigate }) {
         </div>
 
         {/* Imágenes */}
-        <div className="relative flex flex-col md:flex-row ">
-          <div className="flex">
+        <div className="relative flex flex-col md:flex-row justify-around ">
+          <div className="flex h-80 md:h-96">
             {/* Imagen principal */}
-            <Image key={imageSrc} src={imageSrc} alt={`Imagen de ${product.NombreProducto}`} width={500} height={500} className="rounded-lg object-contain w-full h-80 md:h-96" title={`Imagen de ${product.NombreProducto}`} loading="lazy" />
+            <Image
+                key={imageSrc}
+                src={imageSrc}
+                alt={`Imagen de ${product.NombreProducto}`}
+                width={500}
+                height={500}
+                className="rounded-lg object-cover w-full h-80 md:h-96"
+                title={`Imagen de ${product.NombreProducto}`}
+                loading="lazy"
+              />
           </div>
-          <div className="flex p-4 justify-center">
-            {/* Miniaturas */}
-            {thumbnails.length > 0 && (
-              <div className="flex flex-row md:flex-col justify-center gap-2">
-                {thumbnails.map((thumb, index) => (
-                  <button key={index} type="button" onClick={() => handleThumbnailClick(thumb)}>
-                    <Image src={thumb} alt={`Miniatura ${index + 1}`} width={64} height={64} className="h-10 w-10 md:w-16 md:h-16 rounded-lg border border-gray-300 p-1 object-cover" loading="lazy" />
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
+          <div className="flex flex-row md:flex-col justify-center gap-2 my-4 md:my-0">
+              {thumbnails.map((thumb, index) => (
+                <button key={index} type="button" onClick={() => handleThumbnailClick(thumb)}>
+                  <Image
+                    src={thumb}
+                    alt={`Miniatura ${index + 1}`}
+                    width={64}
+                    height={64}
+                    className="w-16 h-16 md:w-20 md:h-20 rounded-lg border border-gray-300 p-1 object-cover"
+                    loading="lazy"
+                  />
+                </button>
+              ))}
+            </div>
         </div>
 
-        <p className="text-gray-700">{product.DescripcionExt}</p>
+        <p className="text-gray-700 min-h-36 md:min-h-20 md:mt-2">{product.DescripcionExt}</p>
         <p className="mt-2 text-xl font-bold text-primary">${product.Precio}</p>
 
         {userinfo?.contact?.phone && (
