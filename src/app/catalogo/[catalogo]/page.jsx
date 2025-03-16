@@ -9,7 +9,7 @@ export default function CatalogoPage() {
 
   const pathId = usePathname().toLowerCase().split("/")[2];
   const foundProduct = catalogo.find((prod) => prod.nombre.toLowerCase() === pathId);
-  console.log(foundProduct.productos);
+  //console.log(foundProduct.productos);
 
 
   if (!foundProduct) {
