@@ -23,7 +23,7 @@ export default function Home() {
         <CarruselImages />
         <PostInstagram />
         <Catalogo/>
-        <ProductCarousel />
+        <ProductCarousel  />
         {/* <Comentarios />  */}
         <Reprocan />
         <PreguntasFrecuentes />
