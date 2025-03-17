@@ -6,13 +6,13 @@ export function ProductCard({ product, userinfo, onImageClick }) {
   return (
     <div className="relative flex flex-col rounded-lg shadow-lg overflow-hidden bg-white min-w-[280px] mx-2">
       <div className="relative h-48 w-full cursor-pointer" onClick={onImageClick}>
-        <Image
-          src={product.ImagenV}
+      <Image
+          src={product.ImagenH}
           alt={product.NombreProducto}
-          fill
+          width={280}
+          height={192} 
           className="object-cover"
           title={product.NombreProducto}
-          aria-label={product.NombreProducto}
         />
       </div>
 

@@ -5,14 +5,14 @@ export const userinfo = {
     logoText: "BLUM",
     contact: {
         email: 'gonza_rionegro@hotmail.com', 
-        phone: '1162574919', 
+        phone: '1156531505', 
         countrycode: '+54' 
     },
     socials: [
         //{ type: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61551846219257', icon: <FaFacebook className='text-primary'/> },
         { type: 'Instagram', link: 'https://www.instagram.com/blum.club/', icon: <FaInstagram className='text-primary'/> },
-       // { type: 'WhatsApp', link:'https://api.whatsapp.com/send/?phone=1123960360&text=Hola%2C+te+escribo+desde+la+web%2C++&type=phone_number&app_absent=0', icon: <FaWhatsapp className='text-primary'/> },
-        //{ type: 'Phone', link:'https://api.whatsapp.com/send?phone=5491123960360' },  
+       // { type: 'WhatsApp', link:'https://api.whatsapp.com/send/?phone=1156531505&text=Hola%2C+te+escribo+desde+la+web%2C++&type=phone_number&app_absent=0', icon: <FaWhatsapp className='text-primary'/> },
+        //{ type: 'Phone', link:'https://api.whatsapp.com/send?phone=1156531505' },  
     ],
     nosotrosTitle:'Somos el primer club de cultivo de Bernal, que realiza producciones cannábicas orientadas exclusivamente a fines medicinales',
     nosotrosSub:'Blüm',
@@ -33,7 +33,7 @@ export const news = {
 
 export const userData = { //----- Asi tiene que ser el documento dentro de constantes -----
   codigoPais: 54,
-  contact: 1123960360,
+  contact: 1156531505,
   textBoton:'¡Contáctame!',
   textoPredefinido :`Hola, me gustaria saber mas sobre,`
 };
